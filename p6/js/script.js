@@ -103,7 +103,7 @@ const app = {
     } else if (day == 2) {
       return "Tuesday";
     } else if (day == 3) {
-      return "ednesday";
+      return "Wednesday";
     } else if (day == 4) {
       return "Thursday";
     } else if (day == 5) {
