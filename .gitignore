@@ -1,1 +1,6 @@
-.DS_Store
+*.dmb
+*.rsc
+*.int
+*.lk
+*.zip
+*.DS_Store
