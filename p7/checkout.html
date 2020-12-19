@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ailiv</title>
+    <link rel="stylesheet" href="_static/css/main.css">
+    <script src="_static/js/main.js" defer></script>
+</head>
+<body>
+    <header id ="top"> 
+        <div class="container con">
+            <ul class="contact">
+                <li><a href = "tel:+32474992345"><span  class="light">GSM </span> <span class="hov">0474 99 23 45</span></a></li>
+                <li><a href = "mailto:lievecortier@ailiv.be"><span class="light">E-MAIL </span> <span class="hov">LIEVECORTIER@AILIV.BE</span></a></li>
+                <li><a href = "https://www.facebook.com/aillivbloemen"><span class="hov">FACEBOOK</span></a></li>
+                <li><a href = "#"><span class="hov">CONTACT</span></a></li>
+            </ul> 
+        </div>
+        <nav class="container" >
+            <a href="#" class="c-header__logo">
+                <img class="logo-symbol" src="_static/media/logo.svg" alt="">
+            </a>
+            <ul class="menu">
+                <li class="list-item"><a href = "index.html">HOME</a></li>
+                <li class="list-item"><a href = "gepersonaliseerd-bloemwerk.html">GEPERSONALISEERD BLOEMWERK</a></li>
+                <li class="list-item"><a href = "#">TROUWBOEKETTEN</a></li>
+                <li class="list-item"><a href = "#">ROUWWERK</a></li>
+                <li class="list-item"><a href = "seizoensdecoratie.html">SIEZOENSDECORATIE</a></li>
+                <li class="list-item"><a href = "#">AANKLEDING</a></li>
+                <li class="list-item"><a href = "webshop.html">WEBSHOP</a></li>
+            </ul>
+            <div class="hamburger-cta">
+                <span class="js-click">
+                    <button class ="cta" >Winkelmandje <span class ="qtn">1</span></button>
+                </span>
+                <span class="burger">
+                    <a href="#menuHam"><img class="ham" src="_static/media/hamburger.svg" alt=""></a>
+                </span>
+            </div>
+        </nav>
+        <div class="modal hide">
+            <div class="mod-content">
+                <ul class="small-menu">
+                    <li class="list-item"><a href = "index.html">HOME</a></li>
+                    <li class="list-item"><a href = "gepersonaliseerd-bloemwerk.html">GEPERSONALISEERD BLOEMWERK</a></li>
+                    <li class="list-item"><a href = "#">TROUWBOEKETTEN</a></li>
+                    <li class="list-item"><a href = "#">ROUWWERK</a></li>
+                    <li class="list-item"><a href = "seizoensdecoratie.html">SIEZOENSDECORATIE</a></li>
+                    <li class="list-item"><a href = "#">AANKLEDING</a></li>
+                    <li class="list-item"><a href = "webshop.html">WEBSHOP</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article class="checkout-body">
+            <div class="container">
+                <div class="check">
+                    <div class="check-title">
+                        <h3>Overzicht van uw besteling</h3>
+                    </div>
+                    <div class="check-product">
+                        <div class="product-img">
+                            <img src="_static/media/m.png" alt="">
+                        </div>
+                        <div class="m-product-info">
+                            <span class="p-title">BOEKET MEDIUM</span>
+                            <span class="p-pricr">Aantal: 1</span>
+                            <span class="p-color"><span class="cl">Kleur: </span><span class="c-value">Wit</span></span>
+                            <span class="p-vase"><span class="cl">Vaas bijbestellen: </span><span class="v-value">Nee</span></span>
+                            <span class="p-binding"><span class="cl">Bindwijze: </span><span class="b-value">Kortgebonden stelen</span></span>
+                        </div>
+                        <span class="r">€ 40</span>
+                    </div> 
+                </div>
+                <div class="check">
+                    <div class="check-head">
+                        <h3>Klanteninformatie</h3>
+                        <h5>*Vereist</h5>
+                    </div>
+                    <div class="client-info">
+                        <label for="E-mail" class="client-email">Email *</label>
+                        <input type="email" class="inputfield" maxlength="256" name="E-mail" data-name="E-mail" id="E-mail" required>
+                    </div>
+                </div>
+                <div class="check">
+                    <div class="check-head">
+                        <h3>Verzendadres</h3>
+                        <h5>*Vereist</h5>
+                    </div>
+                    <div class="client-info">
+                        <label for="Name" class="client-email">Naam *</label>
+                        <input type="text" class="inputfield" maxlength="256" name="name" data-name="Name" required>
+                        <label for="Address" class="client-email">Adres *</label>
+                        <input type="text" class="inputfield" maxlength="256" name="address" data-name="address"  required>
+                        <input type="text" class="inputfield" maxlength="256" name="address" data-name="address"  required>
+                        <div class="local">
+                            <div class="local-item">
+                                <label for="Address" class="client-email">Gemeente *</label>
+                                <input type="text" class="inputfield" maxlength="256" name="gemeente" data-name="Gemeente" id="Gemeente" required>
+                            </div>
+                            <div class="local-item">
+                                <label for="Address" class="client-email">Provincie</label>
+                                <input type="text" class="inputfield" maxlength="256" name="provincie" data-name="Provincie" id="Provincie">
+                            </div>
+                            <div class="local-item">
+                                <label for="Address" class="client-email">Postcode *</label>
+                                <input type="text" class="inputfield" maxlength="256" name="postcode" data-name="Postcode" id="Postcode" required>
+                            </div>
+                        </div>
+
+                        <label class="client-email">Land *</label>
+                        <select  class="inputfield" required>
+                            <option selected value="Belgium">Belgium</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="check">
+                    <div class="check-title">
+                        <h3>Afhalen of Thuislevering</h3>
+                    </div>
+                    <div class="radio">
+                        <div class="op">
+                            <div class="il">
+                                <div class="i">
+                                    <input type="radio" id="service" name="option" value="option">
+                                </div>
+                                <div class="lb">
+                                    <label for="levering"><span>Thuislevering in Beernem</span></label>
+                                </div>
+                            </div>
+                            <h5 class ="extra-info">We brengen jouw bestelling tot jou thuis in Beernem</h5>
+                        </div>
+                        <div class="amount">
+                            <span>€ 0</span>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <div class="op">
+                            <div class="il">
+                                <div class="i">
+                                    <input type="radio" id="service" name="option" value="option">
+                                </div>
+                                <div class="lb">
+                                    <label for="levering"><span>Thuislevering in Knesselare, Aalter, Oostkamp of Sijsele</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="amount">
+                            <span>€ 10</span>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <div class="op">
+                            <div class="il">
+                                <div class="i">
+                                    <input type="radio" id="service" name="option" value="option">
+                                </div>
+                                <div class="lb">
+                                    <label for="levering"><span>Afhalen op zaterdag</span></label>
+                                </div>
+                            </div>
+                            <h5 class ="extra-info">(tussen 11u en 18u)</h5>
+                        </div>
+                        <div class="amount">
+                            <span>€ 0</span>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <div class="op">
+                            <div class="il">
+                                <div class="i">
+                                    <input type="radio" id="service" name="option" value="option">
+                                </div>
+                                <div class="lb">
+                                    <label for="levering"><span>Afhalen op zaterdag</span></label>
+                                </div>
+                            </div>
+                            <h5 class ="extra-info">(tussen 8u en 12u)</h5>
+                        </div>
+                        <div class="amount">
+                            <span>€ 0</span>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <div class="op">
+                            <div class="il">
+                                <div class="i">
+                                    <input type="radio" id="service" name="option" value="option">
+                                </div>
+                                <div class="lb">
+                                    <label for="levering"><span>Levering buiten Beernem, Knesselare, Aalter, Oostkamp of Sijsele</span></label>
+                                </div>
+                            </div>
+                            <h5 class ="extra-info">Gelieve contact op te nemen via het contactformulier</h5>
+                        </div>
+                        <div class="amount">
+                            <span>€ 0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="check">
+                    <div class="check-title">
+                        <h3>Gepersonaliseerde boodschap</h3>
+                    </div>
+                    <div class="client-info">
+                        <label for="Name" class="client-email">Van</label>
+                        <input type="text" class="inputfield" maxlength="256" name="name" data-name="Name" placeholder="Naam van de schenker">
+                        <label for="Name" class="client-email">Boodschap</label>
+                        <input type="text" class="field" maxlength="256" name="name" data-name="Name" placeholder="Boodschap">
+                        <div class="c-b">
+                            <input type="checkbox" name="Anoniem" class="c-box">
+                            <span class="c-box-name">Anoniem</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="check">
+                    <div class="check-head">
+                        <h3>Betaling met kredietkaart</h3>
+                        <h5>*Vereist</h5>
+                    </div>
+                    <div class="client-info">
+                        <label for="Name" class="client-email">KAARTNUMMER *</label>
+                        <input type="text" class="inputfield" maxlength="256" name="creditcard" data-name="creditcard" id="creditcard" pattern="[0-9]{12,}" placeholder="1234 1234 1234" required>
+                        <div class="dates">
+                            <div class="dates-item">
+                                <label class="client-email">vervaldatum *</label>
+                                <input type="text" class="inputfield" maxlength="256" name="vervaldatum" data-name="vervaldatum" id="vervaldatum" placeholder="MM / YY" required>
+                            </div>
+                            <div class="dates-item">
+                                <label class="client-email">veiligheidscode *</label>
+                                <input type="text" class="inputfield" maxlength="256" name="veiligheidscode" data-name="veiligheidscode" id="veiligheidscode" placeholder="CVC" required>
+                            </div>
+                        </div>
+                        <div class="c-b">
+                            <input type="checkbox" name="facAd" class="c-box js-check-box">
+                            <span class="c-box-name">Facturatieadres is hetzelfde als leveringsadres</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="check js-invoice-ad">
+                    <div class="check-head">
+                        <h3>Facturatieadres</h3>
+                        <h5>*Vereist</h5>
+                    </div>
+                    <div class="client-info">
+                        <label for="Name" class="client-email">Naam *</label>
+                        <input type="text" class="inputfield" maxlength="256" name="name" data-name="Name" required>
+                        <label for="Address" class="client-email">Adres *</label>
+                        <input type="text" class="inputfield" maxlength="256" name="address" data-name="address" id="address-1" required>
+                        <input type="text" class="inputfield" maxlength="256" name="address" data-name="address" id="address-2" required>
+                        <div class="local">
+                            <div class="local-item">
+                                <label for="Address" class="client-email">Gemeente *</label>
+                                <input type="text" class="inputfield" maxlength="256" name="gemeente" data-name="Gemeente" id="Gemeente-fac" required>
+                            </div>
+                            <div class="local-item">
+                                <label for="Address" class="client-email">Provincie</label>
+                                <input type="text" class="inputfield" maxlength="256" name="provincie" data-name="Provincie" id="Provincie-fac">
+                            </div>
+                            <div class="local-item">
+                                <label for="Address" class="client-email">Postcode *</label>
+                                <input type="text" class="inputfield" maxlength="256" name="postcode" data-name="Postcode" id="Postcode-fac" required>
+                            </div>
+                        </div>
+
+                        <label class="client-email">Land *</label>
+                        <select  class="inputfield" required>
+                            <option selected value="Belgium">United States</option>
+                            <option value="Afganistan">Afghanistan</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="American Samoa">American Samoa</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Anguilla">Anguilla</option>
+                            <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Aruba">Aruba</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Belize">Belize</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Bermuda">Bermuda</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Bonaire">Bonaire</option>
+                            <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+                            <option value="Botswana">Botswana</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+                            <option value="Brunei">Brunei</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Burkina Faso">Burkina Faso</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Canary Islands">Canary Islands</option>
+                            <option value="Cape Verde">Cape Verde</option>
+                            <option value="Cayman Islands">Cayman Islands</option>
+                            <option value="Central African Republic">Central African Republic</option>
+                            <option value="Chad">Chad</option>
+                            <option value="Channel Islands">Channel Islands</option>
+                            <option value="Chile">Chile</option>
+                            <option value="China">China</option>
+                            <option value="Christmas Island">Christmas Island</option>
+                            <option value="Cocos Island">Cocos Island</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Comoros">Comoros</option>
+                            <option value="Congo">Congo</option>
+                            <option value="Cook Islands">Cook Islands</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Cote DIvoire">Cote DIvoire</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Curaco">Curacao</option>
+                            <option value="Cyprus">Cyprus</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Djibouti">Djibouti</option>
+                            <option value="Dominica">Dominica</option>
+                            <option value="Dominican Republic">Dominican Republic</option>
+                            <option value="East Timor">East Timor</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Equatorial Guinea">Equatorial Guinea</option>
+                            <option value="Eritrea">Eritrea</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Ethiopia">Ethiopia</option>
+                            <option value="Falkland Islands">Falkland Islands</option>
+                            <option value="Faroe Islands">Faroe Islands</option>
+                            <option value="Fiji">Fiji</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="French Guiana">French Guiana</option>
+                            <option value="French Polynesia">French Polynesia</option>
+                            <option value="French Southern Ter">French Southern Ter</option>
+                            <option value="Gabon">Gabon</option>
+                            <option value="Gambia">Gambia</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Ghana">Ghana</option>
+                            <option value="Gibraltar">Gibraltar</option>
+                            <option value="Great Britain">Great Britain</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Greenland">Greenland</option>
+                            <option value="Grenada">Grenada</option>
+                            <option value="Guadeloupe">Guadeloupe</option>
+                            <option value="Guam">Guam</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Guinea">Guinea</option>
+                            <option value="Guyana">Guyana</option>
+                            <option value="Haiti">Haiti</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Hong Kong">Hong Kong</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Iceland">Iceland</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="India">India</option>
+                            <option value="Iran">Iran</option>
+                            <option value="Iraq">Iraq</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Isle of Man">Isle of Man</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Jamaica">Jamaica</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Kazakhstan">Kazakhstan</option>
+                            <option value="Kenya">Kenya</option>
+                            <option value="Kiribati">Kiribati</option>
+                            <option value="Korea North">Korea North</option>
+                            <option value="Korea Sout">Korea South</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Kyrgyzstan">Kyrgyzstan</option>
+                            <option value="Laos">Laos</option>
+                            <option value="Latvia">Latvia</option>
+                            <option value="Lebanon">Lebanon</option>
+                            <option value="Lesotho">Lesotho</option>
+                            <option value="Liberia">Liberia</option>
+                            <option value="Libya">Libya</option>
+                            <option value="Liechtenstein">Liechtenstein</option>
+                            <option value="Lithuania">Lithuania</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Macau">Macau</option>
+                            <option value="Macedonia">Macedonia</option>
+                            <option value="Madagascar">Madagascar</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Malawi">Malawi</option>
+                            <option value="Maldives">Maldives</option>
+                            <option value="Mali">Mali</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Marshall Islands">Marshall Islands</option>
+                            <option value="Martinique">Martinique</option>
+                            <option value="Mauritania">Mauritania</option>
+                            <option value="Mauritius">Mauritius</option>
+                            <option value="Mayotte">Mayotte</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Midway Islands">Midway Islands</option>
+                            <option value="Moldova">Moldova</option>
+                            <option value="Monaco">Monaco</option>
+                            <option value="Mongolia">Mongolia</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Morocco">Morocco</option>
+                            <option value="Mozambique">Mozambique</option>
+                            <option value="Myanmar">Myanmar</option>
+                            <option value="Nambia">Nambia</option>
+                            <option value="Nauru">Nauru</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Netherland Antilles">Netherland Antilles</option>
+                            <option value="Netherlands">Netherlands (Holland, Europe)</option>
+                            <option value="Nevis">Nevis</option>
+                            <option value="New Caledonia">New Caledonia</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Niue">Niue</option>
+                            <option value="Norfolk Island">Norfolk Island</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Oman">Oman</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Palau Island">Palau Island</option>
+                            <option value="Palestine">Palestine</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Papua New Guinea">Papua New Guinea</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Phillipines">Philippines</option>
+                            <option value="Pitcairn Island">Pitcairn Island</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Puerto Rico">Puerto Rico</option>
+                            <option value="Qatar">Qatar</option>
+                            <option value="Republic of Montenegro">Republic of Montenegro</option>
+                            <option value="Republic of Serbia">Republic of Serbia</option>
+                            <option value="Reunion">Reunion</option>
+                            <option value="Romania">Romania</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Rwanda">Rwanda</option>
+                            <option value="St Barthelemy">St Barthelemy</option>
+                            <option value="St Eustatius">St Eustatius</option>
+                            <option value="St Helena">St Helena</option>
+                            <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                            <option value="St Lucia">St Lucia</option>
+                            <option value="St Maarten">St Maarten</option>
+                            <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+                            <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+                            <option value="Saipan">Saipan</option>
+                            <option value="Samoa">Samoa</option>
+                            <option value="Samoa American">Samoa American</option>
+                            <option value="San Marino">San Marino</option>
+                            <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Seychelles">Seychelles</option>
+                            <option value="Sierra Leone">Sierra Leone</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Slovakia">Slovakia</option>
+                            <option value="Slovenia">Slovenia</option>
+                            <option value="Solomon Islands">Solomon Islands</option>
+                            <option value="Somalia">Somalia</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="Suriname">Suriname</option>
+                            <option value="Swaziland">Swaziland</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Syria">Syria</option>
+                            <option value="Tahiti">Tahiti</option>
+                            <option value="Taiwan">Taiwan</option>
+                            <option value="Tajikistan">Tajikistan</option>
+                            <option value="Tanzania">Tanzania</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Togo">Togo</option>
+                            <option value="Tokelau">Tokelau</option>
+                            <option value="Tonga">Tonga</option>
+                            <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Turkmenistan">Turkmenistan</option>
+                            <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+                            <option value="Tuvalu">Tuvalu</option>
+                            <option value="Uganda">Uganda</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="United Arab Erimates">United Arab Emirates</option>
+                            <option value="United States of America">United States of America</option>
+                            <option value="Uraguay">Uruguay</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            <option value="Vanuatu">Vanuatu</option>
+                            <option value="Vatican City State">Vatican City State</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+                            <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                            <option value="Wake Island">Wake Island</option>
+                            <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+                            <option value="Yemen">Yemen</option>
+                            <option value="Zaire">Zaire</option>
+                            <option value="Zambia">Zambia</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="check">
+                    <div class="check-title">
+                        <h3>Overzicht</h3>
+                    </div>
+                    <div class="sub-total">
+                        <div>Subtotaal</div>
+                        <span>€ 40</span>
+                    </div>
+                    <div class="sub-total">
+                        <div>Levering buiten Beernem, Knesselare, Aalter, Oostkamp of Sijsele</div>
+                        <span>€ 0</span>
+                    </div>
+                    <div class="sub-total">
+                        <div>Total</div>
+                        <span class="bold">€ 40</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <a><input type="submit" value="Plaats bestelling" class="bb submit-order"></a>
+            </div>
+        </article>
+        <div class="cart-modal">
+            <div class="modal-content">
+                <div class="m-top">
+                    <h3>uw winkelmandje</h3>
+                    <span><img class="close-modal" src="_static/media/close.svg" alt=""></span>
+                </div>
+                <div class="products-box">
+                    <div class="modal-product">
+                        <div class="product-img">
+                            <img src="_static/media/m.png" alt="">
+                        </div>
+                        <div class="m-product-info">
+                            <span class="p-title">BOEKET MEDIUM</span>
+                            <span class="p-pricr">€ 40</span>
+                            <span class="p-color"><span class="cl">Kleur: </span><span class="c-value">Wit</span></span>
+                            <span class="p-vase"><span class="cl">Vaas bijbestellen: </span><span class="v-value">Nee</span></span>
+                            <span class="p-binding"><span class="cl">Bindwijze: </span><span class="b-value">Kortgebonden stelen</span></span>
+                            <span class="p-delete cl">verwijderen</span>
+                        </div>
+                        <div class="q">
+                            <input class="quanti" type="text" required pattern="^[0-9]+$" value="1">
+                        </div>
+                    </div>
+                    <div class="m-down">
+                        <h4>Subtotal</h4>
+                        <h4>€ 40</h4>
+                    </div>
+                    <div class="b">
+                        <a href="checkout.html"><input type="submit" value="Naar betalen" class="bb"></a>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div> 
+    </main>
+    <footer>
+        <div class="container">
+            <button class="toTop"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg></button>
+            <nav class="footNav">
+                <ul class="foot-list">
+                    <li class="foot-list-item"><a href = "gepersonaliseerd-bloemwerk.html">GEPERSONALISEERD BLOEMWERK</a></li>
+                    <li class="foot-list-item"><a href = "#">TROUWBOEKETTEN</a></li>
+                    <li class="foot-list-item"><a href = "#">ROUWWERK</a></li>
+                    <li class="foot-list-item"><a href = "seizoensdecoratie.html">SIEZOENSDECORATIE</a></li>
+                    <li class="foot-list-item"><a href = "#">AANKLEDING</a></li>
+                    <li class="foot-list-item"><a href = "webshop.html">WEBSHOP</a></li>
+                    <li class="foot-list-item"><a href = "#">CONTACT </a></li>
+                    <li class="foot-list-item"><a href="#">Algemene voorwaarden</a></li>
+                    <li class="foot-list-item"><a href="#">Beheer cookies</a></li>
+                </ul>
+                <ul class="foot-contact">
+                    <li class="butn1"><a href = "tel:+32474992345"><span  class="name">GSM </span> <span class="value">0474 99 23 45</span></a></li>
+                    <li class="butn2"><a href = "mailto:lievecortier@ailiv.be"><span class="name">E-MAIL </span> <span class="value">LIEVECORTIER@AILIV.BE</span></a></li>
+                </ul>
+            </nav>
+            <div class="foot-text">
+                <p>
+                    Copyright © 2020 Ailiv, Lieve Cortier. 
+                    Alle rechten voorbehouden. 
+                    – Grootmoers 3, 8730 Oedelem – Ondernemingsnummer 
+                    0749.728.044
+                </p>
+                <p>Deze website werd met trots gemaakt door<a href="https://de-formatie.be" class="link">De Formatie</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

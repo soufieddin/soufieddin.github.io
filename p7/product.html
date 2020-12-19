@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ailiv</title>
+    <link rel="stylesheet" href="_static/css/main.css">
+    <script src="_static/js/main.js" defer></script>
+</head>
+<body>
+    <header id="top"> 
+        <div class="container con">
+            <ul class="contact">
+                <li><a href = "tel:+32474992345"><span  class="light">GSM </span> <span class="hov">0474 99 23 45</span></a></li>
+                <li><a href = "mailto:lievecortier@ailiv.be"><span class="light">E-MAIL </span> <span class="hov">LIEVECORTIER@AILIV.BE</span></a></li>
+                <li><a href = "https://www.facebook.com/aillivbloemen"><span class="hov">FACEBOOK</span></a></li>
+                <li><a href = "#"><span class="hov">CONTACT</span></a></li>
+            </ul> 
+        </div>
+        <nav class="container" >
+            <a href="#" class="c-header__logo">
+                <img class="logo-symbol" src="_static/media/logo.svg" alt="">
+            </a>
+            <ul class="menu">
+                <li class="list-item"><a href = "index.html">HOME</a></li>
+                <li class="list-item"><a href = "gepersonaliseerd-bloemwerk.html">GEPERSONALISEERD BLOEMWERK</a></li>
+                <li class="list-item"><a href = "#">TROUWBOEKETTEN</a></li>
+                <li class="list-item"><a href = "#">ROUWWERK</a></li>
+                <li class="list-item"><a href = "seizoensdecoratie.html">SIEZOENSDECORATIE</a></li>
+                <li class="list-item"><a href = "#">AANKLEDING</a></li>
+                <li class="list-item"><a href = "webshop.html">WEBSHOP</a></li>
+            </ul>
+            <div class="hamburger-cta">
+                <span class="js-click">
+                    <button class ="cta" >Winkelmandje <span class ="qtn">1</span></button>
+                </span>
+                <span class="burger">
+                    <a href="#menuHam"><img class="ham" src="_static/media/hamburger.svg" alt=""></a>
+                </span>
+            </div>
+        </nav>
+        <div class="modal hide">
+            <div class="mod-content">
+                <ul class="small-menu">
+                    <li class="list-item"><a href = "index.html">HOME</a></li>
+                    <li class="list-item"><a href = "gepersonaliseerd-bloemwerk.html">GEPERSONALISEERD BLOEMWERK</a></li>
+                    <li class="list-item"><a href = "#">TROUWBOEKETTEN</a></li>
+                    <li class="list-item"><a href = "#">ROUWWERK</a></li>
+                    <li class="list-item"><a href = "seizoensdecoratie.html">SIEZOENSDECORATIE</a></li>
+                    <li class="list-item"><a href = "#">AANKLEDING</a></li>
+                    <li class="list-item"><a href = "webshop.html">WEBSHOP</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="cart-modal">
+            <div class="modal-content">
+                <div class="m-top">
+                    <h3>uw winkelmandje</h3>
+                    <span><img class="close-modal" src="_static/media/close.svg" alt=""></span>
+                </div>
+                <div class="products-box">
+                    <div class="modal-product">
+                        <div class="product-img">
+                            <img src="_static/media/m.png" alt="">
+                        </div>
+                        <div class="m-product-info">
+                            <span class="p-title">BOEKET MEDIUM</span>
+                            <span class="p-pricr">€ 40</span>
+                            <span class="p-color"><span class="cl">Kleur: </span><span class="c-value">Wit</span></span>
+                            <span class="p-vase"><span class="cl">Vaas bijbestellen: </span><span class="v-value">Nee</span></span>
+                            <span class="p-binding"><span class="cl">Bindwijze: </span><span class="b-value">Kortgebonden stelen</span></span>
+                            <span class="p-delete cl">verwijderen</span>
+                        </div>
+                        <div class="q">
+                            <input class="quanti" type="text" required pattern="^[0-9]+$" value="1">
+                        </div>
+                    </div>
+                    <div class="m-down">
+                        <h4>Subtotal</h4>
+                        <h4>€ 40</h4>
+                    </div>
+                    <div class="b">
+                        <a href="checkout.html"><input type="submit" value="Naar betalen" class="bb"></a>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div> 
+        
+        <article class="container">
+            <div class="limit">
+                <div class="product">
+                    <img class="pic-js" src="" alt="">
+                    <h1 class="title-js"></h1>
+                    <span class="price-js"></span>
+                </div>
+                <div class="product-line"></div>
+                <div class="option-product">
+                    <div class="forma">
+                        <div class="select-color">
+                            <label class="input-title">Kleur</label>
+                            <select  class="select" required>
+                                <option selected="" value="">Keuze: Kleur</option>
+                                <option value="wit">Wit</option>
+                                <option value="gemengd">Gemengd</option>
+                            </select>
+                        </div>
+                        <div class="select-color">
+                            <label class="input-title">Vaas bijbestellen</label>
+                            <select  class="select" required>
+                                <option selected="" value="">Keuze: Vaas bijbestellen</option>
+                                <option value="ja">Ja</option>
+                                <option value="nee">Nee</option>
+                            </select>
+                        </div>
+                        <div class="select-color">
+                            <label class="input-title">Bindwijze</label>
+                            <select  class="select" required>
+                                <option selected="" value="">Keuze: Bindwijze</option>
+                                <option value="Kortgebonden stelen">Kortgebonden stelen</option>
+                                <option value="Langgebonden stelen">Langgebonden stelen</option>
+                            </select>
+                        </div>
+                        <div class=" product-submit">
+                            <div class="quanty">
+                                <label class="input-title">Aantal</label>
+                                <input type="number" pattern="^[0-9]+$" inputmode="numeric" id="quantity" min="1" class="select num" value="1">
+                            </div>
+                            <!-- <input type="submit" value="Voeg toe aan winkelmandje" class="product-btn"> -->
+                            <button class="product-btn js-push-to-cart">Voeg toe aan winkelmandje</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-texts">
+                    <h2>Hoe een boeket langer bewaren?</h2>
+                    <p>
+                        Zorg er altijd voor dat je vaas brandschoon
+                        is en snijd de stelen van de bloemen onderaan
+                        ook best na een viertal dagen eens schuin af
+                        met een mesje terwijl je het water ververst.
+                        Indien gewenst kan het meegeleverde bloemenvoedsel
+                        aan het water toegevoegd worden.
+                    </p>
+                    <h4>Verzorgingstips in water</h4>
+                    <p>
+                        Zorg ervoor dat er geen dorre blaadjes in het water terechtkomen , 
+                        want die geven bacteriën . Gebruik bij voorkeur leidingwater en 
+                        voeg eventueel een klein druppeltje javel toe .
+                    </p>
+                </div>
+            </div>
+            
+        </article>
+    </main>
+    <footer>
+        <div class="container">
+            <button class="toTop"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg></button>
+            <nav class="footNav">
+                <ul class="foot-list">
+                    <li class="foot-list-item"><a href = "gepersonaliseerd-bloemwerk.html">GEPERSONALISEERD BLOEMWERK</a></li>
+                    <li class="foot-list-item"><a href = "#">TROUWBOEKETTEN</a></li>
+                    <li class="foot-list-item"><a href = "#">ROUWWERK</a></li>
+                    <li class="foot-list-item"><a href = "seizoensdecoratie.html">SIEZOENSDECORATIE</a></li>
+                    <li class="foot-list-item"><a href = "#">AANKLEDING</a></li>
+                    <li class="foot-list-item"><a href = "webshop.html">WEBSHOP</a></li>
+                    <li class="foot-list-item"><a href = "#">CONTACT </a></li>
+                    <li class="foot-list-item"><a href="#">Algemene voorwaarden</a></li>
+                    <li class="foot-list-item"><a href="#">Beheer cookies</a></li>
+                </ul>
+                <ul class="foot-contact">
+                    <li class="butn1"><a href = "tel:+32474992345"><span  class="name">GSM </span> <span class="value">0474 99 23 45</span></a></li>
+                    <li class="butn2"><a href = "mailto:lievecortier@ailiv.be"><span class="name">E-MAIL </span> <span class="value">LIEVECORTIER@AILIV.BE</span></a></li>
+                </ul>
+            </nav>
+            <div class="foot-text">
+                <p>
+                    Copyright © 2020 Ailiv, Lieve Cortier. 
+                    Alle rechten voorbehouden. 
+                    – Grootmoers 3, 8730 Oedelem – Ondernemingsnummer 
+                    0749.728.044
+                </p>
+                <p>Deze website werd met trots gemaakt door<a href="https://de-formatie.be" class="link">De Formatie</a></p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+ 
+</html>
