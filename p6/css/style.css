@@ -1,0 +1,513 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    
+}
+
+
+header{
+    background: url('https://assets.rockwerchter.be/layout/frontend/img/svg/pattern-2021.svg') no-repeat;
+    background-size:cover;
+    height: 15.125rem;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    
+
+}
+
+.c-header-logo{
+    background: url('https://assets.rockwerchter.be/layout/frontend/img/svg/logo-2021.svg') no-repeat;
+    background-size: 15rem 11rem;
+    position:absolute;
+    width: 20%;
+    height: 70%;
+    top:2rem;
+    left:2rem;
+
+}
+
+.c-header-nav {
+    position: absolute;
+    max-width:67%;
+    /* padding-top: 4.5rem;
+    padding-left: 30%; */
+    /* padding-top: 5%; */
+    height:35%;
+    top:30%;
+    left:35%;
+    
+}
+
+
+.o-list{
+    display: flex;
+    height: 5rem;
+    /* max-width:95%; */
+    background:linear-gradient(270deg, rgb(253,105,12) 5.19%, rgb(104,61,243) 100%) no-repeat;
+    background-size:100%;
+
+
+
+}
+.c-header-nav .o-list li{
+    list-style: none;
+    margin-right: 3rem;
+    padding-top: 1.7rem;
+    padding-left: 0;
+    margin-left: -1.6rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+}
+
+a:hover { 
+    color: black;
+  }
+.is-selected{
+    color:black;
+}
+.selected{
+    color:black !important;
+}
+.dark{
+    /* background:black; */
+    padding:0.7rem;
+    border:none;
+    background:black;
+    transition:.4s ease;
+}
+
+.dark:hover{
+    color:#f0f0f0;
+    background:#202020;
+    
+}
+
+
+.o-container {
+    margin: 2.5rem 3rem 2.5rem ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.c-container{
+    position: relative;
+    margin: 0 1rem;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.c-container .ul-sort{
+    display: flex;
+    position:absolute;
+    width: 40%;
+    padding-top: 2rem;
+}
+
+.c-container .ul-sort .list-element{
+    list-style: none;
+    margin-right: 2rem;
+    color:blue;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.c-container .ul-sort .list-element:hover {
+    color: black;
+}
+.clock{
+    width: 30.5%;
+    height:4.452375rem;
+    margin-left: 66%;
+    background:linear-gradient(270deg, rgb(253,105,12) 5.19%, rgb(104,61,243) 100%) no-repeat;
+    margin-top: 2rem;
+    color:white;
+    text-align: center;
+    padding-top: .5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.pic {
+    position:relative;
+    display:flex;
+    height:22rem;
+    width:32%;
+    margin: 0.5rem auto;
+    background-position:50% 50%;
+    background-size:38rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.pi {
+    position:relative;
+    display:flex;
+    height:22rem;
+    width:32%;
+    margin: 0.5rem auto;
+    background-position:50% 50%;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+.o-container .pic:hover {
+    background-size: 42rem;
+}
+
+.box-in-pic{
+    position: absolute;
+    bottom:-1rem;
+    left:1rem;
+}
+
+.date{
+    display: inline-block;
+    color:white;
+    background:rgb(0,0,254);
+    padding: 0.3rem;
+    margin-right:-0.2rem ;
+    font-size: 1.4rem;
+    font-weight:500;
+}
+
+
+.place{
+    display:inline-block;
+    color:black;
+    background:white;
+    padding: 0.3rem;
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight:500;
+}
+.name{
+    color:white;  
+    margin-top: 0;
+    background-image: linear-gradient(270deg, cyan 0%, #643cfa 50%, #ff690a 100%);
+    padding: 0.3rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+.modal {
+    background:rgba(0,0,0,0.5);
+    display: none;
+    position:fixed;
+    z-index: 1;
+    right: 0;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    cursor: pointer;
+}
+
+.m-content{
+    background-color: white;
+    width:74%;
+    z-index: 2;
+    height:289vh;
+    margin: 0 auto;
+    margin-right: 0;
+}
+.mod-container{
+    width:70rem;
+    margin: 5rem auto;
+}
+.synopsis{
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+}
+.yt{
+    width: 70rem;
+    height: 40rem;
+    margin: 4rem auto;
+}
+.km{
+    margin-top: 5rem;
+}
+
+.ul-soc{
+    list-style: none;
+    margin-top: 1.5rem;
+    padding-left: 0;
+    padding-bottom: 3rem;
+}
+.linkS{
+    color:blue;
+    font-size: 1.3rem;
+    line-height: 2rem;
+
+}
+.close {
+    position: relative;
+    color: white;
+    float: left;
+    cursor: pointer;
+}
+.x{
+    position: absolute;
+    left:23%;
+    top:5%;
+}
+.footer {
+    width:auto;
+    height:40rem;
+    background-color:#009;
+    padding: 3rem;
+}
+.fc{
+    margin: 0 auto;
+    background-color: #009;
+    height: 34rem;
+    width: 100%;
+    position: relative;
+
+
+}
+
+.fSoc{
+    height: 6rem;
+    
+
+}
+.list-social-footer{
+    display: flex;
+    list-style: none;
+}
+
+.list-item-footer{
+    margin-right: 2rem;
+    height: 50px;
+    width: 50px;
+    background-color : black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+     
+}
+.sf{
+    fill:white;
+}
+.sf1{
+    padding-top: 3px;
+}
+.sf2{
+    padding-left: 1.5px;
+    padding-top: 5px;
+}
+.sf3{
+    padding-left: 2px;
+    padding-top: 1.5px;
+}
+.sf4{
+    padding-top: 2px;
+    padding-left: 1px;
+}
+.sf5{
+    padding-left: 1px;
+    padding-top: 1px;
+}
+.list-item-footer:hover{
+    background:#009;
+}
+.fInfo{
+    height: 23.5rem;
+    background-color:#009;
+    margin-top: 4.5rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.info{
+    width:25%;
+}
+h4{
+    color:white;
+    margin-left: 2.5rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.list-information{
+    list-style: none;
+    color:rgb(191,191,217);
+}
+.info-links{
+    color:rgb(191,191,217);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+.info-links:hover{
+    color:white;
+}
+.news{
+    width:33%;
+}
+.ts{
+    color:white;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.title-news{
+    margin-left: 0;
+}
+.sub-container{
+    display: flex;
+    flex-wrap: wrap;
+    width:32rem;
+    height: 3.5rem;
+}
+.inp{
+    width:75%;
+    height: 3.5rem;
+    float: left;
+    background-color: #009;
+}
+.c-input-text{
+    background-color: #009;
+    font-size: 1.2rem;
+    font-weight: 300;
+    box-shadow: inset 0 0 0 1px #fff;
+    border:0;
+    width:100%;
+    height: 3.5rem;
+    color: white;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+    outline: none;
+}
+::placeholder {
+    color:white;
+}
+.b{
+    width: 25%;
+    float: left;
+    height: 3.5rem;
+    background-color: #fff;
+}
+.c-button{
+    background-color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width:100%;
+    height: 100%;
+    border:0;
+    color:#009;
+}
+
+
+/* @media (max-width:64rem){
+    header{
+        height: 10rem;
+    }
+    .c-header-nav{
+        display:none;
+    }
+    .c-header-logo{
+        background: url('https://assets.rockwerchter.be/layout/frontend/img/svg/logo-2021.svg') no-repeat;
+        background-size: 12rem 10rem;
+        position:absolute;
+        width: 63%;
+        height: 93%;
+        top:0.2rem;
+        left:1rem;
+    }
+    .pic{
+        width:90%;
+    }
+}
+
+ @media (min-width:64rem){
+
+    header{
+        background: url('https://assets.rockwerchter.be/layout/frontend/img/svg/pattern-2021.svg') no-repeat;
+        background-size:auto 15rem;
+        height: 15.125rem;
+        width: 100%;
+        position: relative;
+        margin: 0;
+        
+    
+    }
+    .c-header-nav .o-list{
+        height: 4rem;
+        width:auto;
+        top:4.5rem;
+        left:32%;
+    }
+    .c-header-nav .o-list li{
+        list-style: none;
+        margin-right: 1.4rem;
+        margin-left: -1rem;
+        padding-top: 1.4rem;
+        padding-left:0;
+    }
+    a{
+        font-size: 0.8rem;
+    }
+    .c-header-logo{
+        background: url('https://assets.rockwerchter.be/layout/frontend/img/svg/logo-2021.svg') no-repeat;
+        background-size: 14rem 10rem;
+        position:absolute;
+        width: 31%;
+        height: 67%;
+        top:2.2rem;
+        left:2.2rem;
+    }
+    .pic{
+        width:40%;
+    }
+}
+@media (min-width:75rem){
+    header{
+       background-size:auto 15rem;
+        height: 15.125rem;
+        width: 100%;
+        position: relative;
+        margin: 0;
+        
+    
+    }
+    .c-header-logo{
+        background-size: 15.625rem 10.625rem;
+        width: 22%;
+        height: 70%;
+        top:2rem;
+        left:2rem;
+    
+    }
+    .c-header-nav{
+        right:6rem;
+    }
+    .c-header-nav .o-list{
+        height: 4rem;
+        width:auto;
+        top:4.5rem;
+        left:42%;
+        
+    }
+    .c-header-nav .o-list li{
+        list-style: none;
+        margin-right: 3rem;
+        padding-top: 1.25rem;
+        padding-left: 0;
+        margin-left: -1.6rem;
+    }
+    a{
+        font-size: 1.5rem;
+    }
+} */
