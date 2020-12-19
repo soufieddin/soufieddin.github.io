@@ -58,8 +58,8 @@ const app = {
                 this.getUniqueDays(this.events);
                 this.changeProductContent(this.events,this.categories);
                 this.changeDetailContent(this.events);
-                //this.filterInvalid(this.events);
-                //this.extraDetails(this.events);
+                this.filterInvalid(this.events);
+                this.extraDetails(this.events);
             })
             .catch((e)=>console.log(e));
     },
@@ -144,7 +144,7 @@ const app = {
     updateEventsHome: function(events){
         const homeEvents = document.querySelector('.home-events');
         const evArr = [];
-        while(evArr.length<4){
+        while(evArr.length<3){
             random = Math.floor(Math.random()*events.length);
             const item = events[random];
             if(item.image && item.image.thumb){
@@ -240,20 +240,15 @@ const app = {
     changeProductContent(events, categories){
         const urls = new URLSearchParams(window.location.search);
         const myUrl = urls.get('day');
-        const rawArr = [];
+        let rawArr = [];
         if(myUrl) {
-            events.forEach((e)=>{
-                if (e.day === myUrl){
-                    rawArr.push(e);
-                }
-                return rawArr;
-            });
+            rawArr = events.filter(e => e.day === myUrl);
             const dayEvents = document.querySelector('.events-day');
             const evArrDay = [];
             while(evArrDay.length<3){
                 const random = Math.floor(Math.random()*rawArr.length);
                 const item = rawArr[random];
-                if(item.image && item.image.thumb){
+                if(item.image && item.image.thumb && item.url){
                     if(evArrDay.indexOf(item)==-1){
                          evArrDay.push(item);
                     }
@@ -262,8 +257,6 @@ const app = {
             evArrDay.sort(function (a, b) {
                 return a.start.localeCompare(b.start);
               });
-            //console.log(evArrDay);
-            
             let str = "";
             if (dayEvents){
                 for(let e = 0;e < evArrDay.length;e++) {
@@ -381,25 +374,25 @@ const app = {
         }
 
     },
-    // filterInvalid(events){
-    //     const eventsFilterInvalid = document.querySelectorAll('.js-invalid');
-    //     console.log(eventsFilterInvalid);
-    //     const checkForInvalid = document.querySelector('input[name=wheelchair_accessible]');
-    //     if (eventsFilterInvalid && checkForInvalid){
-    //         checkForInvalid.addEventListener('click',((ev)=>{
-    //             console.log('hi')
-    //                 eventsFilterInvalid.forEach((e)=>{
-    //                     const checkInv = e.getAttribute('data-invalid');
-    //                     if(checkInv === false){
-    //                         e.style.display = 'none';  
-    //                     }else{
-    //                         e.style.display = 'block';
-    //                     }
-    //                 });
+    filterInvalid(events){
+        const eventsFilterInvalid = document.querySelectorAll('.js-invalid');
+        console.log(eventsFilterInvalid);
+        const checkForInvalid = document.querySelector('input[name=wheelchair_accessible]');        
+        if (eventsFilterInvalid && checkForInvalid){
+            checkForInvalid.addEventListener('change',((ev)=>{
+                console.log('hi')
+                    eventsFilterInvalid.forEach((e)=>{
+                        const checkInv = e.getAttribute('data-invalid');
+                        if(checkInv === "false"){
+                            e.style.display = 'none';  
+                        }else{
+                            e.style.display = 'block';
+                        }
+                    });
                 
-    //         }));
-    //     }
-    // },
+            }));
+        }
+    },
     changeDetailContent(events){
         const urlDetail = new URLSearchParams(window.location.search);
         const myUrlDetailDay = urlDetail.get('day');
@@ -510,27 +503,46 @@ const app = {
         }
 
     },
-    // extraDetails(events){
-    //     const extraDetailsEvents = document.querySelector('.extra-details-events');
-    //     const urlDetail = new URLSearchParams(window.location.search);
-    //     const myUrlDetailDay = urlDetail.get('day');
-    //     const myUrlDetailSlug = urlDetail.get('slug');
-    //     const loc = document.querySelector('.eventLocation');
-    //     const extraDetailsArr = [];
-    //     if(myUrlDetailDay && myUrlDetailSlug){
-    //         while(extraDetailsArr.length<4){
-    //             random = Math.floor(Math.random()*events.length);
-    //             const item = events[random];
-    //             if(item && item.image && item.image.thumb && item.day === myUrlDetailDay && item.slug === myUrlDetailSlug && item.location === loc.innerText){
-    //                 if(extraDetailsArr.indexOf(item)==-1){
-    //                     extraDetailsArr.push(item);
-    //                 }
-    //             }
-    //         }
-    //     }
+    extraDetails(events){
+        const extraDetailsEvents = document.querySelector('.extra-details-events');
+        const urlDetail = new URLSearchParams(window.location.search);
+        const myUrlDetailDay = urlDetail.get('day');
+        const myUrlDetailSlug = urlDetail.get('slug');
+        const loc = document.querySelector('.locDetail');
+        const extraDetailsArr = [];
+        if(!extraDetailsEvents){
+            return;
+        }
+        const filteredEvents = events.filter(item => item.image && item.image.thumb && item.day === myUrlDetailDay && item.location && item.location.trim().toLowerCase() === loc.innerText.trim().toLowerCase());
+        if(extraDetailsEvents && myUrlDetailDay && myUrlDetailSlug){
+            while(extraDetailsArr.length < filteredEvents.length){
+                random = Math.floor(Math.random()*filteredEvents.length);
+                const item = filteredEvents[random];
+                if(extraDetailsArr.indexOf(item)==-1){
+                    extraDetailsArr.push(item);
+                }
+                
+            }
+            const sortedDet = extraDetailsArr.sort(function (a, b) {
+                return a.start.localeCompare(b.start);
+            });
+            const links = sortedDet.map(v => `<a class = "js-detail"  href="detail.html?day=${v.day}&slug=${v.slug}"><div class="events__content detail-content dc">
+            <div class = "start-wrapper">
+                <span  class="evStart detail-start dst">${v.start} u.</span>
+            </div>
+            <div class="title-wrapper">
+                <h2>${v.title}</h2>
+            </div>
+            <div class="place-wrapper">
+                <div class="place detail-place">${v.location}</div>
+            </div>
+            
+        </div></a>`).join("");
+            extraDetailsEvents.innerHTML = links;
+        }
        
-    //     console.log(extraDetailsArr);
-    // },
+        console.log(extraDetailsArr);
+    },
 };
 void (() => {
     console.log("App started!");
