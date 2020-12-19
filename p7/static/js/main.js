@@ -60,7 +60,7 @@ const app = {
                 str+= `
                 <div class = "shopItem">
                     <div class = "picBack">
-                        <img class="itemPic" src="_static/media/${e.pic}"/>
+                        <img class="itemPic" src="static/media/${e.pic}"/>
                     </div>
                     <div class="itemTex">
                         <a id="${e.type}" class="itemTitle" href = "${e.href}">${e.name}</a>
@@ -113,7 +113,7 @@ const app = {
             const pict = document.querySelector('.pic-js');
             const price = document.querySelector('.price-js');
             const picSRC = shopItems.find((p)=>p.type === myUrl).pic;
-            pict.src = "_static/media/"+picSRC;
+            pict.src = "static/media/"+picSRC;
             const pTitle = shopItems.find(p=>p.type === myUrl).name;
             title.innerHTML = pTitle;
             const pPrice = shopItems.find(p=>p.type === myUrl).price;
