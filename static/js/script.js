@@ -147,7 +147,7 @@ const app = {
         while(evArr.length<3){
             random = Math.floor(Math.random()*events.length);
             const item = events[random];
-            if(item.image && item.image.thumb){
+            if(item && item.image && item.image.thumb && item.url){
                 if(evArr.indexOf(item)==-1){
                      evArr.push(item);
                 }
@@ -156,6 +156,7 @@ const app = {
                 break;
               } 
         }
+        console.log(evArr);
         let str = "";
         if (homeEvents){
             for(let e = 0;e < evArr.length;e++) {
