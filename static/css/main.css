@@ -1627,3 +1627,17 @@ header button{
         font-size: 1.875rem!important;
     }
 }
+.dc .dst {
+    display: block!important;
+}
+.head-extra{
+    font-family: 'Raleway Black';
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+@media(min-width:48rem){
+    .head-extra{
+        font-size: 1.3rem;
+    }
+}

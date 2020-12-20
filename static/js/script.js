@@ -33,18 +33,15 @@ const app = {
         const newsCard = document.querySelector('.news-cards');
         if (newsCard){
             this.generateNews();
-        }
-        // this.changeParam();
+        }                
     },
     getDataAPICategories() {
         fetch(getDataCategories)
             .then((response)=>response.json())
             .then((json)=>{
-                // console.log(json);
                 this.categories = json;
                 this.generateFilters(this.categories);
-                this.getDataAPIEvents();
-                
+                this.getDataAPIEvents();  
             })
             .catch((e)=>console.log(e));
     },
@@ -52,14 +49,12 @@ const app = {
         fetch(getDataEvents)
             .then((response)=>response.json())
             .then((json)=>{
-                // console.log(json);
-                this.events = json;
+                this.events = json ;
                 this.updateEventsHome(this.events);
                 this.getUniqueDays(this.events);
                 this.changeProductContent(this.events,this.categories);
                 this.changeDetailContent(this.events);
-                this.filterInvalid(this.events);
-                this.extraDetails(this.events);
+                this.extraDetails(this.events); 
             })
             .catch((e)=>console.log(e));
     },
@@ -92,7 +87,6 @@ const app = {
         longDates.forEach(ld => {
             const liRaw = `<a class = "js-list-day" data-day="${ld.day}" href = "dag.html?day=${ld.day}">${ld.weekDay} ${ld.day} juli</a>`;
             const li = document.createElement("li");
-            //li.classList.add('js-list-day');
             li.innerHTML = liRaw;
             longDatesList.prepend(li);
         });
@@ -105,7 +99,6 @@ const app = {
                     <span class = "nr-big">${e.day} jul</span>
                 </a>`;
                 const li = document.createElement("li");
-                //li.classList.add('js-list-day');
                 li.innerHTML = liRaw;
                 daysLinksBig.prepend(li);
             });
@@ -120,7 +113,6 @@ const app = {
                 </a> 
                     `;
                 const li = document.createElement("li");
-                //li.classList.add('js-list-day');
                 li.innerHTML = liRaw;
                 daysLinks.prepend(li);
             });
@@ -135,7 +127,6 @@ const app = {
                 </a> 
                     `;
                 const li = document.createElement("li");
-                //li.classList.add('js-list-day');
                 li.innerHTML = liRaw;
                 daysLinksNorm.prepend(li);
             });
@@ -192,7 +183,6 @@ const app = {
         const closeModalBTN = document.querySelector('.close');
         const closeIcon = document.querySelector('.close-icon');
         openModalBTN.addEventListener('click',(()=>{
-            //console.log('pressed');
             modal.classList.toggle('show');
         }));
         closeModalBTN.addEventListener('click',(()=>{
@@ -249,7 +239,7 @@ const app = {
             while(evArrDay.length<3){
                 const random = Math.floor(Math.random()*rawArr.length);
                 const item = rawArr[random];
-                if(item.image && item.image.thumb && item.url){
+                if(item.image && item.image.thumb && item.url && !evArrDay.includes(item.id)){
                     if(evArrDay.indexOf(item)==-1){
                          evArrDay.push(item);
                     }
@@ -291,8 +281,8 @@ const app = {
                     const sortedEv = ev.sort(function (a, b) {
                         return a.start.localeCompare(b.start);
                     });
-                    
-                    const listFilters = sortedEv.map((v)=>{
+                    const unique = sortedEv.filter((item, pos, self) => self.findIndex(x => x.id === item.id) === pos);
+                    const listFilters = unique.map((v)=>{
                         return  `
                         <a class="events__link js-detail js-invalid" date-type="${v.id}" data-day="${v.day}" data-slug="${v.slug}" data-invalid="${v.wheelchair_accessible}" href="detail.html?day=${v.day}&slug=${v.slug}">
                             <div class="evPic detail-pic" style="background-image: url(${v.image.thumb})">
@@ -373,34 +363,14 @@ const app = {
                 });
             }));
         }
-
-    },
-    filterInvalid(events){
-        const eventsFilterInvalid = document.querySelectorAll('.js-invalid');
-        console.log(eventsFilterInvalid);
-        const checkForInvalid = document.querySelector('input[name=wheelchair_accessible]');        
-        if (eventsFilterInvalid && checkForInvalid){
-            checkForInvalid.addEventListener('change',((ev)=>{
-                console.log('hi')
-                    eventsFilterInvalid.forEach((e)=>{
-                        const checkInv = e.getAttribute('data-invalid');
-                        if(checkInv === "false"){
-                            e.style.display = 'none';  
-                        }else{
-                            e.style.display = 'block';
-                        }
-                    });
-                
-            }));
-        }
     },
     changeDetailContent(events){
         const urlDetail = new URLSearchParams(window.location.search);
         const myUrlDetailDay = urlDetail.get('day');
         const myUrlDetailSlug = urlDetail.get('slug');
         const infoDetail = document.querySelector('.info-event');
+        
         const detArr = [];
-        // const extraDetailsArr = [];
         if (myUrlDetailDay && myUrlDetailSlug){
             events.forEach((e)=>{
                 if(e.day === myUrlDetailDay && e.slug === myUrlDetailSlug && e.image && e.image.thumb && e.image.full){
@@ -411,7 +381,7 @@ const app = {
             console.log(detailArr);
             const detialResult = detailArr.map((event)=>{
                 return `
-                <div class = "detail-info-event" style="margin-top:2rem;">
+                <div class = "detail-info-event" style="margin-top:2rem;" data-ev-loc = "${event.location}">
                     <div class = "detail-info-wrapper">
                         <div class = "larg-pic-flex"><img src="${event.image.full}"></div>
                         <div class = "d-wrapper">
@@ -500,9 +470,8 @@ const app = {
                 }else{
                     $invalid.style.display='none';
                 }
-            });
+            }); 
         }
-
     },
     extraDetails(events){
         const extraDetailsEvents = document.querySelector('.extra-details-events');
@@ -527,7 +496,8 @@ const app = {
             const sortedDet = extraDetailsArr.sort(function (a, b) {
                 return a.start.localeCompare(b.start);
             });
-            const links = sortedDet.map(v => `<a class = "js-detail"  href="detail.html?day=${v.day}&slug=${v.slug}"><div class="events__content detail-content dc">
+            const unique = sortedDet.filter((item, pos, self) => self.findIndex(x => x.id === item.id) === pos);
+            const links = unique.map(v => `<a class = "js-detail"  href="detail.html?day=${v.day}&slug=${v.slug}"><div class="events__content detail-content dc">
             <div class = "start-wrapper">
                 <span  class="evStart detail-start dst">${v.start} u.</span>
             </div>
@@ -539,10 +509,14 @@ const app = {
             </div>
             
         </div></a>`).join("");
-            extraDetailsEvents.innerHTML = links;
+            extraDetailsEvents.innerHTML += links;
         }
        
-        console.log(extraDetailsArr);
+        const html = document.querySelector('.head-extra');
+        const n = document.querySelector('.detail-info-event');
+        const $loc = n.getAttribute('data-ev-loc');
+        let str = `<h2>Andere evenementen van ${$loc}</h2>`;
+        html.innerHTML = str;
     },
 };
 void (() => {
