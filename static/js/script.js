@@ -497,7 +497,7 @@ const app = {
                 return a.start.localeCompare(b.start);
             });
             const unique = sortedDet.filter((item, pos, self) => self.findIndex(x => x.id === item.id) === pos);
-            const links = unique.map(v => `<a class = "js-detail"  href="detail.html?day=${v.day}&slug=${v.slug}"><div class="events__content detail-content dc">
+            const links = unique.map(v => `<a class = "js-detail"  href="detail.html?day=${v.day}&slug=${v.slug}"><div class="events__content detail-content x dc">
             <div class = "start-wrapper">
                 <span  class="evStart detail-start dst">${v.start} u.</span>
             </div>
@@ -516,7 +516,11 @@ const app = {
         const n = document.querySelector('.detail-info-event');
         const $loc = n.getAttribute('data-ev-loc');
         let str = `<h2>Andere evenementen van ${$loc}</h2>`;
-        html.innerHTML = str;
+        const x = document.querySelector('.x');
+        if(x){
+            html.innerHTML = str;
+        }
+        
     },
 };
 void (() => {
