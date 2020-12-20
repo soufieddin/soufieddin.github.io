@@ -514,7 +514,7 @@ const app = {
         if(!extraDetailsEvents){
             return;
         }
-        const filteredEvents = events.filter(item => item.image && item.image.thumb && item.day === myUrlDetailDay && item.location && item.location.trim().toLowerCase() === loc.innerText.trim().toLowerCase());
+        const filteredEvents = events.filter(item => item.image && item.image.thumb && item.day === myUrlDetailDay && item.slug !== myUrlDetailSlug && item.location && item.location.trim().toLowerCase() === loc.innerText.trim().toLowerCase());
         if(extraDetailsEvents && myUrlDetailDay && myUrlDetailSlug){
             while(extraDetailsArr.length < filteredEvents.length){
                 random = Math.floor(Math.random()*filteredEvents.length);
