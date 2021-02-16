@@ -1,18 +1,18 @@
 const news = [
     {
-        bg:"https://gentsefeesten-2019.stad.gent/sites/default/files/styles/medium_3_2/public/2019-07/Drukkerij%20Van%20Melle%20in%20Gent%2C%20eerste%20helft%2020e%20eeuw.%20Collectie%20Industriemuseum.png?h=2bb066d9&itok=GJErkbEb",
+        bg:"https://www.dansendeberen.be/wp-content/uploads/rsz_social-gf19.jpg",
         title:"Drie eeuwen grafische industrie",
         date:"23/07",
         description:"De tentoonstelling “drie eeuwen grafische industrie” in het Industriemuseum dompelt je onder in de drukkerijen van weleer, van 1750 tot nu. Je krijgt er fascinerende foto’s, imposante drukpersen en knap drukwerk te zien."
     },
     {
-        bg:"https://gentsefeesten-2019.stad.gent/sites/default/files/styles/medium_3_2/public/2019-07/jubilarisen%20Gentse%20Feesten.jpg?h=5304c2bd&itok=koin5Fq6",
+        bg:"https://www.dansendeberen.be/wp-content/uploads/rsz_social-gf19.jpg",
         title:"Dit jaar heel wat jarigen op de Gentse Feesten",
         date:"25/07",
         description:"Trefpunt zit aan 50 edities, Ons Luisterplein mag 10 kaarsjes uitblazen en blueslegende Roland, die 75 jaar wordt, heeft nog op de allereerste editie van de Gentse Feesten aan Trefpunt gespeeld. Reden genoeg om ze even in de bloemetjes te zetten."
     },
     {
-        bg:"https://gentsefeesten-2019.stad.gent/sites/default/files/styles/medium_3_2/public/2019-07/cpex.jpg?h=1b5dafc3&itok=EMbMHle8",
+        bg:"https://www.dansendeberen.be/wp-content/uploads/rsz_social-gf19.jpg",
         title:"Gratis muziek op woensdag",
         date:"24/07",
         description:"Heel wat keuzestress want het belooft een topavond te worden.Blankenberge Blankenberge, wonderschone stad, maar toch moet je vanavond op de Kouter zijn want Clement Peerens Explosition speelt gegarandeerd Boomtown plat (22.30 uur)."
