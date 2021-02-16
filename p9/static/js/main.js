@@ -4,6 +4,7 @@ void(()=>{
             this.toTop();
             this.catchElements();
             this.getStudioItems();
+            this.getStudioItemsForHome();
             this.getArtItems();
             this.getPressItems();
             this.toggleSubscribe();
@@ -69,8 +70,21 @@ void(()=>{
             try{
                 const response = await fetch("../data/atelier.json");
                 const data = await response.json();
-                this.updateStudioSectionHome(data);
+                
                 this.updateStudio(data);
+            }catch(error){
+                console.error(error);
+            }
+        },
+        async getStudioItemsForHome(){
+            if(!this.$studioList && !this.$atelierList){
+                return;
+            }
+            try{
+                const response = await fetch("./data/atelier.json");
+                const data = await response.json();
+                this.updateStudioSectionHome(data);
+                
             }catch(error){
                 console.error(error);
             }
@@ -99,9 +113,10 @@ void(()=>{
             </li>`;
                 
             });
-            if(this.$studioList){
-                this.$studioList.innerHTML = str;
+            if(!this.$studioList){
+                return;
             }
+            this.$studioList.innerHTML = str;
         },
         updateStudio(data){
             const items = data.items;
