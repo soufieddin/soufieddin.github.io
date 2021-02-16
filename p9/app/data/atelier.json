@@ -1,0 +1,40 @@
+{
+    "items":[
+        {
+            "title":"My Secret Garden, Valencia — Extended until 1st of March",
+            "subtitle":"Figures to be proud of",
+            "description":"Since February 2019, the open-air exhibition of Arne Quinze already attracted 3 million visitors,...",
+            "img":"atl1.jpg"
+        },
+        {
+            "title":"Spray-painting The Beautiful Dreamer",
+            "subtitle":"Natural Chaos sculpture for Paris",
+            "description":"Only one month left before heading to Paris for the setup of 'The Beautiful Dreamer'. The...",
+            "img":"atl2.jpg"
+        },
+        {
+            "title":"Finishing a public art installation in Paris",
+            "subtitle":"Le Beau Rêveur",
+            "description":"Inspired by an active romanticism, Arne Quinze continues his journey with this public sculpture...",
+            "img":"atl3.jpg"
+        },
+        {
+            "title":"Amazonia, a Bioluminescent Natural Chaos",
+            "subtitle":"Suspended between green walls",
+            "description":"Bringing colour and diversity inside this brand new corporate's headquarters! 🌺 Inspired by the...",
+            "img":"atl4.jpg"    
+        },
+        {
+            "title":"A new Paris landmark",
+            "subtitle":"The making of",
+            "description":"Arne Quinze will soon turn Paris a tad more colourful with a new installation. This video shows...",
+            "img":"atl5.gif"
+        },
+        {
+            "title":"The story behind the Valencia sculptures",
+            "subtitle":"My Secret Garden video",
+            "description":"Since the Industrial Revolution, we humans have managed to cover a big part of our planet with...",
+            "img":"atl6.gif"
+        }
+    ]
+}

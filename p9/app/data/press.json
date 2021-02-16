@@ -1,0 +1,52 @@
+{
+    "archive":[
+        {
+            "title":"Frieze — London",
+            "subtitle":"Arne Quinze builds Lupine Tower for Frieze Sculpture, Regent's Park",
+            "description":"This year, Frieze Sculpture returns to The Regent’s Park from 5 – 18 October, featuring 12...",
+            "img":"press1.jpg"
+        },
+        {
+            "title":"The Beautiful Dreamer — Paris",
+            "subtitle":"The first permanent public art sculpture by Arne Quinze in France",
+            "description":"Arne Quinze continues his journey to reshape our cities into more human environments with this...",
+            "img":"press2.jpg"
+        },
+        {
+            "title":"My secret Garden — Valencia",
+            "subtitle":"Arne Quinze press release",
+            "description":"“My Secret Garden Valencia” presents a series of six public sculptures that will enter into...",
+            "img":"press3.jpg"
+        }
+    ],
+    "press":[
+        {
+            "title":"Financial Times about Frieze Sculpture",
+            "subtitle":"Frieze Sculpture Park opens its doors to nature",
+            "description":"An upbeat free-to-wander exhibition combines playfulness with serious concerns of contemporary...",
+            "img":"press4.jpg",
+            "next":"download article",
+            "link":"https://www.arnequinze.com/assets/in_the_press/documents/financial-times-arne-quinze-screenshot.png",
+            "attribute":"download"
+        },
+        {
+            "title":"My Secret Garden, Valencia — Extended",
+            "subtitle":"Visit Arne Quinze's Secret Garden until the 1st of March",
+            "description":"Since February 2019, the open-air exhibition of Arne Quinze already attracted 3 million visitors!...",
+            "img":"press5.jpg",
+            "next":"visit website",
+            "link":"http://www.viuvalencia.com/articulo/exposicion_valencia_febrero_gratis/590621076?fbclid=IwAR0eyzjukTOF_kIhXwi1yFWtUrk8kxOFNR4VMiOPd-UOUPjSlgYz5nTucqU",
+            "attribute":""
+        },
+        {
+            "title":"DJ Lefto in our studio",
+            "subtitle":"An inspirational tour with Belgian most famous hip hop DJ",
+            "description":"In this RTBF series, Hadja Lahbib follows Lefto visiting some of his friends artists and...",
+            "img":"press6.jpg",
+            "next":"visit website",
+            "link":"https://www.rtbf.be/auvio/detail_tout-le-baz-art?id=2576946&jwsource=fb&fbclid=IwAR23CB0dqzjvcTZVy3R0x-x-kGrr2kpLmDeEbm9_u4G5DXQQAepjLF07YBA",
+            "attribute":""
+        }
+    ]
+    
+}

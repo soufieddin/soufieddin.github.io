@@ -1,0 +1,1142 @@
+/* -------------------------------------fonts--------------------------------- */
+@font-face {
+    font-family:'Moderat';
+    src: url('../fonts/Moderat Regular.woff2') format('woff2'),
+		url('../fonts/Moderat Regular.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family:'Moderat Light';
+    src: url('../fonts/Moderat Light.woff2') format('woff2'),
+		url('../fonts/Moderat Light.woff') format('woff');
+    font-weight: 300;
+}
+/* -------------------------------------general--------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Moderat','Moderat Light',serif;
+    font-weight: 300;
+    font-size: 16px;
+    color:#000;
+    line-height: 1.2;
+    min-width: 17.5rem;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+article{
+    overflow: hidden;
+}
+.container{
+    width:100%;
+    padding:2rem 5% 0 5%;
+}
+@media(min-width:48rem){
+    .container{
+        padding:3.75rem 6% 0 6%;
+    }
+}
+@media(min-width:64rem){
+    .container{
+        padding:3.75rem 10% 0 10%;
+    }
+}
+/*-------------------------------------------header------------------------------*/
+.navigation ul{
+    list-style: none;
+    padding: 0;
+}
+.navigation ul li a{
+    font-family: 'Moderat';
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.5;
+    color:#000;
+    /* text-shadow: 0 0 .5px black; */
+    transition: all .2s ease-in-out;
+}
+.navigation ul li a:hover{
+    color:#003cff;
+}
+.header_wrapper a{
+    text-decoration: none;
+}
+.is-selected{
+    color:#003cff !important;
+    text-decoration: underline !important;
+}
+.is-selected:hover{
+    text-decoration: none !important;
+}
+.header_wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 2rem; */
+}
+.logo-pic{
+    width:4.287125rem;
+    height: 2.44925rem;
+}
+
+@media(min-width:48rem){
+    .navigation ul li a{
+        font-size:1.75rem;
+        line-height: 1.4;
+    }
+    .logo-pic{
+        width:7.35rem;
+        height: 4.2rem;
+    }
+}
+.to-top{
+    font-family: 'Moderat';
+    font-weight: 400;
+    font-size: 1.5rem;
+    color:#000;
+    text-decoration: underline;
+    text-shadow: 0 0 .5px black;
+    position: fixed;
+    bottom:5%;
+    /* left: 50%; */
+    text-align: center;
+    padding: .5rem 0 .75rem;
+    /* transform: translateX(-50%); */
+    width:100%;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.18);
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+    display:none;
+    cursor: pointer;
+}
+/*-------------------------------------------main up pic-----------------------------*/
+
+.main-pic {
+    padding-left: 5%;
+    margin-bottom: 2rem;
+}
+@media(min-width:48rem){
+    .main-pic{
+        padding-left:6%;
+    }
+}
+@media(min-width:64rem){
+    .main-pic{
+        padding-left:10%;
+    }
+}
+.main-pic img {
+    width:100%;
+    max-height:90vh ;
+}
+/* @media(min-width:48rem){
+    .main-pic {
+        padding-left: 13.5%;
+    }
+} */
+
+.description h3{
+    color:#787878;
+    font-family: 'Moderat';
+    font-weight: 400;
+    font-size: 1.05rem;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+.description h1{
+    color:#000;
+    font-family: 'Moderat';
+    font-weight: 400;
+    font-size: 2.1rem;
+    line-height: 1.2;
+    margin-top: .5rem;
+    margin: 0;
+    padding: 0;
+}
+.description p{
+    color:#000;
+    font-family: 'Moderat Light';
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 1.65rem;
+    margin: 0;
+    padding: 0;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+.description a{
+    color:#000;
+    font-family: 'Moderat';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.65rem;
+    text-shadow: 0 0 .7px black;
+    margin-top: .5rem;
+    transition: all .2s ease-in-out;
+    margin-bottom: 1rem;
+}
+.description a:hover{
+    color:#003cff;
+}
+@media(min-width:64rem){
+    .description h1{
+        font-size: 2.3rem;
+    }
+    .description p{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+}
+
+.bio{
+    padding-left: 0 !important;
+}
+.bio-desc{
+    padding:1rem 5% 0 5%;
+    margin-top: 2rem;
+}
+@media(min-width:48rem){
+    .bio-desc{
+        padding:1rem 6% 0 6%;
+        margin-top: 0;
+    }
+}
+@media(min-width:64rem){
+    .bio-desc{
+        padding:1rem 10% 0 10%;
+    }
+}
+.bio a{
+    text-decoration: none;
+}
+.pic{
+    padding-right: 5%;
+}
+
+@media(min-width:48rem){
+    .bio{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .pic{
+        width: 60%;
+        padding-right: 0;
+    }
+    .bio-desc{
+        width:40%;
+        padding:0 10% 0 5%;
+    }
+}
+/*------------------------------------------------------footer------------------------------------------*/
+.box{
+    padding:0 5%;
+}
+@media(min-width:48rem){
+    .box{
+        padding: 0 6%;
+    }
+}
+@media(min-width:64rem){
+    .box{
+        padding: 0 10%;
+    }
+}
+footer{
+    border-top: 1.5px solid #e6e6e6;
+    padding: 1.5rem 0 0;
+    margin-top: 4rem;
+}
+
+.footer-up{
+    margin-bottom: 4rem;
+}
+.nav-social ul{
+    padding: 1rem 0 0;
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: flex-start; */
+    width:100%;
+}
+.nav-social ul li{
+    width:50%;
+    margin-bottom: 1rem;
+}
+@media(min-width:48rem){
+    .nav-social ul li{
+        width:20%;
+        margin-bottom: 0;
+    }
+}
+.nav-social ul a{
+    text-decoration: none;
+    color:#000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .1s ease-in-out;
+}
+.nav-soc-item h5{
+    margin-top: .75rem;
+    font-family: 'Moderat Light';
+}
+.nav-soc-item:active h5{
+    border-bottom: 1.5px solid #003cff;
+}
+.nav-soc-item:hover h5{
+    color:#003cff;
+}
+
+.nav-soc-item:hover .icon{
+    fill:#003cff;
+}
+footer-bottom{
+    width:100%;
+}
+.email{
+    display:flex;
+    flex-direction: column;
+    padding: 3rem 1rem 1rem;
+}
+.form{
+    border: 1px solid rgba(17,17,19,0.1);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#email{
+    width:80%;
+}
+#submitBtn{    
+    display: none;
+    padding-right: .5rem;
+    cursor:pointer;
+    color:#003cff;
+}
+.email label{
+    font-family: 'Moderat Light';
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+.email input{
+    height: 3rem;
+    outline: none;
+    padding: 0.5rem;
+    background:none;
+    box-shadow: none;
+    border:none;
+    color: rgba(17,17,19,0.8);
+}
+.footer-bottom{
+    background: #E6E6E6;
+    padding-bottom: 2rem;
+}
+.foot-wrapper{
+    padding:1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot-logo,.insta{
+    width: 45%;
+    padding: 0;
+}
+.insta{
+    display:flex;
+    justify-content: flex-end;
+}
+.insta a{
+    font-family: 'Moderat Light';
+    font-size:1.75rem; 
+    text-decoration:none;
+    color:#000;
+}
+.foot-pics{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+@media(min-width:48rem){
+    .foot-logo,.insta{
+        width: 19%;
+        padding: 0;
+    }  
+    .foot-pics{
+        width:62%
+    }
+    .foot-pics div{
+        width: 18% !important;
+    }
+    .insta{
+        justify-content: flex-start;
+    }
+    .terms{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .terms .p{
+        width:35%;
+    }
+    .terms .para{
+        width:60%;
+        display:flex;
+        justify-content: flex-end;
+    }
+    .email{
+        width:33% !important;
+    }
+}
+.foot-pics div{
+    width:48%;
+    margin-bottom: 0.5rem;
+}
+.terms{
+    padding: 1rem;
+    font-size: .75rem;
+}
+.terms p{
+    margin: 0;
+    margin-bottom: .2rem;
+    padding: 0;
+}
+.terms a{
+    text-decoration: none;
+    color: #000;
+}
+/*--------------------------------art----------------------------------------*/
+.art, .studio{
+    margin: 13.75rem 0;
+    position: relative;
+}
+.archive, .press{
+    position: relative;
+    margin: 3rem 0;
+}
+.view h2{
+    font-family: "Moderat";
+    font-weight: 400;
+    color: #000;
+    font-size: 1.75rem;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    margin: 0;
+}
+.view p{
+    margin: 0;
+}
+.view p a{
+    text-decoration: none;
+    font-size: 0.875rem;
+    color:#003cff;
+}
+.vertical{
+    transform:rotate(-90deg);
+    position:absolute;
+    top:40%;
+    display:none;
+    padding-bottom: 4rem;
+}
+.xx{
+    padding-bottom: 2.75rem !important;
+}
+.vertical h2{
+    margin: 0;
+    display: inline-block;
+}
+.vertical p{
+    text-align: center;
+}
+@media(min-width:64rem){
+    .small{
+        display:none;
+    }
+    .vertical{
+        display: block;
+    }
+}
+
+.contetnt-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+.contetnt-wrapper li{
+    width:100%;
+}
+@media(min-width:48rem){
+    .contetnt-wrapper li{
+        width:25.1%;
+    }
+}
+.item-description{
+    width:100%;
+    margin-top: 2rem;
+}
+.item-description h3{
+    font-family: 'Moderat';
+    font-weight: 400;
+    font-size: 1.125rem;
+    color:#787878;
+    margin: 0;
+}
+.item-description h2{
+    font-family: 'Moderat';
+    font-weight: 400;
+    font-size: 1.75rem;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+.item-description p{
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'Moderat Light';
+    font-weight: 300;
+    font-size: 1.3125rem;
+    line-height: 1.7rem;
+}
+.item-description a{
+    color:#000;
+    font-family: 'Moderat';
+    font-weight: 400;
+}
+
+/*-----------------------------------studio page--------------------------------*/
+.intro{
+    margin-bottom: 8.5625rem;
+}
+.intro h1{
+    font-size: 2.1rem;
+    font-family: 'Moderat';
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+.intro p{
+    font-family: 'Moderat Light';
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.65rem;
+}
+@media(min-width:48rem){
+    .intro{
+        margin: 6.75rem 0 13.5625rem !important;
+    }
+    .intro p{
+        width:66%;
+    }
+}
+@media(min-width:64rem){
+    .intro h1{
+        font-size: 2.625rem !important;
+    }
+    .intro p{
+        font-size: 1.75rem !important;
+        line-height: 2.75rem !important;
+    }
+}
+.atelier-item{
+    margin-bottom: 2rem;
+}
+.js-atelier{
+    margin-bottom: 6rem;
+}
+/*-----------------------------------press page-----------------------------------*/
+.head-title{
+    font-family: 'Moderat';
+    font-weight: 400;
+    font-size: 2.1rem;
+    line-height: 1.2;
+}
+@media(min-width:64rem){
+    .head-title{
+        font-size: 2.625rem;
+    }
+}
+.is-link:hover{
+    color:#003cff;
+}
+.is-link:active{
+    color:#003cff;
+}
+/*-----------------------------------------contact page--------------------------*/
+.contact-info{
+    margin: 2.5rem 0 5rem;
+}
+@media(min-width:48rem){
+    .contact-info{
+        margin: 5rem 0 10rem;
+    }
+}
+.exp{
+    margin-bottom: 2rem !important;
+}
+.strong{
+    font-size: 1.3125rem;
+    font-family: "Moderat";
+}
+.contact-detail{
+    color: #787878;
+    font-size: 1rem;
+    font-family: "Moderat Light";
+    font-weight: 300;
+    line-height: 1.5;
+}
+.sites{
+    font-family: "Moderat Light";
+    font-weight: 300;
+    color: #787878;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.sites a{
+    text-decoration: none;
+    font-family: "Moderat";
+    font-weight: 400;
+    color: #000;
+
+}
+.contacts{
+    margin-bottom: 2rem;
+}
+
+.mail{
+    outline: none;
+    width:100%;
+    height: 2.8125rem;
+    border: 1px solid rgba(17,17,19,0.1);
+    padding:.5rem;
+    box-shadow: none;
+    color: rgba(17,17,19,0.8);
+    font-family: "Moderat Light";
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+.textarea{
+    outline: none;
+    width:100%;
+    height: 7rem;
+    border: 1px solid rgba(17,17,19,0.1);
+    padding: .5rem;
+    box-shadow: none;
+    color: rgba(17,17,19,0.8);
+    font-family: "Moderat Light";
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+.btn{
+    border:none;
+    background:#003cff;
+    color:#fff;
+    height: 2.8125rem;
+    width: 4.6rem;
+}
+@media(min-width:48rem){
+    .contact-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        width:100%;
+        justify-content: space-between;
+    }
+    .contact-wrapper div{
+        width:30%;
+    }
+}
+
+/*-------------------------------------------biography--------------------------------*/
+.bio-pic,.mons-pic{
+    padding-right: 5%;
+}
+@media(min-width:48rem){
+    .bio-pic,.mons-pic{
+        padding-right: 6%;
+    }
+}
+@media(min-width:64rem){
+    .bio-pic,.mons-pic{
+        padding-right: 10%;
+    }
+}
+.bio-descri, .center, .mons-descri{
+    margin-top: 2rem;
+    width:100%;
+}
+.bio-descri h1, .center h1, .mons-descri h1 {
+    margin-bottom: 1rem;
+}
+.bio-descri p, .center p, .mons-descri p{
+    font-family: 'Moderat Light';
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 1.3125rem !important;
+    word-break: break-word;
+}
+@media(min-width:48rem){
+    .bio-descri p{
+        width:66%;
+        padding: 0;
+        margin: 0;
+    }
+}
+.video{
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+}
+.video iframe{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+}
+.center p, .center h2{
+    text-align: center;
+}
+.center h2{
+    font-size: 1.75rem;
+    margin-bottom: -1.5rem;
+    font-family: "Moderat";
+    font-weight: 400;
+}
+
+.center img{
+    display:block;
+}
+.center .bio-p, .center .bio-img, .center blockquote{
+    padding:4% 0 !important;
+}
+@media(min-width:48rem){
+    .center .bio-p, .center .bio-img, .center blockquote{
+        width:66%;
+        margin: 0 auto;
+    }
+    .center .bio-p, .center .bio-img, .center blockquote{
+        padding:8% 0;
+    }
+}
+.img-desc{
+    display: flex;
+    justify-content: flex-end;
+}
+.img-desc p{
+    padding: .5rem 0 0 0 !important;
+    margin: 0;
+    font-size: 0.875rem !important;
+    font-family: "Moderat";
+    font-weight: 400;
+}
+.bio-details{
+    margin: 7.5rem 0;
+}
+.bio-details .description p{
+    font-size: 1.3125rem !important;
+    line-height: 1.5 !important;
+}
+@media(min-width:48rem){
+    .bio-details{
+        display: flex;
+        flex-direction:row-reverse;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bio-details .description{
+        width:50%;
+    }
+    .bio-details .detail-pic{
+        width:50%;
+    }
+}
+blockquote{
+    font-family: "Moderat Light";
+    font-weight: 300;
+    font-size: 2.1rem;
+    line-height: 1.2;
+    text-align: center;
+}
+.author{
+    display:flex;
+    justify-content:center;
+    font-size: 1.75rem !important;
+    
+}
+.bio-content2{
+    margin-bottom: 2rem;
+}
+.bio-wrapper1{
+    margin-bottom: 4rem;
+}
+.bio-wrapper1 div, .bio-wrapper2 div{
+    margin-bottom: 2rem;
+}
+.b-desc p{
+    font-size: 1.3125rem !important;
+    line-height: 1.5;
+}
+@media(min-width:48rem){
+    .bio-wrapper1, .bio-wrapper2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bio-wrapper1 div{
+        width:45%;
+    }
+    .bio-wrapper2 div{
+        width:26%;
+    }
+    .wrapper1{
+        margin: 7.5rem 0;
+    }
+    .b-desc p{
+        line-height: 1.5 !important;
+    }
+}
+.wrapper1{
+    margin: 3.75rem 0;
+}
+.wrapper2{
+    margin-bottom: 13.125rem;
+}
+/*---------------------------------------------mons---------------------------*/
+.back-to-overview{
+    display:flex;
+    justify-content: flex-end;
+}
+.back-to-overview a{
+    text-decoration: none;
+    color:#000;
+    font-family: "Moderat";
+    font-weight: 400;
+    font-size: 1.3125rem;
+}
+.back-to-overview a:hover{
+    text-decoration: underline;
+    color:#003cff;
+}
+.mons-subtitle{
+    font-family: "Moderat" !important;
+    font-weight: 400 !important;
+    font-size: 1.125rem !important;
+    line-height: 1.2;
+}
+
+.date p ,.cl-wrapper p{
+    font-family: "Moderat";
+    font-weight: 400;
+    font-size: .875rem !important;
+    color:#787878;
+}
+@media(min-width:48rem){
+    .desc-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .date{
+        width:33%;
+    }
+    .mons-p{
+        width:66% !important;
+    }
+    .date{
+        display:flex;
+        justify-content: flex-end;
+    }
+}
+.mons{
+    margin-bottom: 7.5rem;
+}
+.imgs-wrapper div{
+    margin-bottom: 2rem;
+}
+@media(min-width:48rem){
+    .imgs-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .imgs-wrapper div{
+        width:26%;
+    }
+}
+.mons-imgs{
+    margin-bottom: 13.75rem;
+}
+.related, .d-img{
+    margin-bottom: 6.875rem;
+}
+@media(min-width:48rem){
+    .related, .d-img{
+        margin-bottom: 13.75rem;
+    }
+}
+.related-title h2{
+    font-family: "Moderat";
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+/*------------------------------------------------------valencia--------------------------------*/
+.mons-p ul{
+    margin-left: 1.25rem;
+    padding: 0;
+    font-family: "Moderat Light";
+    font-weight: 300;
+    font-size: 1.3125rem;
+    line-height: 1.5;
+}
+.c-link{
+    font-family: "Moderat";
+    font-weight: 400;
+    line-height: 1.5;
+    color:#000;
+    text-decoration: none;
+    font-size: 1.3125rem !important;
+    transition: all .05s ease-in-out !important;
+}
+.c-link:hover{
+    text-decoration: underline;
+    color:#003cff;
+}
+.files h2{
+    font-size: 1.75rem !important;
+    margin: 5rem 0 2rem;
+    font-family: "Moderat";
+    font-weight: 400;
+    line-height: 1.2;
+}
+.download-item svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 1rem;
+}
+.download, .d-images{
+    list-style: none;
+    padding: 0;
+}
+.download-item, .d{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.download-item{
+    border: 1px solid rgba(17,17,19,0.1);
+    margin-bottom: 2rem;
+    padding:1rem;
+}
+.d a{
+    text-decoration: none;
+    color:#000;
+    border-bottom: 2px solid #000;
+}
+.d a:hover{
+    border-bottom: 2px solid transparent;
+    text-decoration: underline;
+    color:#003cff;
+}
+@media(min-width:48rem){
+    .download{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .download .download-item{
+        width:30%;
+    }
+}
+.d-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.d-images li{
+    width:35%;
+    margin-bottom: 4rem;
+}
+@media(min-width:48rem){
+    .d-images li{
+        width: 17%;
+    }
+}
+.images-item img{
+    margin-bottom: 1rem;
+}
+/*--------------------------------------------------calatrave----------------------------*/
+@media(min-width:48rem){
+    .cl-wrapper{
+        text-align: right;
+        margin-left: 2rem;
+        width:25%;
+    }
+}
+/*---------------------------------------------art & exhb--------------------------*/
+
+.catgs, .years, .views{
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.catgs a, .years a, .views a{
+    font-family: "Moderat Light" !important;
+    font-weight: 600;
+    color:#000;
+    text-decoration: none;
+}
+.catgs a{
+    font-size: 1.125rem;
+}
+.catgs a:active{
+    color: yellow;
+}
+.years a, .views a{
+    font-size: .875rem;
+}
+.catgs a:hover, .years a:hover, .views a:hover{
+    color:#003cff !important;
+}
+.is-active{
+    text-decoration: underline !important;
+}
+.is-active:hover{
+    text-decoration: none !important;
+}
+@media(min-width:48rem){
+    .catgs, .years{
+        width:66%;
+        margin-bottom: .5rem;
+    }
+    .section-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .views a{
+        padding: 0;
+    }
+}
+
+.catgs li, .years li, .views li:nth-child(1) {
+    margin-right: 1.5rem;
+}
+
+.art-item{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.main-content ul{
+    list-style: none;
+    padding: 0;
+}
+.main-content h2,h3,h4{
+    margin: 0;
+}
+.main-content h2 a:hover{
+    text-decoration: underline;
+    color:#003cff !important;
+}
+.main-content h3,h4{
+    margin-top: 0.5rem;
+}
+.main-content h4, a, h3{
+    font-family: "Moderat";
+    text-rendering: optimizeLegibility;
+    line-height: 1.2
+}
+.main-content h3{
+    font-size: 1.125rem;
+    color:#787878;
+    font-family: "Moderat";
+    font-weight: 400;
+}
+.main-content h4{
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #000;
+}
+.main-content a, .itemTitle{
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #000;
+}
+.item-info-wrapper{
+    margin-bottom: 1rem;
+}
+.list-pics-art{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width:100%;
+    /* justify-content: space-between; */
+}
+.list-pics-art img{
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 6.25rem;
+    
+}
+/* .list-pics-art li:nth-last-child(1){
+    margin-right: 0 !important;
+    margin-bottom: .75rem;
+} */
+
+@media(min-width:48rem){
+    .art-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .item-info-wrapper{
+        width:30%;
+    }
+    .list-pics-art{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .art-item-pics{
+        width:60%;
+        overflow-x: auto;
+    }
+    .art-item{
+        margin-bottom: 3.75rem;
+        margin-top: 3.75rem;
+    }
+    .itemTitle{
+        width:30%;
+        text-align: right;
+    }
+}
