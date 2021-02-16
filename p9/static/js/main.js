@@ -67,7 +67,7 @@ void(()=>{
                 return;
             }
             try{
-                const response = await fetch("../../app/data/atelier.json");
+                const response = await fetch("../data/atelier.json");
                 const data = await response.json();
                 this.updateStudioSectionHome(data);
                 this.updateStudio(data);
@@ -310,7 +310,7 @@ void(()=>{
                 return;
             }
             try{
-                const response = await fetch("../../app/data/press.json");
+                const response = await fetch("../data/press.json");
                 const data = await response.json();
                 this.updatePress(data);
             }catch(error){
