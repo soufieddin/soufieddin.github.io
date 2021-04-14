@@ -1,0 +1,12 @@
+:root {
+    --main-color: #441D4F;
+    --secondary-color: #FFF;
+    --third-color:#FFBB00;
+    --extra-color:#764a82;
+    --radius:4px;
+    --marginValue:64px;
+    --paddingBase:16px 32px;
+    --fontBase:16px;
+    --fontMid:18px;
+    --fontBig:20px;
+}
