@@ -1,0 +1,58 @@
+{
+  "animals": [
+    {
+      "type": "mammals",
+      "icons": [
+        "001-elephant",
+        "003-hippo",
+        "006-panda",
+        "007-boar",
+        "008-giraffe",
+        "010-rhino",
+        "011-deer",
+        "015-walrus",
+        "016-bat",
+        "017-hedgehog",
+        "020-dog",
+        "021-sloth",
+        "022-rabbit",
+        "024-camel",
+        "025-zebra",
+        "026-beaver",
+        "027-horse",
+        "029-fox",
+        "031-platypus",
+        "032-whale",
+        "033-cow",
+        "040-lama",
+        "043-buffalo",
+        "044-pig",
+        "045-cat",
+        "046-sheep",
+        "048-lion",
+        "049-gorilla",
+        "050-mouse"
+      ]
+    },
+    {
+      "type": "fish",
+      "icons": ["012-stingray", "014-shark", "036-clown-fish"]
+    },
+    {
+      "type": "birds",
+      "icons": ["005-parrot", "028-chicken", "034-bullfinch", "037-penguin", "038-owl", "047-flamingo"]
+    },
+    {
+      "type": "reptiles",
+      "icons": ["002-snake", "004-turtle", "039-crocodile", "042-chameleon"]
+    },
+    {
+      "type": "amphibian",
+      "icons": ["030-frog"]
+    },
+    {
+      "type": "other",
+      "icons": ["009-squid", "013-beetle", "018-spider", "019-ladybug", "023-crab", "035-butterfly", "041-bee"]
+    }
+  ]
+}
