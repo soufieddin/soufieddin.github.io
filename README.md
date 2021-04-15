@@ -1,5 +1,4 @@
 ![My photo](./assets/cvhero.svg) 
-Adress: Heusden 9070, East Flanders, Belgium
 
 ## Contact Information
 
@@ -10,10 +9,23 @@ Email: soufi.aiden@gmail.com
 Website: https://soufieddin.github.io/
 
 ## Social
+
+  linkedin: https://www.linkedin.com/in/aiden-soufi-a17ba0191/
+
+  github: https://github.com/soufieddin
 ## About
 
 ## Skills
 
+- HTML5
+- CSS3
+- SASS
+- Javascript
+- NodeJS
+- ExpressJS
+- SQL
+- Git
+- Eleventy
 ## Experience
 
 https://www.instructables.com/MixCheers/
@@ -39,7 +51,3 @@ https://www.instructables.com/MixCheers/
 [![Aidens's GitHub stats](https://github-readme-stats.vercel.app/api?username=soufieddin&count_private=true&show_icons=true)](https://github.com/soufieddin/github-readme-stats)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=soufieddin&langs_count=8)](https://github.com/soufieddin/github-readme-stats)
-
-## Contact info
-
-## Social
