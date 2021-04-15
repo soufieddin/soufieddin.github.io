@@ -1,5 +1,7 @@
 ![My photo](./assets/cvhero.svg) 
-Aiden Soufi
+Heusden 9070, East Flanders, Belgium
+
+soufi.aiden@gmail.com
 
 ## About
 
