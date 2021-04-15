@@ -1,4 +1,4 @@
-![My photo](./assets/cvpic.svg) 
+![My photo](./assets/cvhero.svg) 
 Aiden Soufi
 
 ## About Me
