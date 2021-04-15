@@ -1,10 +1,26 @@
 ![My photo](./assets/cvhero.svg) 
 Adress: Heusden 9070, East Flanders, Belgium
 
-Email: soufi.aiden@gmail.com&nbsp;&nbsp;&nbsp;Website: https://soufieddin.github.io/
+## Contact Information
 
+Adress: Heusden 9070, East Flanders, Belgium
+
+Email: soufi.aiden@gmail.com
+
+Website: https://soufieddin.github.io/
+
+## Social
 ## About
 
+## Skills
+
+## Experience
+
+## Education
+
+## Languages
+
+## Interests
 ## Github stats
 
 [![Aidens's GitHub stats](https://github-readme-stats.vercel.app/api?username=soufieddin&count_private=true&show_icons=true)](https://github.com/soufieddin/github-readme-stats)
