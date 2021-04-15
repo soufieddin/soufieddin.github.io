@@ -145,3 +145,9 @@ img{
   color:whitesmoke;
   font-size: 1.5rem;
 }
+
+.cv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
