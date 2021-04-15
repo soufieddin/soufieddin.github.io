@@ -1,5 +1,7 @@
 ![My photo](./assets/cvhero.svg) 
-Adress: Heusden 9070, East Flanders, Belgium&nbsp;Email: soufi.aiden@gmail.com&nbsp;Website: https://soufieddin.github.io/
+Adress: Heusden 9070, East Flanders, Belgium
+
+Email: soufi.aiden@gmail.com&nbsp;&nbsp;&nbsp;Website: https://soufieddin.github.io/
 
 ## About
 
