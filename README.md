@@ -32,9 +32,9 @@ https://www.instructables.com/MixCheers/
 
 ## Education
 
-- Master degree in dentistery from Kharkiv National Medical University in Ukraine
-- Finished 1st year of bachelor in new multimedia technologies from Howest Kortrijk Belgium
-- Busy in 1st year of Associate Degree in programming from Artevelde university of applied sciences Gent Belgium
+- Master degree in dentistery from [Kharkiv National Medical University](http://www.knmu.kharkov.ua/index.php?lang=en) in Ukraine
+- Finished 1st year of bachelor in new multimedia technologies from [Howest](https://mct.be/) Kortrijk Belgium
+- Busy in 1st year of Associate Degree in programming from [Artevelde university of applied sciences](https://www.artevelde-uas.be/programmes/associate-degree/computer-programming) Gent Belgium
 ## Languages
 
 - Russian
