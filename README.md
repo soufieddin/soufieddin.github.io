@@ -1,7 +1,7 @@
 ![My photo](./assets/cvhero.svg) 
-Heusden 9070, East Flanders, Belgium
+Adress: Heusden 9070, East Flanders, Belgium
 
-soufi.aiden@gmail.com
+Email: soufi.aiden@gmail.com
 
 ## About
 
