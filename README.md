@@ -1,6 +1,4 @@
-# Aiden Soufi
-
-![My photo](./assets/cvpic.svg)
+![My photo](./assets/cvpic.svg) Aiden Soufi
 
 ## About Me
 
