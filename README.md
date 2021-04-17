@@ -1,4 +1,8 @@
-![My photo](./assets/cvhero.svg) 
+![My photo](./assets/cvhero.svg)
+
+👋🌍 My name is Aiden Soufi
+I am a student programming at [Artevelde university of applied sciences](https://www.artevelde-uas.be/programmes/associate-degree/computer-programming) Gent Belgium
+Highly motivated growing full-stack javascript developer! with a passion for metrics and beating former "best-yets".
 
 ## Contact Information
 
@@ -13,8 +17,6 @@
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aiden-soufi-a17ba0191/)
 [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]( https://github.com/soufieddin)
 
-
-## About
 
 ## Skills
 
@@ -33,15 +35,15 @@
 ![GIT](	https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![POSTMAN](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)
 
-## Experience
-
-https://www.instructables.com/MixCheers/
 
 ## Education
 
 - Master degree in dentistery from [Kharkiv National Medical University](http://www.knmu.kharkov.ua/index.php?lang=en) in Ukraine
 - Finished 1st year of bachelor in new multimedia technologies from [Howest](https://mct.be/) Kortrijk Belgium
 - Busy in 1st year of Associate Degree in programming from [Artevelde university of applied sciences](https://www.artevelde-uas.be/programmes/associate-degree/computer-programming) Gent Belgium
+
+## Experience
+[My IOT project at Howest Kortrijk 2019-2020]https://www.instructables.com/MixCheers/
 ## Languages
 
 - Russian ★★★★★
