@@ -26,6 +26,7 @@ Website: https://soufieddin.github.io/
 - SQL
 - Git
 - Eleventy
+- Adobe XD
 ## Experience
 
 https://www.instructables.com/MixCheers/
@@ -37,9 +38,9 @@ https://www.instructables.com/MixCheers/
 - Busy in 1st year of Associate Degree in programming from [Artevelde university of applied sciences](https://www.artevelde-uas.be/programmes/associate-degree/computer-programming) Gent Belgium
 ## Languages
 
-- Russian
-- English
-- Dutch
+- Russian ★★★★★
+- English ★★★★☆
+- Dutch ★★★☆☆
 
 ## Interests
 
