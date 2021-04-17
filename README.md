@@ -2,13 +2,15 @@
 
 ## Contact Information
 
-Adress: Heusden 9070, East Flanders, Belgium
+:house: Heusden 9070, East Flanders, Belgium
 
 :email: soufi.aiden@gmail.com
 
-Website: https://soufieddin.github.io/
+:computer: https://soufieddin.github.io/
 
 ## Social
+
+![Linkedin](	https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
 
   linkedin: https://www.linkedin.com/in/aiden-soufi-a17ba0191/
 
