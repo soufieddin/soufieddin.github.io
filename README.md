@@ -4,7 +4,7 @@
 
 Adress: Heusden 9070, East Flanders, Belgium
 
-Email: soufi.aiden@gmail.com
+:email: soufi.aiden@gmail.com
 
 Website: https://soufieddin.github.io/
 
