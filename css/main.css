@@ -52,13 +52,15 @@ p{
 .email{
   position:absolute;
   bottom:2rem;
+  left:50%;
+  transform:translateX(-50%);
   display: block;
   background-color: #fff;
   color:#441d4f;
   padding: 1rem 2rem;
   outline: none;
   animation: pulse 2s infinite;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 @keyframes pulse {
   0% {
