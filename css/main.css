@@ -46,6 +46,9 @@ img{
 span{
   font-size: 2.5rem;
 }
+p{
+  font-size: 1.2rem !important;
+}
 .email{
   position:absolute;
   bottom:2rem;
