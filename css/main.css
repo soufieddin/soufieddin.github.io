@@ -103,7 +103,7 @@ img{
     align-items: center;
   }
   .projects-list li{
-    background-color: #441D4F;
+    background-color: rgba(4, 81, 129);
     width:45% !important;
     display: flex;
     justify-content: center;
@@ -126,7 +126,7 @@ img{
   margin: 0;
 }
 .projects-list li{
-  background-color: #441D4F;
+  background-color: rgba(4, 81, 129);
   width:9%;
   height: 8rem;
   display: flex;
