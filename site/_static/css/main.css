@@ -1928,7 +1928,7 @@ body {
   display: inline-block;
 }
 
-/* .text {
+.text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1988,4 +1988,4 @@ button[type=submit] {
 }
 button[type=submit]:hover {
   background-color: #d6e2ec;
-} */
+}
