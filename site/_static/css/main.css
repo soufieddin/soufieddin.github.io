@@ -1821,9 +1821,9 @@ body {
 }
 .home__clients, .home__projects {
   background-color: #7E57C5;
-  width: 100%;
   padding: 2rem;
   margin: 0;
+  margin-top: 4rem;
 }
 .home__clients h2, .home__projects h2 {
   color: white;
@@ -1840,9 +1840,6 @@ body {
 }
 .home__clients__list__item img, .home__projects__list__item img {
   width: 5rem;
-}
-.home__projects {
-  background-color: #F58732;
 }
 
 .footer {

@@ -59,6 +59,16 @@ description: Get great at designing amazing websites and mobile applications wit
             </div>
         </div>
     </div>
+    <div class="home__projects">
+        <h2>Our projects</h2>
+        {% if projects | length %}
+        {% endif %}
+                <ul class="home__projects__list row">
+        {% for project in projects %}
+            <li class="home__projects__list__item col-sm-4 col-lg-3"><a href = "https://soufieddin.github.io/p{{project}}" target="_blank"><img src="./static/images/{{project}}.svg" alt="logo of the client"></a></li>
+        {% endfor %}
+        </ul>
+    </div>
     <div class="home__us container">
         <ul class="home__us__list row">
             <li class="home__us__list__item col-sm-12 col-lg-4">
@@ -105,16 +115,6 @@ description: Get great at designing amazing websites and mobile applications wit
         <ul class="home__clients__list row">
         {% for client in clients %}
             <li class="home__clients__list__item col-sm-4 col-lg-3"><img src="./static/images/{{client}}.svg" alt="logo of the client"></li>
-        {% endfor %}
-        </ul>
-    </div>
-    <div class="home__projects">
-        <h2>Our projects</h2>
-        {% if projects | length %}
-        {% endif %}
-                <ul class="home__projects__list row">
-        {% for project in projects %}
-            <li class="home__projects__list__item col-sm-6 col-lg-3"><a href = "https://soufieddin.github.io/p{{project}}" target="_blank"><img src="./static/images/{{project}}.svg" alt="logo of the client"></a></li>
         {% endfor %}
         </ul>
     </div>
