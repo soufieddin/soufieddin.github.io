@@ -1,0 +1,12 @@
+<nav class="footer-nav">
+{{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+    listElement: "ul",
+    listItemElement: "li",
+    listClass: "footer-nav__list",
+    listItemClass: "footer-nav__list-item",
+    listItemHasChildrenClass: "has-children",
+    activeListItemClass: "footer-nav__list-item--active",
+    activeKey: eleventyNavigation.key,
+    showExcerpt: false
+}) | safe }}
+</nav>
