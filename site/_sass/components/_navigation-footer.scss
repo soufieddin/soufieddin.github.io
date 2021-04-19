@@ -18,20 +18,20 @@
             > a {
                 position: relative;
                 display: block;
-                color: $gray-100;
+                color: $primary;
                
                 padding: calc(var(--nav-spacing)/4) var(--nav-spacing);
 
                 text-decoration: none; 
 
                 &:hover {
-                    color: rgba($gray-100, 0.48);
+                    color: rgba($primary, 0.48);
                 }
             }
 
             &--active {
                 > a {
-                    color: rgba($gray-100, 0.48);
+                    color: rgba($primary, 0.48);
                 }
             }
 
