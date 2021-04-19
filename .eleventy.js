@@ -46,7 +46,7 @@ module.exports = function (eleventyConfig) {
       includes: "_includes",
       data: "_data",
     },
-    pathPrefix: "/11tyio-boilerplate",
+    pathPrefix: "/digital-agency-digital-agency",
     templateFormats: ["html", "liquid", "md", "njk"],
     markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",
