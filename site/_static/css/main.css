@@ -1719,6 +1719,7 @@ body {
   background-color: #7E57C5;
   font-size: 2rem;
   padding: 1rem;
+  color: white;
 }
 .home__text p {
   font-size: 1.25rem;
@@ -1739,6 +1740,7 @@ body {
   background-color: #7E57C5;
   font-size: 1.6rem;
   padding: 1rem;
+  color: white;
 }
 .home__extra p {
   font-size: 1.25rem;
@@ -1815,4 +1817,11 @@ body {
   background: #543195;
   color: #f8f9fa;
   padding: 72px 0;
+}
+
+.team {
+  margin: 1rem;
+}
+.team__header {
+  text-align: center;
 }
