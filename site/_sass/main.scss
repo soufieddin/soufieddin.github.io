@@ -1,5 +1,6 @@
 @import "./abstracts/fonts";
 @import "./abstracts/variables";
+@import "./abstracts/mixin";
 @import "./vendors/bootstrap";
 @import "./components/logo";
 @import "./components/navigation";
@@ -11,3 +12,4 @@
 @import "./layout/main";
 @import "./layout/footer";
 @import "./layout/team";
+@import "./layout/contact";

@@ -1,7 +1,10 @@
 .footer {
     border-top: 1px solid $gray-200;
     background: darken($purple, 12%);
-    color: $gray-100;
+    color: $primary;
 
     padding: #{$spacing * 4px} 0;
+    &__high {
+        color: $primary;
+    }
 }
