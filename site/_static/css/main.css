@@ -1698,8 +1698,21 @@ body {
   box-shadow: #dee2e6 0px 2px 4px 0px;
 }
 
+@media (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
 .main {
   flex: 1;
+}
+
+.hero {
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
 }
 
 .footer {

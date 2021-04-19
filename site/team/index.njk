@@ -5,3 +5,28 @@ eleventyNavigation:
   order: 4
 ---
 
+
+<section class="team container">
+  <h1 class="team__header ">TEAM</h1>
+
+  <p class="team__text">
+    Onze klantteams zijn gek van code, design en strategie. Vanuit onze factory in Rotterdam werken we samen met onze klanten aan de continue digitalisering van hun business.
+  </p>
+
+  <div class="row team__image">
+
+ 
+    {% for element in team %}
+      <div  class=" col team__image__container">
+        <img class="image--team" src="../static/images/{{element.photo}}" alt="photo of a team member">
+
+        <div class="team__info">
+          <h3 class="team__info__name">{{element.name}}</h3>
+
+          <h4  class="team__info__role">{{element.role}}<h4>
+        </div> 
+      </div>
+    {% endfor %} 
+  </div>
+
+</section>
