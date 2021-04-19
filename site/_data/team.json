@@ -1,0 +1,33 @@
+[
+  {
+      "photo": "dennis-large@2x.png",
+      "name": "Dennis van der Kaaij",
+      "role": "Strateeg"
+  },
+  {    
+      "photo": "emma-large@2x.png",
+      "name": "Emma Woods",
+      "role": "Product Owner"
+  },
+  {
+      "photo": "frank@2x.png",
+      "name": "Frank Spee",
+      "role": "Allround Developer"
+  },
+  {
+      "photo": "jeannette-large@2x.png",
+      "name": "Jeannette van Tooren",
+      "role": "Developer"
+  },
+  {
+      "photo": "jelle-2@2x.png",
+      "name": "Jelle Schouwstra",
+      "role": "Developer"
+  },
+  {
+      "photo": "jetta-large@2x.png",
+      "name": "Jetta Boogaard",
+      "role": "Senior Developer"
+  }  
+  
+]
