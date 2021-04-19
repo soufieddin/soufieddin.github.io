@@ -10,9 +10,6 @@ eleventyNavigation:
   <h1 class="team__header ">TEAM</h1>
 <section class="team custom-container">
 
-  <div class="team__wrapper">
-    <h1 class="team__header ">TEAM</h1>
-  </div>
 
   <div class="team__wrapper__text">
     <p class="team__text">
@@ -21,23 +18,13 @@ eleventyNavigation:
   </div>
   
 
-  <div class="row team__image">
-
-
- 
-    {# {% for element in team %}
-      <div  class=" col team__image__container">
-        <img class="image--team" src="./static/images/{{element.photo}}" alt="photo of a team member">
-
-        <div class="team__info">
-
   <div class="team__image">
 
  
     {% for element in team %}
       <div  class="team__image__container">
         <div class="{{element.class}}">
-          <img class="image--team" src="./static/images/{{element.photo}}" alt="photo of a team member">
+          <img class="image--team" src="../static/images/{{element.photo}}" alt="photo of a team member">
         </div>
       
         <div class="team__image__container__info">
@@ -47,7 +34,7 @@ eleventyNavigation:
         </div> 
       </div>
     {% endfor %} 
-  </div> #}
+  </div>
 
   <div class="team__together">
     <h2 class="team__together__header">Ook werken in onze factory?</h2>
@@ -57,7 +44,7 @@ eleventyNavigation:
     </div>
 
     <a class="team__together__link">Contact
-     <img class="image--right"src="./static/images/icons/right.svg">
+     <img class="image--right"src="../static/images/icons/right.svg">
     </a>
   </div>
 
