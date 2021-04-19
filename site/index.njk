@@ -4,6 +4,20 @@ eleventyNavigation:
   key: Home
   order: 1
 title: Home
+projects:
+    - 7
+    - 9
+    - 11
+clients:
+    - herb
+    - horse
+    - waterfall
+    - wood
+    - sunset
+    - suitcase
+    - mountains
+    - panda
+    - leaf
 description: Get great at designing amazing websites and mobile applications with high-performance code and neat graphics. In the Associate Degree in Computer Programming you will learn all the tricks of the digital trade.
 ---
 
@@ -13,9 +27,11 @@ description: Get great at designing amazing websites and mobile applications wit
         <h3 class="col-10">Full-service partner van<br>ambitieuze ondernemingen</h3>
         <p>Inova geeft als digital agency de ondernemingen van morgen vorm op gebied van marketing, strategie, communicatie en technologie. Onze campussen in België en Nederland barsten van het talent om uitdagende projecten naar een hoger niveau te tillen.</p>
         </div>
-        <div class="row">
-            <div class="home__img col-12">
-                <img src="./static/images/hero.png">
+        <div class="container">
+            <div class="row">
+                <div class="home__img col-12">
+                    <img src="./static/images/hero.png">
+                </div>
             </div>
         </div>
         <div class="home__extra">
@@ -82,13 +98,23 @@ description: Get great at designing amazing websites and mobile applications wit
             </li>
         </ul>
     </div>
-    <div class = "home__clients">
-        <h2 class ="subtitle">Our clients</h2>
+    <div class = "home__clients container">
+        <h2>Our clients</h2>
         {% if clients | length %}
         {% endif %}
-        <ul class="home__clients__list container">
+        <ul class="home__clients__list row">
         {% for client in clients %}
-            <li class="clients__list__item"><img src="./static/images/{{client.img}}.svg" alt="logo of the client"></li>
+            <li class="home__clients__list__item col-sm-6 col-lg-3"><img src="./static/images/{{client}}.svg" alt="logo of the client"></li>
+        {% endfor %}
+        </ul>
+    </div>
+    <div class="home__projects">
+        <h2>Our projects</h2>
+        {% if projects | length %}
+        {% endif %}
+                <ul class="home__projects__list row">
+        {% for project in projects %}
+            <li class="home__projects__list__item col-sm-12 col-lg-3"><a href = "https://soufieddin.github.io/p{{project}}" target="_blank"><img src="./static/images/{{project}}.svg" alt="logo of the client"></a></li>
         {% endfor %}
         </ul>
     </div>
