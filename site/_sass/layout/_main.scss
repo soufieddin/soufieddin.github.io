@@ -84,7 +84,7 @@
             }
         }
     }
-    &__clients{
+    &__clients, &__projects{
         background-color: $ahs-purple;
         width:100%;
         padding: 2rem;
@@ -95,17 +95,19 @@
         &__list{
             list-style: none;
             margin-top: 2rem;
-            margin-left: 5rem;
-    
+            align-items: center;
             &__item{
                 display :flex;
                 justify-content: center;
-                margin-right: 2rem;
+                
                 margin-bottom: 3rem;
                 img{
                     width:5rem;
                 }
             }
         }
+    }
+    &__projects{
+        background-color:#F58732;
     }
 }
