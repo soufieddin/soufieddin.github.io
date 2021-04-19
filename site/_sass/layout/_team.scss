@@ -1,25 +1,23 @@
 .team {
-  margin: 1rem;
-  &__header {
-    text-align: center;
+  margin: 1rem; 
   &__wrapper {
-    @include text-wrapper; 
+    @include text-wrapper;
+    &__header {
+      text-align: center;
+      font-weight: 600;
+      padding-bottom: $spacing-md;
+      border-bottom: 2px solid $ahs-purple ;
+      display: inline-block;
+    } 
   }
   &__wrapper__text {
    @include text-wrapper; 
-  }
-  &__header {
-    text-align: center;
-    font-weight: 600;
-    padding-bottom: $spacing-md;
-    border-bottom: 2px solid $ahs-purple ;
-    display: inline-block;
-  }
-  &__text {
-    text-align: center;
-    font-size: $text-base;
-    padding-bottom: $spacing-base-m;
-    width: 50rem;
+      p {
+        text-align: center;
+        font-size: $text-base;
+        padding-bottom: $spacing-base-m;
+        width: 40rem;
+      }
   }
   &__image {
     display: flex;
@@ -64,6 +62,6 @@
         display: inline-block;
       }
     }
-  }
+  
 }
 }
