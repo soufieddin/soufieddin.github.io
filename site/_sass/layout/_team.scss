@@ -1,6 +1,38 @@
 .team {
   margin: 1rem;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: $spacing-base-m;
+  }
   &__header {
     text-align: center;
+    font-weight: 600;
+    padding-bottom: $spacing-md;
+    border-bottom: 2px solid $ahs-purple ;
+    display: inline-block;
+  }
+  &__text {
+    text-align: center;
+    font-size: $text-base;
+    padding-bottom: $spacing-base-m;
+  }
+  &__image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__container {
+      position: relative;
+      width: 40%;
+      // height: 20rem;
+      // background-position: center;
+      // background-repeat: no-repeat;
+      // margin-bottom: 2rem;
+      &__info {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+      }
+    }
   }
 }

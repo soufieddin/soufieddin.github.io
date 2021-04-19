@@ -2,32 +2,38 @@
   {
       "photo": "dennis-large@2x.png",
       "name": "Dennis van der Kaaij",
-      "role": "Strateeg"
+      "role": "Strateeg",
+      "class": "no"
   },
   {    
       "photo": "emma-large@2x.png",
       "name": "Emma Woods",
-      "role": "Product Owner"
+      "role": "Product Owner",
+      "class": "color"
   },
   {
       "photo": "frank@2x.png",
       "name": "Frank Spee",
-      "role": "Allround Developer"
+      "role": "Allround Developer",
+      "class": "color"
   },
   {
       "photo": "jeannette-large@2x.png",
       "name": "Jeannette van Tooren",
-      "role": "Developer"
+      "role": "Developer",
+      "class": "no"
   },
   {
       "photo": "jelle-2@2x.png",
       "name": "Jelle Schouwstra",
-      "role": "Developer"
+      "role": "Developer",
+      "class": "no"
   },
   {
       "photo": "jetta-large@2x.png",
       "name": "Jetta Boogaard",
-      "role": "Senior Developer"
+      "role": "Senior Developer",
+      "class": "color"
   }  
   
 ]
