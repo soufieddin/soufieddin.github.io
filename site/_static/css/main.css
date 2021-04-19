@@ -1855,55 +1855,52 @@ body {
 .team {
   margin: 1rem;
 }
-.team__header {
-  text-align: center;
-}
-.team__header__wrapper {
+.team__wrapper {
   display: flex;
   justify-content: center;
   padding-bottom: 2rem;
 }
-.team__header__wrapper__text {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 2rem;
-}
-.team__header__header {
+.team__wrapper__header {
   text-align: center;
   font-weight: 600;
   padding-bottom: 1.5rem;
   border-bottom: 2px solid #7E57C5;
   display: inline-block;
 }
-.team__header__text {
+.team__wrapper__text {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.team__wrapper__text p {
   text-align: center;
   font-size: 1.2rem;
   padding-bottom: 2rem;
-  width: 50rem;
+  width: 40rem;
 }
-.team__header__image {
+.team__image {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.team__header__image__container {
+.team__image__container {
   position: relative;
   width: 40%;
 }
-.team__header__image__container__info {
+.team__image__container__info {
   position: absolute;
   top: 30%;
   left: 5%;
 }
-.team__header__together {
+.team__together {
   text-align: center;
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
-.team__header__together__wrapper {
+.team__together__wrapper {
   margin-bottom: 2rem;
 }
-.team__header__together__text {
+.team__together__text {
   background-color: #7E57C5;
   display: inline-block;
   font-size: 1.6rem;
@@ -1911,17 +1908,17 @@ body {
   line-height: 1.6;
   color: white;
 }
-.team__header__together__link {
+.team__together__link {
   border: 2px solid #7E57C5;
   margin-top: 1rem;
   padding: 1rem;
   transition: all 2s ease-in-out;
   cursor: pointer;
 }
-.team__header__together__link:hover {
+.team__together__link:hover {
   text-decoration: none;
 }
-.team__header__together__link:hover .image--right {
+.team__together__link:hover .image--right {
   display: inline-block;
 }
 
