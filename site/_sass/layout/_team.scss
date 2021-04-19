@@ -1,5 +1,7 @@
 .team {
   margin: 1rem;
+  &__header {
+    text-align: center;
   &__wrapper {
     display: flex;
     justify-content: center;
@@ -24,10 +26,6 @@
     &__container {
       position: relative;
       width: 40%;
-      // height: 20rem;
-      // background-position: center;
-      // background-repeat: no-repeat;
-      // margin-bottom: 2rem;
       &__info {
         position: absolute;
         top: 30%;
