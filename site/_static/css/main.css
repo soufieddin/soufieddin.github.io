@@ -1698,12 +1698,24 @@ img {
   color: rgba(248, 249, 250, 0.48);
 }
 
+.image--right {
+  width: 2rem;
+  padding-left: 1rem;
+  display: none;
+  transition: all 2s ease-in-out;
+}
+
 .color {
   border: 2px solid #7E57C5;
 }
 
 .no {
   border: 2px solid transparent;
+}
+
+.button--contact {
+  outline: none;
+  border: 1pc solid #7E57C5;
 }
 
 body {
@@ -1872,4 +1884,32 @@ body {
   position: absolute;
   top: 30%;
   left: 5%;
+}
+.team__together {
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.team__together__wrapper {
+  margin-bottom: 2rem;
+}
+.team__together__text {
+  background-color: #7E57C5;
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 1rem;
+  line-height: 1.6;
+  color: white;
+}
+.team__together__link {
+  border: 1px solid #7E57C5;
+  margin-top: 1rem;
+  padding: 1rem;
+  transition: all 2s ease-in-out;
+}
+.team__together__link:hover {
+  text-decoration: none;
+}
+.team__together__link:hover .image--right {
+  display: inline-block;
 }

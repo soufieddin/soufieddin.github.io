@@ -35,4 +35,33 @@
       }
     }
   }
+  &__together {
+    text-align: center;
+    padding-bottom: $spacing-base-m;
+    padding-top:  $spacing-base-m;
+    &__wrapper {
+      margin-bottom: $spacing-base-m;
+    }
+    &__text {
+      background-color: $ahs-purple;
+      display: inline-block;
+      font-size: 1.6rem;
+      padding: 1rem;
+      line-height: 1.6;
+      color: white;
+    }
+    &__link {
+      border: 1px solid $ahs-purple;
+      margin-top: 1rem;
+      padding: 1rem;
+      transition: all 2s ease-in-out;
+      &:hover {
+        text-decoration: none;
+
+      }
+      &:hover .image--right {
+        display: inline-block;
+      }
+    }
+  }
 }
