@@ -1788,28 +1788,27 @@ body {
   margin: 0 auto;
 }
 .home__clients {
+  background-color: #7E57C5;
+  width: 100%;
   padding: 2rem;
+  margin: 0;
+}
+.home__clients h2 {
+  color: white;
 }
 .home__clients__list {
-  padding-left: 10%;
-  margin-top: 2rem;
-}
-.home__clients__list__list {
   list-style: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-left: 5rem;
 }
 .home__clients__list__item {
-  background-color: #7E57C5;
-  padding: 1rem;
-  border-radius: 50%;
-  margin-right: 12.6%;
-  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
 }
 .home__clients__list__item img {
-  width: 4rem;
+  width: 5rem;
 }
 
 .footer {
