@@ -54,3 +54,10 @@ $grid-row-columns:      6;
 @import "../../../node_modules/bootstrap/scss/type";
 @import "../../../node_modules/bootstrap/scss/images";
 @import "../../../node_modules/bootstrap/scss/grid";
+
+.custom-container {
+  @include make-container(2rem);
+}
+img {
+  width: 100%;
+}
