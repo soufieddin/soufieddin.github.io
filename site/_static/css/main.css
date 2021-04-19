@@ -1819,28 +1819,30 @@ body {
   display: block;
   margin: 0 auto;
 }
-.home__clients {
+.home__clients, .home__projects {
   background-color: #7E57C5;
   width: 100%;
   padding: 2rem;
   margin: 0;
 }
-.home__clients h2 {
+.home__clients h2, .home__projects h2 {
   color: white;
 }
-.home__clients__list {
+.home__clients__list, .home__projects__list {
   list-style: none;
   margin-top: 2rem;
-  margin-left: 5rem;
+  align-items: center;
 }
-.home__clients__list__item {
+.home__clients__list__item, .home__projects__list__item {
   display: flex;
   justify-content: center;
-  margin-right: 2rem;
   margin-bottom: 3rem;
 }
-.home__clients__list__item img {
+.home__clients__list__item img, .home__projects__list__item img {
   width: 5rem;
+}
+.home__projects {
+  background-color: #F58732;
 }
 
 .footer {
