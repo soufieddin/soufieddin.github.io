@@ -1,9 +1,10 @@
 .team {
   margin: 1rem;
   &__wrapper {
-    display: flex;
-    justify-content: center;
-    padding-bottom: $spacing-base-m;
+    @include text-wrapper; 
+  }
+  &__wrapper__text {
+   @include text-wrapper; 
   }
   &__header {
     text-align: center;
@@ -52,10 +53,11 @@
       color: white;
     }
     &__link {
-      border: 1px solid $ahs-purple;
+      border: 2px solid $ahs-purple;
       margin-top: 1rem;
       padding: 1rem;
       transition: all 2s ease-in-out;
+      cursor: pointer;
       &:hover {
         text-decoration: none;
 

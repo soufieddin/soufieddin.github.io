@@ -5,3 +5,8 @@
   margin-right: auto;
   margin-left: auto;
 }
+@mixin text-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: $spacing-base-m;
+}

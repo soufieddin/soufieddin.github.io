@@ -1859,6 +1859,11 @@ body {
   justify-content: center;
   padding-bottom: 2rem;
 }
+.team__wrapper__text {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
 .team__header {
   text-align: center;
   font-weight: 600;
@@ -1903,10 +1908,11 @@ body {
   color: white;
 }
 .team__together__link {
-  border: 1px solid #7E57C5;
+  border: 2px solid #7E57C5;
   margin-top: 1rem;
   padding: 1rem;
   transition: all 2s ease-in-out;
+  cursor: pointer;
 }
 .team__together__link:hover {
   text-decoration: none;
