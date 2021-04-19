@@ -8,27 +8,29 @@ description: Get great at designing amazing websites and mobile applications wit
 ---
 
 <div class="home">
-    <div class="home__text">
-    <h3>Full-service partner van<br>ambitieuze ondernemingen</h3>
-    <p>Intracto geeft als digital agency de ondernemingen van morgen vorm op gebied van marketing, strategie, communicatie en technologie. Onze campussen in België en Nederland barsten van het talent om uitdagende projecten naar een hoger niveau te tillen.</p>
-    </div>
-    <div class="row">
-        <div class="home__img col-12">
-            <img src="./static/images/hero.png">
+    <div class="container">
+        <div class="home__text row ">
+        <h3 class="col-10">Full-service partner van<br>ambitieuze ondernemingen</h3>
+        <p>Inova geeft als digital agency de ondernemingen van morgen vorm op gebied van marketing, strategie, communicatie en technologie. Onze campussen in België en Nederland barsten van het talent om uitdagende projecten naar een hoger niveau te tillen.</p>
+        </div>
+        <div class="row">
+            <div class="home__img col-12">
+                <img src="./static/images/hero.png">
+            </div>
+        </div>
+        <div class="home__extra">
+        <span>Experts in groei</span>
+        <P>
+            Imagine Tomorro_
+            Samen met onze klanten anticiperen we op de uitdagingen van een steeds sneller evoluerende wereld. Consumenten verwachten meer dan enkel uitstekende service, en technologie maakt het mogelijk om een antwoord te bieden op die veranderende verwachtingen. Samen met onze klanten kijken we vooruit naar morgen, verleggen we grenzen om nieuwe kansen te creëren en geven we de toekomst vorm.
+        </P>
         </div>
     </div>
-    <div class="home__extra">
-    <span>Experts in groei</span>
-    <P>
-        Imagine Tomorro_
-        Samen met onze klanten anticiperen we op de uitdagingen van een steeds sneller evoluerende wereld. Consumenten verwachten meer dan enkel uitstekende service, en technologie maakt het mogelijk om een antwoord te bieden op die veranderende verwachtingen. Samen met onze klanten kijken we vooruit naar morgen, verleggen we grenzen om nieuwe kansen te creëren en geven we de toekomst vorm.
-    </P>
-    </div>
-    <div class="home__tech">
+    <div class="home__tech container">
         <div class="row">
             <div class="home__tech__text col-lg-7 col-sm-12">
                 <span>
-                    Intracto als end-to-end partner
+                    Inova als end-to-end partner
                 </span>
                 <p>
                     In een wereld in beweging is het niet langer houdbaar voor bedrijven om elk onderdeel van hun strategie te laten uitvoeren door een andere leverancier. De complexe communicatie en onderlinge concurrentie tussen die verschillende leveranciers neemt een overbodige hap uit het budget en zorgt voor vertraging op meerdere vlakken.
@@ -41,7 +43,7 @@ description: Get great at designing amazing websites and mobile applications wit
             </div>
         </div>
     </div>
-    <div class="home__us">
+    <div class="home__us container">
         <ul class="home__us__list row">
             <li class="home__us__list__item col-sm-12 col-lg-4">
                 <img src="./static/images/icon-strategy.png">
@@ -78,6 +80,16 @@ description: Get great at designing amazing websites and mobile applications wit
                     Onze uitgebreide tech stack garandeert vrijheid in ontwikkeling, testing, support en onderhoud. Reken op de beste match met jouw project.
                 </p>
             </li>
+        </ul>
+    </div>
+    <div class = "home__clients">
+        <h2 class ="subtitle">Our clients</h2>
+        {% if clients | length %}
+        {% endif %}
+        <ul class="home__clients__list container">
+        {% for client in clients %}
+            <li class="clients__list__item"><img src="./static/images/{{client.img}}.svg" alt="logo of the client"></li>
+        {% endfor %}
         </ul>
     </div>
 </div>

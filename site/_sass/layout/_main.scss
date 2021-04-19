@@ -4,7 +4,8 @@
 .home{
     width:100%;
     &__text{
-        padding: 3rem 1.5rem 3rem 0;
+        margin-left: 1rem;
+        padding: 3rem 0;
         h3{
             display: inline-block;
             background-color:$ahs-purple;
@@ -13,7 +14,7 @@
         }
         p{
             font-size: 1.25rem;
-            padding: 1rem 1rem 0 1rem;
+            padding: 1rem 0;
         }
     }
     &__img{
@@ -25,7 +26,7 @@
         }
     }
     &__extra{
-        margin-top: 2rem;
+        margin-top: 4rem;
         span{
             background-color:$ahs-purple;
             font-size: 1.6rem;
@@ -38,7 +39,6 @@
         }
     }
     &__tech{
-        padding-right: 1rem;
         margin-top: 2rem;
         &__img{
             img{
@@ -50,6 +50,8 @@
                 background-color:$ahs-purple;
                 font-size: 1.6rem;
                 padding: 1rem;
+                line-height: 1.6;
+                color:white;
             }
             p{
                 font-size: 1.25rem;
@@ -61,6 +63,7 @@
     &__us{
         margin-top: 6rem;
         ul{
+            padding-left: 0;
             list-style: none;
             li{
                 text-align: center;
@@ -75,6 +78,31 @@
                     width: 80%;
                     display: block;
                     margin: 0 auto;
+                }
+            }
+        }
+    }
+    &__clients{
+        padding: 2rem;
+        &__list{
+            &__list{
+                list-style: none;
+                display:flex;
+                justify-content: space-around;
+                align-items: baseline;
+                flex-wrap: wrap;
+            }
+            padding-left: 10%;
+            margin-top: 2rem;
+    
+            &__item{
+                background-color: $ahs-purple;
+                padding: 1rem;
+                border-radius: 50%;
+                margin-right: 12.6%;
+                margin-bottom: 2rem;
+                img{
+                    width:4rem;
                 }
             }
         }
