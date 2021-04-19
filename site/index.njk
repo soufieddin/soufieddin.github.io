@@ -7,10 +7,89 @@ title: Home
 description: Get great at designing amazing websites and mobile applications with high-performance code and neat graphics. In the Associate Degree in Computer Programming you will learn all the tricks of the digital trade.
 ---
 
-<div class="">
-    <div class="row">
-        <div class="hero">
-            <img src="./static/images/hero.png">
+<div class="home">
+    <div class="container">
+        <div class="home__text row ">
+        <h3 class="col-10">Full-service partner van<br>ambitieuze ondernemingen</h3>
+        <p>Inova geeft als digital agency de ondernemingen van morgen vorm op gebied van marketing, strategie, communicatie en technologie. Onze campussen in België en Nederland barsten van het talent om uitdagende projecten naar een hoger niveau te tillen.</p>
         </div>
+        <div class="row">
+            <div class="home__img col-12">
+                <img src="./static/images/hero.png">
+            </div>
+        </div>
+        <div class="home__extra">
+        <span>Experts in groei</span>
+        <P>
+            Imagine Tomorro_
+            Samen met onze klanten anticiperen we op de uitdagingen van een steeds sneller evoluerende wereld. Consumenten verwachten meer dan enkel uitstekende service, en technologie maakt het mogelijk om een antwoord te bieden op die veranderende verwachtingen. Samen met onze klanten kijken we vooruit naar morgen, verleggen we grenzen om nieuwe kansen te creëren en geven we de toekomst vorm.
+        </P>
+        </div>
+    </div>
+    <div class="home__tech container">
+        <div class="row">
+            <div class="home__tech__text col-lg-7 col-sm-12">
+                <span>
+                    Inova als end-to-end partner
+                </span>
+                <p>
+                    In een wereld in beweging is het niet langer houdbaar voor bedrijven om elk onderdeel van hun strategie te laten uitvoeren door een andere leverancier. De complexe communicatie en onderlinge concurrentie tussen die verschillende leveranciers neemt een overbodige hap uit het budget en zorgt voor vertraging op meerdere vlakken.
+                    Om morgen succesvol te zijn moet de eindklant en zijn noden centraal staan. Daarom zetten we bij Intracto compromisloos in op een geïntegreerde aanpak. We combineren een brede strategische knowhow met diepgaande tactische en operationele expertise. 
+                    Het resultaat? Een geoliede machine die jouw onderneming gemoedsrust bezorgt en helpt uit te blinken op vlak van strategie, technologie, creatie, content en marketing. Met de juiste oplossingen voor elk domein en in elke sector.
+                </p>
+            </div>
+            <div class="home__tech__img col-lg-5 col-sm-12">
+                <img src="./static/images/tech.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="home__us container">
+        <ul class="home__us__list row">
+            <li class="home__us__list__item col-sm-12 col-lg-4">
+                <img src="./static/images/icon-strategy.png">
+                <h4>Strategie</h4>
+                <p>
+                    We helpen je een competitief voordeel te ontwikkelen. Reken op concreet, toekomstgericht advies.
+                </p>
+            </li>
+            <li class="home__us__list__item col-sm-12 col-lg-4">
+                <img src="./static/images/icon-creative.png">
+                <h4>Creatie</h4>
+                <p>
+                    We creëren unieke merken en alle bijhorende assets, op maat van je noden en onze continu evoluerende maatschappij.
+                </p>
+            </li>
+            <li class="home__us__list__item col-sm-12 col-lg-4">
+                <img src="./static/images/icon-content.png">
+                <h4>Content</h4>
+                <p>
+                    We voeden je publiek met de juiste content op het juiste moment, in tekst en in beeld, doorheen de volledige customer journey.
+                </p>
+            </li>
+            <li class="home__us__list__item col-sm-12 col-lg-4">
+                <img src="./static/images/icon-marketing.png">
+                <h4>Marketing</h4>
+                <p>
+                    Met behulp van intelligente automatisering helpen we je je doelpubliek te bereiken en te converteren, van leads tot loyale merkambassadeurs.
+                </p>
+            </li>
+            <li class="home__us__list__item col-sm-12 col-lg-4">
+                <img src="./static/images/icon-tech.png">
+                <h4>Technologie</h4>
+                <p>
+                    Onze uitgebreide tech stack garandeert vrijheid in ontwikkeling, testing, support en onderhoud. Reken op de beste match met jouw project.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class = "home__clients">
+        <h2 class ="subtitle">Our clients</h2>
+        {% if clients | length %}
+        {% endif %}
+        <ul class="home__clients__list container">
+        {% for client in clients %}
+            <li class="clients__list__item"><img src="./static/images/{{client.img}}.svg" alt="logo of the client"></li>
+        {% endfor %}
+        </ul>
     </div>
 </div>

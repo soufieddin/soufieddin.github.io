@@ -1707,12 +1707,107 @@ body {
   flex: 1;
 }
 
-.hero {
+.home {
   width: 100%;
 }
-
-.hero img {
+.home__text {
+  margin-left: 1rem;
+  padding: 3rem 0;
+}
+.home__text h3 {
+  display: inline-block;
+  background-color: #7E57C5;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.home__text p {
+  font-size: 1.25rem;
+  padding: 1rem 0;
+}
+.home__img {
+  padding: 0;
   width: 100%;
+}
+.home__img img {
+  width: 100%;
+  height: 100%;
+}
+.home__extra {
+  margin-top: 4rem;
+}
+.home__extra span {
+  background-color: #7E57C5;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+.home__extra p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.home__tech {
+  margin-top: 2rem;
+}
+.home__tech__img img {
+  width: 100%;
+}
+.home__tech__text span {
+  background-color: #7E57C5;
+  font-size: 1.6rem;
+  padding: 1rem;
+  line-height: 1.6;
+  color: white;
+}
+.home__tech__text p {
+  font-size: 1.25rem;
+  padding: 1rem 1rem 0 1rem;
+  margin-top: 1rem;
+}
+.home__us {
+  margin-top: 6rem;
+}
+.home__us ul {
+  padding-left: 0;
+  list-style: none;
+}
+.home__us ul li {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.home__us ul li img {
+  display: block;
+  width: 6rem;
+  margin: 1rem auto;
+  padding-left: 1rem;
+}
+.home__us ul li p {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.home__clients {
+  padding: 2rem;
+}
+.home__clients__list {
+  padding-left: 10%;
+  margin-top: 2rem;
+}
+.home__clients__list__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.home__clients__list__item {
+  background-color: #7E57C5;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-right: 12.6%;
+  margin-bottom: 2rem;
+}
+.home__clients__list__item img {
+  width: 4rem;
 }
 
 .footer {
@@ -1722,7 +1817,22 @@ body {
   padding: 72px 0;
 }
 
+.team {
+  margin: 1rem;
+}
+.team__header {
+  text-align: center;
+}
+
 /*contact section*/
+
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
 
 .contact {
     position: relative;
@@ -1740,17 +1850,9 @@ body {
     background-color: white;
     border-radius: 8px;
     margin-bottom: 20px;
-    margin-top: 20px
+    margin-top: 20px;
 }
 
-.text{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  font-family: bold;
-  margin: 1.5rem;
-}
 .form-group {
     width: 100%;
     margin-top: 20px;
