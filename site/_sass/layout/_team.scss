@@ -1,5 +1,5 @@
 .team {
-  margin: 1rem; 
+  margin-top: 4rem;
   &__wrapper {
     @include text-wrapper;
     &__header {
@@ -20,6 +20,7 @@
       }
   }
   &__image {
+    margin-bottom: $spacing-base;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -39,6 +40,7 @@
     padding-top:  $spacing-base-m;
     &__wrapper {
       margin-bottom: $spacing-base-m;
+      margin-top: $spacing-base;
     }
     &__text {
       background-color: $ahs-purple;
@@ -52,7 +54,7 @@
       border: 2px solid $ahs-purple;
       margin-top: 1rem;
       padding: 1rem;
-      transition: all 2s ease-in-out;
+      transition: all .8s ease-in-out;
       cursor: pointer;
       &:hover {
         text-decoration: none;

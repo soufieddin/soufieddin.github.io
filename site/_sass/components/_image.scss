@@ -3,7 +3,16 @@
     width: 2rem;
     padding-left: 1rem;
     display: none;
-    transition: all 2s ease-in-out;
+    transition: all .8s ease-in-out;
+  }
+  &--logo{
+    width:10rem;
+  }
+  &--card{
+    max-width:5rem;
+    height:5rem;
+    display: block;
+    margin: 1rem auto;
   }
 }
 .color {
