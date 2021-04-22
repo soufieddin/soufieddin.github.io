@@ -1,0 +1,33 @@
+.cases{
+  margin-top: 4rem;
+  &__text{
+    @include text-wrapper(center);
+    &__title{
+      @include text-underline(center);
+    }
+  }
+  &__element{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    &__subtitle{
+      margin: 2rem 0;
+      @include text-wrapper(start);
+      &__content{
+        @include text-underline(left);
+        font-size: 1.6rem;
+        color:black;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    &__item{
+      &__img{
+        transition: all .5s ease-in-out ;
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
