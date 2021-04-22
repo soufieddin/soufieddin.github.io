@@ -1,3 +1,20 @@
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 .image {
   &--right {
     width: 2rem;
@@ -14,9 +31,27 @@
     display: block;
     margin: 1rem auto;
   }
+  &--contact {
+    width:1.5rem;
+  }
+  &--social {
+    width: 1.7rem;
+    margin-right: 0.4rem;
+  }
+  &--animate {
+    &:hover {
+      animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 1000px;
+    }
+  }
 }
 .color {
   border: 2px solid $ahs-purple;
+  @media (max-width: 61.9375rem) {
+    border: none;
+  }
 }
 .no {
   border: 2px solid transparent;

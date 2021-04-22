@@ -2,9 +2,31 @@
     border-top: 1px solid $gray-200;
     background: darken($purple, 12%);
     color: $primary;
-
-    padding: #{$spacing * 4px} 0;
-    &__high {
-        color: $primary;
+    margin-top: $spacing-base-m;
+    padding: #{$spacing * 2px} 0;
+    &__author {
+        text-align: center;
+        color: $ahs-orange;
+        background: darken($purple, 12%);
+    }
+    &__list {
+        list-style: none;
+        color: $ahs-orange;
+        &--flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__item {
+            padding: .5rem 0;
+           
+            &__link {
+                color: white;
+                cursor: pointer;
+                &:hover {
+                    color: rgba($gray-100, 0.48);
+                    text-decoration: none;
+                }
+            }
+        }
     }
 }
