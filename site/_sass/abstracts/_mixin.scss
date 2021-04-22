@@ -23,6 +23,9 @@
       @include text-wrapper(space-between);
       align-items: end;
       margin-bottom: 2rem;
+      @media (max-width: 991px){
+        align-items: center;
+    }
       &__title{
           @include text-underline(left);
       }
