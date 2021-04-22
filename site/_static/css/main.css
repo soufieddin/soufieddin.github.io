@@ -1872,15 +1872,14 @@ body {
   padding-bottom: 2rem;
   width: 40rem;
 }
-.team__image {
-  margin-bottom: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 .team__image__container {
   position: relative;
-  width: 40%;
+  padding: 0;
+}
+@media (max-width: 61.9375rem) {
+  .team__image__container {
+    padding: 1rem;
+  }
 }
 .team__image__container__info {
   position: absolute;
