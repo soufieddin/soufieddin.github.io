@@ -1,0 +1,18 @@
+[
+  {
+    "contact": "Heusdendorp 2, 9000 Ghent" ,
+    "image": "notebook.svg",
+    "href": "https://www.google.be/maps"
+  },
+  
+  {
+    "contact": "045-865-98-24",
+    "image": "phone-call.svg",
+    "href": "tel:0458659824"
+  },
+  {
+    "contact" : "contact@inova.com",
+    "image": "envelope.svg",
+    "href": "mailto: contact@inova.com"
+  }
+]

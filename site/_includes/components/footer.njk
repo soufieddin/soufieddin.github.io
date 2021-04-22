@@ -1,14 +1,50 @@
 <footer>
-    <div class="container footer__high">
+    {# <div class="container footer__high">
         <section>
                 {# {% include "components/navigation-footer.njk" %} #}
-        </section>
-    </div>
+        {# </section>
+    </div> #} 
     <div class= "footer">
-        <div class="row justify-content-between">
+        <div>
             <section class="container">
+            <div class="row">
                 {% include "components/navigation-footer.njk" %}
+                <ul class="footer__list col-md-4 col-sm-6">
+                Contact Us
+                     {% for element in footerContact %}
+                       <li class="footer__list__item">
+                        <a href={{element.href}} class="footer__list__item__link">
+                            <img class="image--contact image--animate" src="{{path}}/static/images/icons/{{element.image}}"> 
+                            {{element.contact}}
+                        </a>
+                       </li>
+                    {% endfor %} 
+                </ul>
+
+                <ul class="footer__list col-md-3 col-sm-6">
+                Let's work!
+                      {% for element in footerWork %}
+                       <li class="footer__list__item">
+                        <a class="footer__list__item__link">
+                            {{element.work}}
+                        </a>
+                       </li>
+                    {% endfor %} 
+                </ul>
+                <ul class="footer__list footer__list--flex col-md-2 col-sm-12">
+                      {% for element in footerSocial %}
+                       <li class="footer__list__item">
+                        <a href="{{element.href}}" class="footer__list__item__link">
+                            <img class="image--social" src="{{path}}/static/images/icons/{{element.icon}}"> 
+                        </a>
+                       </li>
+                    {% endfor %} 
+                </ul>
+            </div>
+            <p class="footer__author">© INOVA 2021</p>
             </section>
         </div>
     </div>
+
+    
 </footer>
