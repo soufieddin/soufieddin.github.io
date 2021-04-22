@@ -1827,7 +1827,7 @@ body {
   height: 9rem;
 }
 .home__us__list__item__element:hover, .home__projects__list__item__element:hover, .home__clients__list__item__element:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .home__us__list__item .extra, .home__projects__list__item .extra, .home__clients__list__item .extra {
   background-color: transparent;

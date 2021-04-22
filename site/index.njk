@@ -40,7 +40,7 @@ description: Get great at designing amazing websites and mobile applications wit
         </div>
         {% if projects | length %}
         {% endif %}
-        <div class="home__projects__list row row-cols-1 row-cols-md-3 g-4">
+        <div class="home__projects__list row row-cols-1 row-cols-lg-3 g-4">
         {% for project in projects %}
             <a class="col home__projects__list__item" href="https://soufieddin.github.io/p{{project}}/" target="_blank">
                 <div class="item home__projects__list__item__element card h-100">
@@ -54,68 +54,13 @@ description: Get great at designing amazing websites and mobile applications wit
         {% endfor %}
         </div>
     </div>
-    <div class="home__us container">
-        <div class="home__us__header">
-            <h2 class="home__us__header__title">How it works</h2>
-            <a class="link--btn" href="./services/">Our services
-                <img class="image--right"src="./static/images/icons/right.svg">
-            </a>
-        </div>
-        <div class="home__us__list row row-cols-1 row-cols-md-3 g-4">
-            <div class="col home__us__list__item">
-                <div class="home__us__list__item__element card h-100">
-                    <img src="./static/images/icon-strategy.png" class="card-img-top image--card" alt="...">
-                    <div class="card-body home__us__list__item__text">
-                        <h5 class="card-title">Strategie</h5>
-                        <p class="card-text">We helpen je een competitief voordeel te ontwikkelen. Reken op concreet, toekomstgericht advies.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col home__us__list__item">
-                <div class="home__us__list__item__element card h-100">
-                    <img src="./static/images/icon-creative.png" class="card-img-top image--card" alt="...">
-                    <div class="card-body home__us__list__item__text">
-                        <h5 class="card-title">Creatie</h5>
-                        <p class="card-text">We creëren unieke merken en alle bijhorende assets, op maat van je noden en onze continu evoluerende maatschappij.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col home__us__list__item">
-                <div class="home__us__list__item__element card h-100">
-                    <img src="./static/images/icon-content.png" class="card-img-top image--card" alt="...">
-                    <div class="card-body home__us__list__item__text">
-                        <h5 class="card-title">Content</h5>
-                        <p class="card-text">We voeden je publiek met de juiste content op het juiste moment, in tekst en in beeld, doorheen de volledige customer journey.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col home__us__list__item">
-                <div class="home__us__list__item__element card h-100">
-                    <img src="./static/images/icon-marketing.png" class="card-img-top image--card" alt="...">
-                    <div class="card-body home__us__list__item__text">
-                        <h5 class="card-title">Marketing</h5>
-                        <p class="card-text">Met behulp van intelligente automatisering helpen we je je doelpubliek te bereiken en te converteren, van leads tot loyale merkambassadeurs.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col home__us__list__item">
-                <div class="home__us__list__item__element card h-100">
-                    <img src="./static/images/icon-tech.png" class="card-img-top image--card" alt="...">
-                    <div class="card-body home__us__list__item__text">
-                        <h5 class="card-title">Technologie</h5>
-                        <p class="card-text">Onze uitgebreide tech stack garandeert vrijheid in ontwikkeling, testing, support en onderhoud. Reken op de beste match met jouw project.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class = "home__clients container">
         <div class="home__clients__header">
             <h2 class = "home__clients__header__title">Our clients</h2>
         </div>
         {% if clients | length %}
         {% endif %}
-        <div class="home__clients__list row row-cols-6 row-cols-md-6 g-4">
+        <div class="home__clients__list row row-cols-3 row-cols-md-6 g-4">
         {% for client in clients %}
         <div class="col">
             <div class="home__projects__list__item  card h-100">
