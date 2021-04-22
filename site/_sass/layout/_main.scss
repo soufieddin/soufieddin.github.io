@@ -38,11 +38,14 @@
             padding: 2rem 0 1rem;
         }
     }
-    &__us,&__projects,&__clients{
-        @include list-cards
+    &__us{
+        @include list-cards(9rem);
     }
     &__us{
         margin-bottom: 4rem;
+    }
+    &__clients, &__projects{
+        @include list-cards(5rem);
     }
 
 }
