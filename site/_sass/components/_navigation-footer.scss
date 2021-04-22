@@ -1,5 +1,9 @@
 .footer-nav {
     --nav-spacing: #{$spacing*1px};
+    padding: 0;
+    @media (max-width: 61.9375rem) {
+        margin-bottom: 1.5rem;
+    }
 
     &__list {
         display: flex;
@@ -9,7 +13,6 @@
         list-style: none;
         margin: 0;
         padding: 0;
-
         &-item {
             font-family: $font-family-montserrat;
             font-size: 18px;

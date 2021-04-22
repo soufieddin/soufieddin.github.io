@@ -1670,6 +1670,12 @@ img {
 
 .footer-nav {
   --nav-spacing: 18px;
+  padding: 0;
+}
+@media (max-width: 61.9375rem) {
+  .footer-nav {
+    margin-bottom: 1.5rem;
+  }
 }
 .footer-nav__list {
   display: flex;
