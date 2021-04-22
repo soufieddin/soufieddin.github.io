@@ -16,13 +16,17 @@
       }
   }
   &__image {
-    margin-bottom: $spacing-base;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    // margin-bottom: $spacing-base;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
     &__container {
       position: relative;
-      width: 40%;
+      padding: 0;
+      // width: 40%;
+      @media (max-width: 61.9375rem) {
+        padding: 1rem;
+      }
       &__info {
         position: absolute;
         top: 30%;
