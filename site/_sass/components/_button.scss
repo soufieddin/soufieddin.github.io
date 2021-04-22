@@ -26,3 +26,18 @@
     }
   }
 }
+.btn-to-top{
+  height:4rem;
+  width:4rem;
+  border-radius: .5rem;
+  opacity: .7;
+  outline: none;
+  border:none;
+  position: fixed;
+  bottom:1rem;
+  right:2rem;
+  background-color:$ahs-orange;
+  color:white;
+  z-index: 2;
+  padding: .5rem;
+}
