@@ -6,28 +6,28 @@
     a{
         text-decoration: none;
     }
+    &__img{
+        padding-right: 0;
+        padding-left: 0;
+    }
     &__text{
         margin-top: 4rem;
+        @include text-wrapper(space-between);
+        align-items: end;
         &__title{
-            display: inline-block;
-            background-color:$ahs-purple;
-            font-size: 2rem;
-            padding: 1rem;
-            color:white;
+            @include text-underline(left);
         }
         &__text{
             font-size: 1.25rem;
             padding: 2rem 0 1rem;
         }
-    
     }
     &__extra{
         margin-top: 4rem;
+        @include text-wrapper(space-between);
+        align-items: end;
         &__title{
-            background-color:$ahs-purple;
-            font-size: 1.6rem;
-            padding: 1rem;
-            color:white;
+            @include text-underline(left);
         }
         &__text{
             font-size: 1.25rem;
@@ -36,6 +36,9 @@
     }
     &__us,&__projects,&__clients{
         @include list-cards
+    }
+    &__us{
+        margin-bottom: 4rem;
     }
 
 }

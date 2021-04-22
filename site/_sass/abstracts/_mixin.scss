@@ -5,13 +5,13 @@
   margin-right: auto;
   margin-left: auto;
 }
-@mixin text-wrapper {
+@mixin text-wrapper($justify) {
   display: flex;
-  justify-content: center;
+  justify-content: $justify;
   padding-bottom: $spacing-base-m;
 }
-@mixin text-underline {
-  text-align: center;
+@mixin text-underline($position) {
+  text-align: $position;
   font-weight: 600;
   padding-bottom: $spacing-md;
   border-bottom: 2px solid $ahs-purple ;
@@ -20,16 +20,11 @@
 @mixin list-cards{
   margin-top: 4rem;
   &__header{
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
+      @include text-wrapper(space-between);
+      align-items: end;
+      margin-bottom: 2rem;
       &__title{
-          background-color:$ahs-purple;
-          font-size: 1.6rem;
-          padding: 1rem;
-          color:white;
-          display: inline-block;
-          margin-bottom: 2rem;
+          @include text-underline(left);
       }
   }
   &__list{

@@ -1,13 +1,13 @@
 .team {
   margin-top: 4rem;
   &__wrapper {
-    @include text-wrapper;
+    @include text-wrapper(center);
     &__header {
-    @include text-underline;
+    @include text-underline(center);
     } 
   }
   &__wrapper__text {
-   @include text-wrapper; 
+   @include text-wrapper(center); 
       p {
         text-align: center;
         font-size: $text-base;
