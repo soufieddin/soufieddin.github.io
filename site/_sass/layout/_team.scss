@@ -3,11 +3,7 @@
   &__wrapper {
     @include text-wrapper;
     &__header {
-      text-align: center;
-      font-weight: 600;
-      padding-bottom: $spacing-md;
-      border-bottom: 2px solid $ahs-purple ;
-      display: inline-block;
+    @include text-underline;
     } 
   }
   &__wrapper__text {
