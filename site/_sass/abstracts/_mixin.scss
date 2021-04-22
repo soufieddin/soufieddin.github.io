@@ -10,6 +10,13 @@
   justify-content: center;
   padding-bottom: $spacing-base-m;
 }
+@mixin text-underline {
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: $spacing-md;
+  border-bottom: 2px solid $ahs-purple ;
+  display: inline-block;
+}
 @mixin list-cards{
   margin-top: 4rem;
   &__header{
