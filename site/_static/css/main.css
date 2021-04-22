@@ -1687,15 +1687,15 @@ img {
 .footer-nav__list-item > a {
   position: relative;
   display: block;
-  color: #454A4D;
+  color: #f8f9fa;
   padding: calc(var(--nav-spacing)/4) var(--nav-spacing);
   text-decoration: none;
 }
 .footer-nav__list-item > a:hover {
-  color: rgba(69, 74, 77, 0.48);
+  color: rgba(248, 249, 250, 0.48);
 }
 .footer-nav__list-item--active > a {
-  color: rgba(69, 74, 77, 0.48);
+  color: rgba(248, 249, 250, 0.48);
 }
 
 .image--right {
