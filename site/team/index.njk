@@ -1,11 +1,12 @@
 ---
 layout: layouts/base.njk
+path: ..
 eleventyNavigation:
   key: Team
   order: 4
 ---
 
-<section class="team custom-container">
+<section class="team container">
 
  <div class="team__wrapper">
     <h2 class="team__wrapper__header">Team</h2>
@@ -16,9 +17,9 @@ eleventyNavigation:
     </p>
   </div>
   
-  <div class="team__image">
+  <div class="team__image row">
     {% for element in team %}
-      <div  class="team__image__container">
+      <div  class="team__image__container col-12 col-lg-6">
         <div class="{{element.class}}">
           <img class="image--team" src="../static/images/{{element.photo}}" alt="photo of a team member">
         </div>
