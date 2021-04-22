@@ -18,14 +18,14 @@ description: Get great at designing amazing websites and mobile applications wit
         <div class="container">
             <div class="row">
                 <div class="home__img col-12">
-                    <img class="img-fluid" src="./static/images/hero.png">
+                    <img class="img-fluid" src="{{"./static/images/hero.png" | url}}">
                 </div>
             </div>
         </div>
         <div class="home__extra">
             <h2 class="home__extra__title">Experts in growth</h2>
-            <a class="home__projects__header__link link--btn" href="./services/">Our Services
-                <img class="image--right"src="./static/images/icons/right.svg">
+            <a class="home__projects__header__link link--btn" href="{{'./services/' | url}}">Our Services
+                <img class="image--right"src="{{"./static/images/icons/right.svg"| url}}">
             </a>
         </div>
         <P class="home__extra__text">
@@ -41,9 +41,9 @@ description: Get great at designing amazing websites and mobile applications wit
         {% endif %}
         <div class="home__projects__list row row-cols-1 row-cols-lg-3 g-4">
         {% for project in projects %}
-            <a class="col home__projects__list__item" href="https://soufieddin.github.io/p{{project.img}}/" target="_blank">
+            <a class="col home__projects__list__item" href="https://soufieddin.github.io/p{{project.img}}" target="_blank">
                 <div class="item home__projects__list__item__element card h-100">
-                    <img src="./static/images/{{project.img}}.svg" class="card-img-top image--card" alt="...">
+                    <img src='./static/images/{{project.img}}.svg' class="card-img-top image--card" alt="...">
                     <div class="card-body">
                         <p class="card-title">{{project.title}}</p>
                     </div>
