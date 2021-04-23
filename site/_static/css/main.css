@@ -2130,6 +2130,17 @@ button[type=submit]:hover {
   background-color: #d6e2ec;
 }
 
+.map {
+  width: 100rem;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+}
+
 .cases {
   margin-top: 4rem;
 }
