@@ -1,0 +1,28 @@
+<div class="cases container">
+  <img class = "image--logo" src = "../../static/images/{{project.thumb}}.svg" />
+  <div class="cases__text">
+    <h2 class = "cases__text__title">{{project.title}}</h2>
+  </div>
+  <div class="cases__client">
+    <h6>Client: {{client.name}}</h6>
+    <p>{{client.synopsis}}</p>
+    <blockquote>{{client.quote}}</blockquote>
+  </div>
+  <p>{{client.review}}</p>
+</div>
+<div class="cases__element container">
+  <div class="cases__element__subtitle">
+    <a class = "cases__element__subtitle__content" href="{{project.link}}" target="_blank">Visit Site</a>
+  </div>
+  <div class="row cases__element__item">
+    <div class="cases__element__item__img gf__img col-sm-12 col-lg-3">
+      <img src="../../static/images/{{project.mob}}.png"/>
+    </div>
+    <div class="cases__element__item__img gf__img col-sm-12 col-lg-4">
+      <img src="../../static/images/{{project.ipad}}.png"/>
+    </div>
+    <div class="cases__element__item__img gf__img col-sm-12  col-lg-5">
+      <img src="../../static/images/{{project.pc}}.png"/>
+    </div>
+  </div>
+</div>
