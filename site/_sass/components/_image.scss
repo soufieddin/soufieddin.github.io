@@ -27,11 +27,10 @@
   }
   &--client{
     width:10rem;
-    @media (max-width:992px) {
-      width: 6rem;
+    @media (max-width:992px){
+      width:6rem;
+    }
   }
-}
- 
   &--card{
     max-width:5rem;
     height:5rem;

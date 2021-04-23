@@ -1843,8 +1843,45 @@ body {
   text-decoration: none;
 }
 .home__img {
+  margin-top: 4rem;
   padding-right: 0;
   padding-left: 0;
+  position: relative;
+}
+.home__img__text {
+  position: absolute;
+  color: #fff;
+  width: 50%;
+  top: 30%;
+  left: 5%;
+}
+.home__img__text .onSmall {
+  display: none;
+}
+@media (max-width: 767px) {
+  .home__img__text {
+    left: 10%;
+    font-size: 0.8rem !important;
+  }
+  .home__img__text .onSmall {
+    display: block;
+  }
+  .home__img__text .onBig {
+    display: none;
+  }
+}
+@media (max-width: 1365px) {
+  .home__img__text {
+    left: 7%;
+    top: 40%;
+    font-size: 2rem !important;
+  }
+  .home__img__text .onSmall {
+    display: block;
+  }
+  .home__img__text .onBig {
+    display: none;
+  }
 }
 .home__text {
   margin-top: 4rem;
