@@ -2126,7 +2126,7 @@ button[type=submit]:hover {
 
 #map {
   position: absolute;
-  top: 0;
+  top: 100;
   bottom: 0;
   width: 100%;
 }
