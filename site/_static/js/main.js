@@ -32,7 +32,7 @@ const LONGTITUDE = 3.799770;
       var map = new mapboxgl.Map({
       container: 'map', // container id
       style: 'mapbox://styles/mapbox/streets-v11', // style URL
-      center: [-74.5, 40], // starting position [lng, lat]
+      center: [3.799770,  51.028810], // starting position [lng, lat]
       zoom: 9 // starting zoom
       });
       // let url = `https://www.bing.com/maps/embed?h=800&w=800&cp=${LONGTITUDE}~${LONGTITUDE}&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8`;
