@@ -5,8 +5,26 @@ eleventyNavigation:
   key: Work
   order: 3
 ---
+    <div class="home__projects container">
+        <div class="home__projects__header">
+            <h2 class="home__projects__header__title">Interesting projects</h2>
+        </div>
+        <div class="home__projects__list row row-cols-1 row-cols-lg-3 g-4">
+        {% for p in collections.work %}
+            <a class="col home__projects__list__item" href="{{p.url | url}}" target="_blank">
+                <div class="item home__projects__list__item__element card h-100">
+                    <img src='../static/images/{{p.data.project.thumb}}.svg' class="card-img-top image--card" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{p.data.project.title}}</h5>
+                        <h6 class="card-title">Ordered by: {{p.data.client.name}}</h6>
 
-<div class="cases container">
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+        </div>
+    </div>
+{# <div class="cases container">
   <div class="cases__text">
     <h2 class = "cases__text__title">Interesting Cases</h2>
   </div>
@@ -30,4 +48,4 @@ eleventyNavigation:
     </div>
   </div>
 </div>
-{% endfor %}
+{% endfor %} #}

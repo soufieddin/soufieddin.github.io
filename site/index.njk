@@ -35,7 +35,7 @@ description: Get great at designing amazing websites and mobile applications wit
     </div>
     <div class="home__projects container">
         <div class="home__projects__header">
-            <h2 class="home__projects__header__title">Our projects</h2>
+            <h2 class="home__projects__header__title">Interesting projects</h2>
         </div>
         {% if projects | length %}
         {% endif %}
@@ -61,7 +61,7 @@ description: Get great at designing amazing websites and mobile applications wit
         <div class="home__clients__list row row-cols-3 row-cols-md-6 g-4">
         {% for client in clients %}
         <div class="col">
-            <div class="home__projects__list__item  card h-100">
+            <div class="home__clients__list__item  card h-100">
                 <div class="home__projects__list__item__element extra">
                     <img src="./static/images/{{client.img}}.svg" class="card-img-top" alt="...">
                 </div> 

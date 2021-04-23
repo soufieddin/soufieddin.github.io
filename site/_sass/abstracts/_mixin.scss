@@ -29,27 +29,34 @@
   }
   &__list{
       &__item{
+        transition: all .5s ease-in-out;
           &__element{
               text-align: center;
               color:white;
               background-color:$ahs-purple;
               padding: 1.5rem;
               margin-bottom: 1rem;
-              transition: all .5s ease-in-out;
               p{
                   width:100%;
                   height: $height;
               }
-              &:hover{
-                transform: scale(1.05);
-            }
+          }
+          &:hover{
+            transform: scale(1.05);
+            text-decoration: none;
           }
           .extra{
               background-color:transparent;
               img{
-                  width:3rem;
+                  width:4rem;
               }
           }
+          // .biger{
+          //   background-color:transparent;
+          //   img{
+          //     width: 8rem;
+          //   }
+          // }
       }
   }
 }
