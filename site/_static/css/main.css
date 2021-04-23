@@ -2176,8 +2176,12 @@ button[type=submit]:hover {
 }
 
 #map {
-  height: 350px;
+  height: 430px;
   margin-top: 2rem;
+}
+
+.contact_title {
+  margin-top: 4rem;
 }
 
 .cases {
