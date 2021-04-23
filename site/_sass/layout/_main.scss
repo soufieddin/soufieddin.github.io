@@ -17,12 +17,18 @@
             width:50%;
             top: 30%;
             left:5%;
+            font-size: 1.25rem;
             .onSmall{
                 display: none;
             }
-            @media (max-width:767px){
+            &--dark{
+                color:white;
+                background-color: rgba(255,255,255, .2);
+                padding: .5rem 1rem;
+            }
+            @media (max-width:414px){
                 left:10%;
-                font-size: .8rem !important;
+                font-size: .75rem !important;
                 .onSmall{
                     display: block;
                 }
@@ -30,7 +36,7 @@
                     display: none;
                 }
             }
-            @media (max-width:1365px){
+            @media (max-width:600px){
                 left:7%;
                 top:40%;
                 font-size: 2rem !important;
