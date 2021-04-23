@@ -1,5 +1,19 @@
+<div class = "container">
+  <div class="dropdown">
+      <button class="dropdown__btn btn--third">Other Features</button>
+
+      <div class="dropdown__links">
+      {% for article in collections.work%}
+      {% if article.url !== page.url %}
+        <a class="dropdown__links__item" href="{{ article.url | url}}">
+          {{ article.data.project.title}}
+        </a>
+      {% endif %}
+      {% endfor %}
+  </div>
+</div>
 <div class="cases container">
-  <img class = "image--logo" src = "../../static/images/{{project.thumb}}.svg" />
+  <img class = "image--client" src = "../../static/images/{{project.thumb}}.svg" />
   <div class="cases__text">
     <h2 class = "cases__text__title">{{project.title}}</h2>
   </div>

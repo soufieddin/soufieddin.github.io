@@ -25,6 +25,14 @@
   &--logo{
     width:10rem;
   }
+  &--client{
+    width:10rem;
+  }
+  @media (max-width:992px){
+    &--client{
+      width:6rem;
+    }
+  }
   &--card{
     max-width:5rem;
     height:5rem;

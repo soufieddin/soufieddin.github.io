@@ -1727,6 +1727,14 @@ img {
 .image--logo {
   width: 10rem;
 }
+.image--client {
+  width: 10rem;
+}
+@media (max-width: 992px) {
+  .image--client {
+    width: 6rem;
+  }
+}
 .image--card {
   max-width: 5rem;
   height: 5rem;
@@ -2148,6 +2156,7 @@ button[type=submit]:hover {
   display: flex;
   justify-content: center;
   padding-bottom: 2rem;
+  margin-top: 4rem;
 }
 .cases__text__title {
   text-align: center;
@@ -2183,4 +2192,46 @@ button[type=submit]:hover {
 }
 .cases__element__item__img:hover {
   transform: scale(1.1);
+}
+
+.dropdown__links {
+  display: none;
+  position: absolute;
+  background-color: #7E57C5;
+  width: 10rem;
+  max-height: 15rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown__links__item {
+  color: white;
+  padding: 0.8rem;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.dropdown__links__item:hover {
+  background-color: #F58732;
+  text-decoration: none;
+}
+.dropdown__btn {
+  width: 10rem !important;
+  height: 2.85rem !important;
+  outline: none;
+  border: none;
+  background-color: #7E57C5;
+  color: white;
+}
+
+.dropdown:hover .dropdown__links {
+  display: block;
+}
+
+.dropdown {
+  position: absolute;
+  top: 4.2rem;
+  right: 0;
 }
