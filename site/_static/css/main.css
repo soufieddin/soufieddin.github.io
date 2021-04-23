@@ -2124,6 +2124,13 @@ button[type=submit]:hover {
   background-color: #d6e2ec;
 }
 
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 .cases {
   margin-top: 4rem;
 }

@@ -28,12 +28,19 @@ const LONGTITUDE = 3.799770;
       }
     },
     showMap () {
-      let url = `https://www.bing.com/maps/embed?h=800&w=800&cp=${LONGTITUDE}~${LONGTITUDE}&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8`;
+      mapboxgl.accessToken = 'pk.eyJ1IjoibWFycnlzIiwiYSI6ImNrbGdsdWF6azA0c2Iyb3Jydm9xcG1qMzYifQ.PTJcG6qfqXf1uK1F43FrSA';
+      var map = new mapboxgl.Map({
+      container: 'map', // container id
+      style: 'mapbox://styles/mapbox/streets-v11', // style URL
+      center: [-74.5, 40], // starting position [lng, lat]
+      zoom: 9 // starting zoom
+      });
+      // let url = `https://www.bing.com/maps/embed?h=800&w=800&cp=${LONGTITUDE}~${LONGTITUDE}&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8`;
 
-        const iframe = `
-        <iframe src="${url}" title=""Bing Maps" width="800" height="800"></iframe>
-        `;
-        document.body.querySelector('#map').innerHTML = iframe;
+      //   const iframe = `
+      //   <iframe src="${url}" title=""Bing Maps" width="800" height="800"></iframe>
+      //   `;
+      //   document.body.querySelector('#map').innerHTML = iframe;
       // navigator.geolocation.getCurrentPosition(
       //   (position) => {
       //     const latitude = position.coords.latitude;
