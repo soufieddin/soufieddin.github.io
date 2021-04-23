@@ -1843,8 +1843,45 @@ body {
   text-decoration: none;
 }
 .home__img {
+  margin-top: 4rem;
   padding-right: 0;
   padding-left: 0;
+  position: relative;
+}
+.home__img__text {
+  position: absolute;
+  color: #fff;
+  width: 50%;
+  top: 30%;
+  left: 5%;
+}
+.home__img__text .onSmall {
+  display: none;
+}
+@media (max-width: 767px) {
+  .home__img__text {
+    left: 10%;
+    font-size: 0.8rem !important;
+  }
+  .home__img__text .onSmall {
+    display: block;
+  }
+  .home__img__text .onBig {
+    display: none;
+  }
+}
+@media (max-width: 1365px) {
+  .home__img__text {
+    left: 7%;
+    top: 40%;
+    font-size: 2rem !important;
+  }
+  .home__img__text .onSmall {
+    display: block;
+  }
+  .home__img__text .onBig {
+    display: none;
+  }
 }
 .home__text {
   margin-top: 4rem;
@@ -2146,6 +2183,32 @@ button[type=submit]:hover {
 .cases {
   margin-top: 4rem;
 }
+.cases__client {
+  font-size: 1.2rem;
+}
+.cases__client__review {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-image: url(https://images.unsplash.com/photo-1600096194534-95cf5ece04cf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGlrZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.cases__client__review h6 {
+  margin-top: 0.5rem;
+}
+.cases__client__about {
+  border: 1px solid black;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .cases__text {
   display: flex;
   justify-content: center;
@@ -2192,7 +2255,7 @@ button[type=submit]:hover {
   display: none;
   position: absolute;
   background-color: #7E57C5;
-  width: 10rem;
+  width: 8rem;
   max-height: 15rem;
   overflow-x: hidden;
   overflow-y: auto;
@@ -2208,11 +2271,11 @@ button[type=submit]:hover {
   font-size: 0.8rem;
 }
 .dropdown__links__item:hover {
-  background-color: #F58732;
+  background-color: white;
   text-decoration: none;
 }
 .dropdown__btn {
-  width: 10rem !important;
+  width: 8rem !important;
   height: 2.85rem !important;
   outline: none;
   border: none;
@@ -2227,5 +2290,5 @@ button[type=submit]:hover {
 .dropdown {
   position: absolute;
   top: 4.2rem;
-  right: 0;
+  right: 1rem;
 }

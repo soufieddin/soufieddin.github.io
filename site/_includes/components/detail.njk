@@ -1,6 +1,6 @@
 <div class = "container">
   <div class="dropdown">
-      <button class="dropdown__btn btn--third">Other Features</button>
+      <button class="dropdown__btn btn--third">Other Projects</button>
 
       <div class="dropdown__links">
       {% for article in collections.work%}
@@ -18,11 +18,18 @@
     <h2 class = "cases__text__title">{{project.title}}</h2>
   </div>
   <div class="cases__client">
-    <h6>Client: {{client.name}}</h6>
-    <p>{{client.synopsis}}</p>
-    <blockquote>{{client.quote}}</blockquote>
+    <div class = "row">
+      <div class = "cases__client__about col-md-6 col-sm-12">
+        <h6>Client: {{client.name}}</h6>
+        <p>{{client.synopsis}}</p>
+      </div>
+      <div class = "cases__client__review col-md-6 col-sm-12">
+        <q>{{client.review}}</q>
+        <h6><cite>_{{client.name}}</cite></h6>
+      </div>
+    </div>
   </div>
-  <p>{{client.review}}</p>
+  
 </div>
 <div class="cases__element container">
   <div class="cases__element__subtitle">
