@@ -15,30 +15,41 @@
             position: absolute;
             color: #fff;
             width:50%;
-            top: 30%;
+            bottom: 20%;
             left:5%;
-            font-size: 1.25rem;
             .onSmall{
                 display: none;
             }
+            .onBig{
+                font-size: 1.5rem;
+            }
             &--dark{
                 color:white;
-                background-color: rgba(255,255,255, .2);
-                padding: .5rem 1rem;
+                background-color: rgba(0,0,0, .5);
+                display:flex;
+                justify-content: center;
+                flex-direction: column;
+                width:96.5%;
+                height: 32%;
+                bottom:.2rem !important;
+                left:50%;
+                transform: translateX(-50%);
+                text-align: center;
             }
-            @media (max-width:414px){
-                left:10%;
-                font-size: .75rem !important;
-                .onSmall{
-                    display: block;
-                }
-                .onBig{
-                    display: none;
-                }
-            }
+
             @media (max-width:600px){
+                &--dark{
+                    left:50%;
+                    transform: translateX(-50%);
+                    width:90%;
+                    bottom: .7rem;
+                    padding: .4rem;
+                    height: 27%;
+                    font-size: 1.6rem;
+                    text-align: center;
+                }
                 left:7%;
-                top:40%;
+                bottom:20%;
                 font-size: 2rem !important;
                 .onSmall{
                     display: block;
