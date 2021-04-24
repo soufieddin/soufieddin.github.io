@@ -1864,18 +1864,18 @@ body {
 }
 .home__img__text--dark {
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 96.5%;
+  width: 97%;
   height: 32%;
   bottom: 0.2rem !important;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .home__img__text {
     left: 7%;
     bottom: 20%;
@@ -1884,7 +1884,7 @@ body {
   .home__img__text--dark {
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
+    width: 95%;
     bottom: 0.7rem;
     padding: 0.4rem;
     height: 27%;
