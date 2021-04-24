@@ -5,7 +5,8 @@
   }
 }
 .link--btn{
-  border: 2px solid $ahs-purple;
+  border: 2px solid whitesmoke;
+  color: white;
   margin-top: 1rem;
   padding: 1rem;
   transition: all .8s ease-in-out;
@@ -33,8 +34,8 @@
   position: fixed;
   bottom:1rem;
   right:2rem;
-  background-color:$ahs-orange;
-  color:white;
+  background-color:whitesmoke;
+  color:black;
   z-index: 2;
   padding: .5rem;
 }

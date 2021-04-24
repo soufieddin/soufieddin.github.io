@@ -41,15 +41,15 @@
       margin-top: $spacing-base;
     }
     &__text {
-      background-color: $ahs-purple;
+      background-color: white;
       display: inline-block;
       font-size: 1.6rem;
       padding: 1rem;
       line-height: 1.6;
-      color: white;
+      color: black;
     }
     &__link {
-      border: 2px solid $ahs-purple;
+      border: 2px solid whitesmoke;
       margin-top: 1rem;
       padding: 1rem;
       transition: all .8s ease-in-out;

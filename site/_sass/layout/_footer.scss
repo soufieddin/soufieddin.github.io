@@ -1,13 +1,13 @@
 .footer {
-    border-top: 1px solid $gray-200;
-    background: darken($purple, 12%);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    background: darken(black, 12%);
     color: $primary;
     margin-top: $spacing-base-m;
     padding: #{$spacing * 2px} 0;
     &__author {
         text-align: center;
         color: $ahs-orange;
-        background: darken($purple, 12%);
+        background: darken(black, 12%);
     }
     &__list {
         list-style: none;

@@ -19,7 +19,7 @@
       }
     }
     &__about{
-      border: 1px solid black;
+      border: 1px solid whitesmoke;
       padding-top:3rem;
       padding-bottom: 3rem;
       display: flex;
@@ -44,7 +44,7 @@
       &__content{
         @include text-underline(left);
         font-size: 1.6rem;
-        color:black;
+        color:white;
         &:hover{
           text-decoration: none;
         }
@@ -64,7 +64,7 @@
   &__links{
       display: none;
       position: absolute;
-      background-color: $ahs-purple;
+      background-color: black;
       width: 8rem;
       max-height: 15rem;
       overflow-x: hidden;
@@ -89,7 +89,7 @@
       height:2.85rem !important;
       outline: none;
       border: none;
-      background-color: $ahs-purple;
+      background-color: black;
       color: white;
   }
 }
@@ -98,6 +98,6 @@
 }
 .dropdown{
   position:absolute;
-  top: 4.2rem;
+  top: 4.3rem;
   right:1rem;
 }
