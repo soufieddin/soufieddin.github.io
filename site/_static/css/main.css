@@ -2025,6 +2025,9 @@ body {
   padding: 1.5rem;
   margin-bottom: 1rem;
 }
+.home__us__list__item__element--height {
+  min-height: 18rem;
+}
 .home__us__list__item__element p {
   width: 100%;
   height: 9rem;
@@ -2070,6 +2073,9 @@ body {
   border: 1px solid whitesmoke;
   padding: 1.5rem;
   margin-bottom: 1rem;
+}
+.home__clients__list__item__element--height, .home__projects__list__item__element--height {
+  min-height: 18rem;
 }
 .home__clients__list__item__element p, .home__projects__list__item__element p {
   width: 100%;

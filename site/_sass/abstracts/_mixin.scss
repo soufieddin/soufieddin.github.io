@@ -38,6 +38,9 @@
               border: 1px solid whitesmoke;
               padding: 1.5rem;
               margin-bottom: 1rem;
+              &--height{
+                min-height: 18rem;
+              }
               p{
                   width:100%;
                   height: $height;
