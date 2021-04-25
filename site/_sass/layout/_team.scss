@@ -29,6 +29,16 @@
         top: 30%;
         left: 5%;
         width: 48%;
+        &__name {
+          @media (max-width: 23.4rem) {
+            font-size: 1.2rem;
+          }
+        }
+        &__role {
+          @media (max-width: 23.4rem) {
+            font-size: 1rem;
+          }
+        }
       }
     }
   }

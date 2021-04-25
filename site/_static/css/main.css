@@ -2164,6 +2164,16 @@ body {
   left: 5%;
   width: 48%;
 }
+@media (max-width: 23.4rem) {
+  .team__image__container__info__name {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 23.4rem) {
+  .team__image__container__info__role {
+    font-size: 1rem;
+  }
+}
 .team__together {
   text-align: center;
   padding-bottom: 2rem;
