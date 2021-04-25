@@ -7,10 +7,13 @@ const LONGTITUDE = 3.799770;
       this.cacheElements();
       this.registerEventListeners();
       this.showMap ();
+      this.showModalWindow();
     },
     cacheElements () {
       this.btnToTopElement = document.querySelector('.btn-to-top');
       this.map = document.querySelector('#wrapper');
+      this.myModal = document.getElementById('myModal');
+      this.myInput = document.getElementById('myInput');
     },
     registerEventListeners () {
       if (this.btnToTopElement !== null) {
@@ -34,6 +37,11 @@ const LONGTITUDE = 3.799770;
       var marker = new mapboxgl.Marker()
       .setLngLat([3.799770, 51.028810])
       .addTo(map);
+    },
+    showModalWindow() {
+        this.myModal.addEventListener('shown.bs.modal', function () {
+        this.myInput.focus()
+      })
     }
   };
   app.initialize();

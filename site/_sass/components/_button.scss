@@ -1,32 +1,29 @@
-button[type="submit"] {
-  width: 100%;
-  border: 2px solid whitesmoke;
-  background-color: transparent;
-  outline: none;
-  padding: 20px;
-  font-size: 24px;
-  border-radius: 8px;
-  color: white;
-  text-align: center;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: 0.3s ease background-color;
-
- 
-
-  &:hover {
-    background-color: whitesmoke;
-    color: black;
-    border: 2px solid transparent;
-    
+.button{
+  &--contact{
+    width: 100%;
+    border: 2px solid whitesmoke;
+    background-color: transparent;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition:all .5s ease-in-out;
+    &:hover {
+      background-color: whitesmoke;
+      color: black;
+      border: 2px solid transparent;
+    }
   }
-}
-.link--btn{
-  border: 2px solid whitesmoke;
+  &--link{
+    border: 2px solid whitesmoke;
   color: white;
   margin-top: 1rem;
   padding: 1rem;
-  transition: all .2s ease-in-out;
+  transition: all .5s ease-in-out;
   cursor: pointer;
   .image--right{
     display: none;
@@ -34,26 +31,25 @@ button[type="submit"] {
   &:hover {
     text-decoration: none;
     color: white;
-
-  }
-  &:hover{
     .image--right{
       display: inline-block;
     }
+
   }
-}
-.btn-to-top{
-  height:4rem;
-  width:4rem;
-  border-radius: .5rem;
-  opacity: .7;
-  outline: none;
-  border:none;
-  position: fixed;
-  bottom:1rem;
-  right:2rem;
-  background-color:whitesmoke;
-  color:black;
-  z-index: 2;
-  padding: .5rem;
+  }
+  &--toTop{
+    height:4rem;
+    width:4rem;
+    border-radius: .5rem;
+    opacity: .7;
+    outline: none;
+    border:none;
+    position: fixed;
+    bottom:1rem;
+    right:2rem;
+    background-color:whitesmoke;
+    color:black;
+    z-index: 2;
+    padding: .5rem;
+  }
 }

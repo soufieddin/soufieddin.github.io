@@ -1757,7 +1757,7 @@ img {
   border: 2px solid transparent;
 }
 
-button[type=submit] {
+.button--contact {
   width: 100%;
   border: 2px solid whitesmoke;
   background-color: transparent;
@@ -1769,34 +1769,32 @@ button[type=submit] {
   text-align: center;
   cursor: pointer;
   margin-top: 10px;
-  transition: 0.3s ease background-color;
+  transition: all 0.5s ease-in-out;
 }
-button[type=submit]:hover {
+.button--contact:hover {
   background-color: whitesmoke;
   color: black;
   border: 2px solid transparent;
 }
-
-.link--btn {
+.button--link {
   border: 2px solid whitesmoke;
   color: white;
   margin-top: 1rem;
   padding: 1rem;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
-.link--btn .image--right {
+.button--link .image--right {
   display: none;
 }
-.link--btn:hover {
+.button--link:hover {
   text-decoration: none;
   color: white;
 }
-.link--btn:hover .image--right {
+.button--link:hover .image--right {
   display: inline-block;
 }
-
-.btn-to-top {
+.button--toTop {
   height: 4rem;
   width: 4rem;
   border-radius: 0.5rem;
@@ -1835,7 +1833,7 @@ body {
   box-shadow: black 0px 2px 4px 0px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 47.9375rem) {
   .nav {
     display: none;
   }
