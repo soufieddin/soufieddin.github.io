@@ -1757,9 +1757,24 @@ img {
   border: 2px solid transparent;
 }
 
-.button--contact {
+button[type=submit] {
+  width: 100%;
+  border: 2px solid whitesmoke;
+  background-color: transparent;
   outline: none;
-  border: 1pc solid #7E57C5;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+button[type=submit]:hover {
+  background-color: whitesmoke;
+  color: black;
+  border: 2px solid transparent;
 }
 
 .link--btn {
@@ -2179,24 +2194,6 @@ body {
 
 textarea {
   resize: vertical;
-}
-
-button[type=submit] {
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 20px;
-  font-size: 24px;
-  border-radius: 8px;
-  font-family: "Montserrat";
-  color: #1ba6f7;
-  text-align: center;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: 0.3s ease background-color;
-}
-button[type=submit]:hover {
-  background-color: #d6e2ec;
 }
 
 #map {

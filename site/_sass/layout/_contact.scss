@@ -62,26 +62,7 @@ textarea {
 
  
 
-button[type="submit"] {
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 20px;
-  font-size: 24px;
-  border-radius: 8px;
-  font-family: "Montserrat";
-  color: rgb(27, 166, 247);
-  text-align: center;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: 0.3s ease background-color;
 
- 
-
-  &:hover {
-    background-color: rgb(214, 226, 236);
-  }
-}
 #map {
   height: 430px;
   margin-top: 2rem;

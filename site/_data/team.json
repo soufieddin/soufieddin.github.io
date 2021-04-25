@@ -3,37 +3,44 @@
       "photo": "dennis-large@2x.png",
       "name": "Dennis Klochko",
       "role": "Strateeg",
-      "class": "no"
+      "class": "no",
+      "social": "https://www.linkedin.com/"
+      
   },
   {    
       "photo": "emma-large@2x.png",
       "name": "Emma Woods",
       "role": "Product Owner",
-      "class": "color"
+      "class": "color",
+      "social": "https://www.linkedin.com/"
   },
   {
       "photo": "frank@2x.png",
       "name": "Frank Spee",
       "role": "Developer",
-      "class": "color"
+      "class": "color",
+      "social": "https://www.linkedin.com/"
   },
   {
       "photo": "jeannette-large@2x.png",
       "name": "Jeannette Adams",
       "role": "Developer",
-      "class": "no"
+      "class": "no",
+      "social": "https://www.linkedin.com/"
   },
   {
       "photo": "jelle-2@2x.png",
       "name": "Jelle Schouwstra",
       "role": "Developer",
-      "class": "no"
+      "class": "no",
+      "social": "https://www.linkedin.com/"
   },
   {
       "photo": "jetta-large@2x.png",
       "name": "Jetta Boogaard",
       "role": "Senior Developer",
-      "class": "color"
+      "class": "color",
+      "social": "https://www.linkedin.com/"
   }  
   
 ]
