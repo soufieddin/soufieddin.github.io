@@ -28,6 +28,7 @@ eleventyNavigation:
           <h3 class="team__info__name">{{element.name}}</h3>
 
           <h4  class="team__info__role">{{element.role}}<h4>
+          <a href="{{element.social}}"><img class="image--social" src="../static/images/icons/ld.svg"></a>
         </div> 
       </div>
     {% endfor %} 
@@ -38,9 +39,10 @@ eleventyNavigation:
 
     <div class="team__together__wrapper">
        <p class="team__together__text">Come along to get acquainted</p>
-    </div
-    <a class="link--btn">Contact
-     <img class="image--right"src="../static/images/icons/right.svg">
+    </div>
+    <a href="../contact" class="link--btn">
+      Contact
+     <img class="image--right" src="../static/images/icons/right.svg">
     </a>
   </div>
 

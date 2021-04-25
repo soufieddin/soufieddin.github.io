@@ -1712,7 +1712,6 @@ img {
   width: 2rem;
   padding-left: 1rem;
   display: none;
-  transition: all 0.8s ease-in-out;
 }
 .image--logo {
   width: 10rem;
@@ -1758,9 +1757,24 @@ img {
   border: 2px solid transparent;
 }
 
-.button--contact {
+button[type=submit] {
+  width: 100%;
+  border: 2px solid whitesmoke;
+  background-color: transparent;
   outline: none;
-  border: 1pc solid #7E57C5;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+button[type=submit]:hover {
+  background-color: whitesmoke;
+  color: black;
+  border: 2px solid transparent;
 }
 
 .link--btn {
@@ -1768,7 +1782,7 @@ img {
   color: white;
   margin-top: 1rem;
   padding: 1rem;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 .link--btn .image--right {
@@ -1776,6 +1790,7 @@ img {
 }
 .link--btn:hover {
   text-decoration: none;
+  color: white;
 }
 .link--btn:hover .image--right {
   display: inline-block;
@@ -2179,24 +2194,6 @@ body {
 
 textarea {
   resize: vertical;
-}
-
-button[type=submit] {
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 20px;
-  font-size: 24px;
-  border-radius: 8px;
-  font-family: "Montserrat";
-  color: #1ba6f7;
-  text-align: center;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: 0.3s ease background-color;
-}
-button[type=submit]:hover {
-  background-color: #d6e2ec;
 }
 
 #map {
