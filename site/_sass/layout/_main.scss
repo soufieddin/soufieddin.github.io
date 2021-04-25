@@ -15,24 +15,41 @@
             position: absolute;
             color: #fff;
             width:50%;
-            top: 30%;
+            bottom: 20%;
             left:5%;
             .onSmall{
                 display: none;
             }
-            @media (max-width:767px){
-                left:10%;
-                font-size: .8rem !important;
-                .onSmall{
-                    display: block;
-                }
-                .onBig{
-                    display: none;
-                }
+            .onBig{
+                font-size: 1.5rem;
             }
-            @media (max-width:1365px){
+            &--dark{
+                color:white;
+                background-color: rgba(0,0,0, .3);
+                display:flex;
+                justify-content: center;
+                flex-direction: column;
+                width:97%;
+                height: 32%;
+                bottom:.2rem !important;
+                left:50%;
+                transform: translateX(-50%);
+                text-align: center;
+            }
+
+            @media (max-width:768px){
+                &--dark{
+                    left:50%;
+                    transform: translateX(-50%);
+                    width:95%;
+                    bottom: .7rem;
+                    padding: .4rem;
+                    height: 27%;
+                    font-size: 1.6rem;
+                    text-align: center;
+                }
                 left:7%;
-                top:40%;
+                bottom:20%;
                 font-size: 2rem !important;
                 .onSmall{
                     display: block;

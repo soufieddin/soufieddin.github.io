@@ -14,11 +14,12 @@
   text-align: $position;
   font-weight: 600;
   padding-bottom: $spacing-md;
-  border-bottom: 2px solid $ahs-purple ;
+  border-bottom: 2px solid whitesmoke; ;
   display: inline-block;
 }
 @mixin list-cards($height){
   margin-top: 4rem;
+  margin-bottom: 4rem;
   &__header{
       @include text-wrapper(space-between);
       align-items: end;
@@ -33,7 +34,8 @@
           &__element{
               text-align: center;
               color:white;
-              background-color:$ahs-purple;
+              // background-color:$ahs-purple;
+              border: 1px solid whitesmoke;
               padding: 1.5rem;
               margin-bottom: 1rem;
               p{
@@ -47,6 +49,7 @@
           }
           .extra{
               background-color:transparent;
+              border:none;
               img{
                   width:4rem;
               }

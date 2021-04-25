@@ -3,6 +3,8 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    background-color: #000;
+    color: #fff;
 }
 @media(max-width:991px){
     h2{

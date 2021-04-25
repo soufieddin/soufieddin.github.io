@@ -20,7 +20,7 @@
             > a {
                 position: relative;
                 display: block;
-                color: $gray-900;
+                color: white;
                
                 padding: calc(var(--nav-spacing)/2) var(--nav-spacing);
 
@@ -41,16 +41,16 @@
                 }
 
                 &:hover::before {
-                    background: $gray-500;
-                    border-bottom-color: $gray-900;
+                    //background: $white;
+                    border-bottom-color: whitesmoke;
                 }
             }
 
             &--active {
                 > a {
                     &::before {
-                        background: lighten($ahs-purple, 20%);
-                        border-bottom-color: $gray-900;
+                        //background: lighten(white, 20%);
+                        border-bottom-color: whitesmoke;
                     }
                 }
             }

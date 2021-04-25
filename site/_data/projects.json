@@ -1,14 +1,17 @@
 [
   {
     "img":"7",
+    "link": "7",
     "title":"Responsive website for plants webShop"
   },
   {
-    "img":"9",
+    "img":"9-light",
+    "link": "9",
     "title":"Responsive website for portfolio and biography of Arne Quinze"
   },
   {
     "img":"11",
+    "link": "11",
     "title":"Responsive website for Gent's Festival with news and agenda"
   }
 ]
