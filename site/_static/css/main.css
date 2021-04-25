@@ -1764,7 +1764,7 @@ img {
   display: none;
   padding: 1.25rem 1rem;
 }
-@media (max-width: 47.9375rem) {
+@media (max-width: 48rem) {
   .button--burger {
     display: block;
   }
@@ -1885,7 +1885,7 @@ body {
   box-shadow: black 0px 2px 4px 0px;
 }
 
-@media (max-width: 47.9375rem) {
+@media (max-width: 48rem) {
   .nav {
     display: none;
   }
