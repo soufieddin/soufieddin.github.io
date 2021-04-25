@@ -1712,7 +1712,6 @@ img {
   width: 2rem;
   padding-left: 1rem;
   display: none;
-  transition: all 0.8s ease-in-out;
 }
 .image--logo {
   width: 10rem;
@@ -1768,7 +1767,7 @@ img {
   color: white;
   margin-top: 1rem;
   padding: 1rem;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 .link--btn .image--right {
@@ -1776,6 +1775,7 @@ img {
 }
 .link--btn:hover {
   text-decoration: none;
+  color: white;
 }
 .link--btn:hover .image--right {
   display: inline-block;
@@ -2148,7 +2148,7 @@ body {
   text-align: center;
   font-weight: 600;
   padding-bottom: 1.5rem;
-  border-bottom: 2px solid #7E57C5;
+  border-bottom: 2px solid whitesmoke;
   display: inline-block;
 }
 
