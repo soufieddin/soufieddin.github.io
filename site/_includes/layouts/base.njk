@@ -14,6 +14,7 @@
     <body class="{{ templateClass }}"> 
         {% include "components/header.njk" %}
         <main class="main">
+        <button class = "button--toTop">To top</button>
             {{ content | safe }}
         </main>
         {% include "components/footer.njk" %}

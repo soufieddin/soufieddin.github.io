@@ -9,7 +9,7 @@ const LONGTITUDE = 3.799770;
       this.showMap ();
     },
     cacheElements () {
-      this.btnToTopElement = document.querySelector('.btn-to-top');
+      this.btnToTopElement = document.querySelector('.button--toTop');
       this.map = document.querySelector('#wrapper');
     },
     registerEventListeners () {
