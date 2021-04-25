@@ -1,4 +1,22 @@
 .button{
+  &--burger {
+    background-color: transparent;
+    border: none;
+    height: 2rem;
+    display: none;
+    padding: 1.25rem 1rem;
+    @media (max-width: 47.9375rem) {
+      display: block;
+    }
+  }
+  &--close {
+    position: absolute;
+    right: 1rem;
+    top: 1.2rem;
+    background-color: transparent;
+    border: none;
+    transition: all .4s .4s ease;
+  }
   &--contact{
     width: 100%;
     border: 2px solid whitesmoke;

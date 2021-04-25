@@ -6,12 +6,14 @@ const LONGTITUDE = 3.799770;
     initialize () {
       this.cacheElements();
       this.registerEventListeners();
-      this.showMap ();
+      if(this.map) {
+        this.showMap ();
+      }
       this.showModalWindow();
     },
     cacheElements () {
+      this.map = document.getElementById('map');
       this.btnToTopElement = document.querySelector('.button--toTop');
-      this.map = document.querySelector('#wrapper');
       this.myModal = document.getElementById('myModal');
       this.myInput = document.getElementById('myInput');
     },
@@ -39,10 +41,20 @@ const LONGTITUDE = 3.799770;
       .addTo(map);
     },
     showModalWindow() {
-        this.myModal.addEventListener('shown.bs.modal', function () {
-        this.myInput.focus()
-      })
-    }
+      const burger = document.querySelector('.button--burger');
+      const modalWindow = document.querySelector('.my-modal');
+      const close = document.querySelector('.button--close');
+      burger.addEventListener('click', function() {
+          modalWindow.style.display = 'block';
+      });
+      close.addEventListener('click', function() {
+          close.style.transform = 'rotate(180deg)';
+          setTimeout(function() {
+              modalWindow.style.display = 'none';
+          }, 1000);
+      });
+      
+  },
   };
   app.initialize();
 })();
