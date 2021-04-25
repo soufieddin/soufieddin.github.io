@@ -2,9 +2,6 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/mixins";
-// @import "../../../node_modules/bootstrap/scss/utilities";
-// @import "../../../node_modules/bootstrap/scss/utilities/position";
-
 // Variables
 
 $font-family-sans-serif:      $font-family-montserrat;
@@ -55,9 +52,3 @@ $grid-row-columns:      6;
 @import "../../../node_modules/bootstrap/scss/images";
 @import "../../../node_modules/bootstrap/scss/grid";
 
-.custom-container {
-  @include make-container(2rem);
-}
-img {
-  width: 100%;
-}

@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
   font-weight: bold;
 }
 
@@ -15,7 +14,15 @@
   margin-left: 80px;
 }
 
- 
+.contact__wrapper {
+  text-align: center;
+  @include text-wrapper(center);
+  
+  &__header {
+    @include text-underline(center);
+  }
+
+}
 
 .container2 {
   width: 90%;
@@ -81,4 +88,6 @@ button[type="submit"] {
 }
 .contact_title{
   margin-top: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }

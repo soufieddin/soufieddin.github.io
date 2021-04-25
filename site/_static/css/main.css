@@ -1601,18 +1601,6 @@ mark,
     margin-left: 91.6666666667%;
   }
 }
-.custom-container {
-  width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-img {
-  width: 100%;
-}
-
 .logo {
   font-family: "Montserrat", sans-serif;
   font-size: 42px;
@@ -1718,6 +1706,10 @@ img {
     transform: translate3d(4px, 0, 0);
   }
 }
+img {
+  width: 100%;
+}
+
 .image--right {
   width: 2rem;
   padding-left: 1rem;
@@ -2117,7 +2109,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
   font-weight: bold;
 }
 
@@ -2126,6 +2117,20 @@ body {
   color: white;
   font-size: 18px;
   margin-left: 80px;
+}
+
+.contact__wrapper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.contact__wrapper__header {
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #7E57C5;
+  display: inline-block;
 }
 
 .container2 {
@@ -2182,6 +2187,8 @@ button[type=submit]:hover {
 
 .contact_title {
   margin-top: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .cases {
