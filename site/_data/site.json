@@ -1,12 +1,12 @@
 {
     "title": "Home",
-    "subdomain": "the8gency",
-    "domain": "Associate Degree in Computer Programming",
-    "url": "https://the8gency.github.io/11tyio-boilerplate",
-    "description": "Get great at designing amazing websites and mobile applications with high-performance code and neat graphics. In the Associate Degree in Computer Programming you will learn all the tricks of the digital trade.",
+    "subdomain": "Aiden Soufi",
+    "domain": "Portfolio",
+    "url": "https://soufieddin.github.io/portfolio/",
+    "description": "My Portfolio",
     "author": {
-        "name": "Philippe De Pauw - Waterschoot",
-        "email": "philippe.depauw@arteveldehs.be"
+        "name": "Aiden Soufi",
+        "email": "soufi.aiden@gmail.com"
     },
-    "image": "/static/images/logo.jpg"
+    "image": "/static/images/as-logo.png"
 }

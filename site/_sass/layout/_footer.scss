@@ -5,8 +5,8 @@
     margin-top: $spacing-base-m;
     padding: #{$spacing * 2px} 0;
     &__author {
-        text-align: center;
-        color: $ahs-orange;
+        text-align: left;
+        color: white;
         background: darken(black, 12%);
     }
     &__list {
@@ -15,9 +15,12 @@
         &--flex {
             display: flex;
             flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
         }
         &__item {
-            padding: .5rem 0;
+            // padding: .5rem 0;
+            padding-right: .75rem;
            
             &__link {
                 color: white;

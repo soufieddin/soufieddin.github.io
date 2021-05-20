@@ -3,7 +3,7 @@
         <div>
             <section class="container">
             <div class="row">
-                {% include "components/navigation-footer.njk" %}
+                {# {% include "components/navigation-footer.njk" %}
                 <ul class="footer__list col-md-4 col-sm-6">
                 Contact Us
                      {% for element in footerContact %}
@@ -25,8 +25,9 @@
                         </a>
                        </li>
                     {% endfor %} 
-                </ul>
-                <ul class="footer__list footer__list--flex col-md-2 col-sm-6">
+                </ul> #}
+                <p class="footer__author col-6">© Aiden Soufi 2021</p>
+                <ul class="footer__list footer__list--flex col-6">
                       {% for element in footerSocial %}
                        <li class="footer__list__item">
                         <a href="{{element.href}}" class="footer__list__item__link">
@@ -35,8 +36,9 @@
                        </li>
                     {% endfor %} 
                 </ul>
+                
             </div>
-            <p class="footer__author">© INOVA 2021</p>
+            {# <p class="footer__author col-6">© Aiden Soufi 2021</p> #}
             </section>
         </div>
     </div>

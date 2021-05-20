@@ -1,11 +1,15 @@
 [
   {
-    "icon": "instagram (1).svg",
-    "href": "https://www.instagram.com/"
+    "icon": "igm.svg",
+    "href": "https://www.instagram.com/aiden__so/"
   },
   {
-    "icon": "linkedin (1).svg",
-    "href": "https://www.linkedin.com/"
+    "icon": "lid.svg",
+    "href": "https://www.linkedin.com/in/aiden-soufi-a17ba0191/"
+  },
+  {
+    "icon": "gh.svg",
+    "href": "https://github.com/soufieddin"
   }
   
  

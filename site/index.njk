@@ -7,33 +7,31 @@ title: Home
 path: .
 ---
 <section class="home">
+    <div class="home__img ">
+        <video class="home__img__vid col-12" autoplay muted loop id="myVideo">
+            <source src="./static/images/main.mp4" type="video/mp4">
+        </video>
+        <div class="home__img__text home__img__text--dark">
+            <p class = "onSmall">INOVA is a full-service partner of ambitious companies</p>
+            <h2 class = "onBig">Full-service partner of ambitious companies</h2>
+            <p class = "onBig">INOVA is a digital product studio. Our team of product designers, engineers, strategists, architects and data scientists is eager and ready to accelerate your business.</p>
+        </div>
+    </div>
     <div class="container">
         <div class="">
             <div class="row">
-                <div class="home__img ">
-                    <video class="col-12" autoplay muted loop id="myVideo">
-                        <source src="./static/images/main.mp4" type="video/mp4">
-                    </video>
-                    <div class="home__img__text home__img__text--dark">
-                        <p class = "onSmall">INOVA is a full-service partner of ambitious companies</p>
-                        <h2 class = "onBig">Full-service partner of ambitious companies</h2>
-                        <p class = "onBig">INOVA is a digital product studio. Our team of product designers, engineers, strategists, architects and data scientists is eager and ready to accelerate your business.</p>
-                    </div>
-                </div>
+
             </div>
         </div>
         <div class="home__extra">
             <h2 class="home__extra__title">Experts in growth</h2>
-            <a class="home__projects__header__link button--link" href="{{'./services/' | url}}">Our Services
-                <img class="image--right"src="{{"./static/images/icons/right.svg"| url}}">
-            </a>
         </div>
         <P class="home__extra__text">
             Imagine Tomorro_
              Together with our customers we anticipate the challenges of an ever faster evolving world. Consumers expect more than just excellent service, and technology makes it possible to respond to these changing expectations. Together with our customers, we look ahead to tomorrow, push boundaries to create new opportunities and shape the future.
         </P>
     </div>
-    <div class="home__projects container">
+    {# <div class="home__projects container">
         <div class="home__projects__header">
             <h2 class="home__projects__header__title">Interesting projects</h2>
         </div>
@@ -51,23 +49,6 @@ path: .
             </a>
         {% endfor %}
         </div>
-    </div>
-    <div class = "home__clients container">
-        <div class="home__clients__header">
-            <h2 class = "home__clients__header__title">Our clients</h2>
-        </div>
-        {% if clients | length %}
-        {% endif %}
-        <div class="home__clients__list row row-cols-3 row-cols-md-6 g-4">
-        {% for client in clients %}
-        <div class="col">
-            <div class="home__clients__list__item  card h-100">
-                <div class="home__projects__list__item__element extra">
-                    <img src="./static/images/{{client.img}}.svg" class="card-img-top" alt="...">
-                </div> 
-            </div>
-        </div>
-        {% endfor %}
-        </div>
-    </div>
+    </div> #}
+    
 </section>
