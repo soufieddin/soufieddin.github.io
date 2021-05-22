@@ -14,7 +14,8 @@
   text-align: $position;
   font-weight: 600;
   padding-bottom: $spacing-md;
-  border-bottom: 2px solid whitesmoke; ;
+  border-bottom: 2px solid whitesmoke;
+  transition: all .3s ease-in-out;
   display: inline-block;
 }
 @mixin list-cards($height){

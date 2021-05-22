@@ -77,19 +77,55 @@
     }
     &__extra{
         margin-top: 4rem;
-        @include text-wrapper(space-between);
-        align-items: end;
-        @media (max-width: 991px){
-            align-items: center;
-        }
-        &__title{
-            @include text-underline(left);
-            width:40%;
-        }
-        &__text{
-            font-size: 1.25rem;
-            padding: 2rem 0 1rem;
-        }
+				justify-content:center;
+        align-items: center;
+				z-index: 1;
+				&__greetings{
+					display: flex;
+					justify-content: center;
+					p{
+						font-size: 8rem !important;
+						color: #c0c0c0 !important;
+					}
+
+				}
+				&__personal{
+					display: flex;
+					justify-content: center;
+					p{
+						font-size: 1.5rem !important;
+					}
+					h2{
+						font-size: 1.75rem !important;
+					}
+					&__wrapper{
+						padding: 0;
+					}
+				}
+				@media (max-width:991px){
+					&__greetings{
+						display: flex;
+						justify-content: center;
+						p{
+							font-size: 6rem !important;
+						}
+	
+					}
+					&__personal{
+						display: flex;
+						justify-content: center;
+						text-align: center;
+						p{
+							font-size: 1.5rem !important;
+						}
+						h2{
+							font-size: 1.75rem !important;
+						}
+						&__wrapper{
+							padding: 0;
+						}
+					}
+				}
     }
     &__us{
         @include list-cards(9rem);

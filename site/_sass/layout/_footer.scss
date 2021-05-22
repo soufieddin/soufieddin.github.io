@@ -4,6 +4,7 @@
     color: $primary;
     margin-top: $spacing-base-m;
     padding: #{$spacing * 2px} 0;
+    z-index: 1;
     &__author {
         text-align: left;
         color: white;
@@ -25,10 +26,17 @@
             &__link {
                 color: white;
                 cursor: pointer;
+                z-index: 1;
                 &:hover {
                     color: rgba($gray-100, 0.48);
                     text-decoration: none;
                 }
+            }
+        }
+        @media (max-width:991px){
+            &__item {
+                // padding: .5rem 0;
+                padding-right: .3rem;
             }
         }
     }

@@ -45,8 +45,11 @@
         @include text-underline(left);
         font-size: 1.6rem;
         color:white;
+        
         &:hover{
           text-decoration: none;
+          color: #c0c0c0;
+          border-bottom: 2px solid #c0c0c0;
         }
       }
     }

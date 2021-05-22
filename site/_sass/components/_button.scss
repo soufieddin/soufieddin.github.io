@@ -56,19 +56,32 @@
   }
   }
   &--toTop{
-    height:4rem;
-    width:4rem;
+    height:3rem;
+    width:3rem;
     border-radius: .5rem;
     opacity: .7;
     outline: none;
     border:none;
     position: fixed;
-    bottom:1rem;
+    bottom:7.3rem;
     right:2rem;
-    background-color:white;
+    background-color:#c0c0c0;
     color:black;
-    z-index: 2;
-    padding: .5rem;
+    z-index: 200;
+    padding: .25rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 32px;
+  }
+  @media (max-width:991px){
+    &--toTop{
+      height:2rem;
+      width:2rem;
+      right: .75rem;
+      bottom: 6rem;
+      font-size: 21px;
+    }
   }
 }
 
