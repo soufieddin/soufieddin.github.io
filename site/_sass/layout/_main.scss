@@ -11,68 +11,9 @@
         padding-left: 0;
         position: relative;
         &__vid{
-					padding: 0;
-        }
-        &__text{
-            position: absolute;
-            color: #fff;
-            width:100%;
-            bottom: 20%;
-            left:5%;
-						padding: 0 1rem;
-            .onSmall{
-                display: none;
-            }
-            .onBig{
-                font-size: 1.5rem;
-            }
-            &--dark{
-                color:white;
-                background-color: rgba(0,0,0, .3);
-                display:flex;
-                justify-content: center;
-                flex-direction: column;
-                width:100%;
-                height: 32%;
-                bottom:.2rem !important;
-                left:50%;
-                transform: translateX(-50%);
-                text-align: center;
-            }
-
-            @media (max-width:768px){
-                &--dark{
-                    left:50%;
-                    transform: translateX(-50%);
-                    width:100%;
-                    bottom: .7rem;
-                    padding: .4rem;
-                    height: 27%;
-                    font-size: 1.6rem;
-                    text-align: center;
-                }
-                left:7%;
-                bottom:20%;
-                font-size: 2rem !important;
-                .onSmall{
-                    display: block;
-                }
-                .onBig{
-                    display: none;
-                }
-            }
-        }
-    }
-    &__text{
-        margin-top: 4rem;
-        @include text-wrapper(space-between);
-        align-items: end;
-        &__title{
-            @include text-underline(left);
-        }
-        &__text{
-            font-size: 1.25rem;
-            padding: 2rem 0 1rem;
+			padding: 0;
+            height: 47vh;
+            object-fit: cover;
         }
     }
     &__extra{
@@ -127,13 +68,7 @@
 					}
 				}
     }
-    &__us{
-        @include list-cards(9rem);
-    }
-    &__us{
-        margin-bottom: 4rem;
-    }
-    &__clients, &__projects{
+    &__clients, &__projects, &__skills{
         @include list-cards(5rem);
     }
 

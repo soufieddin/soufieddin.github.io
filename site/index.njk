@@ -11,11 +11,6 @@ path: .
         <video class="home__img__vid col-12" autoplay muted loop id="myVideo">
             <source src="./static/images/coding.mp4" type="video/mp4">
         </video>
-        {# <div class="home__img__text home__img__text--dark">
-            <p class = "onSmall">INOVA is a full-service partner of ambitious companies</p>
-            <h2 class = "onBig">Full-service partner of ambitious companies</h2>
-            <p class = "onBig">INOVA is a digital product studio. Our team of product designers, engineers, strategists, architects and data scientists is eager and ready to accelerate your business.</p>
-        </div> #}
     </div>
     <div class="home__extra container">
         <div class="container">
@@ -38,24 +33,81 @@ path: .
             </div>
         </div>
     </div>
-    {# <div class="home__projects container">
-        <div class="home__projects__header">
-            <h2 class="home__projects__header__title">Interesting projects</h2>
+
+    <div class="home__skills container">
+        <div class="home__skills__header">
+            <h2 class="home__projects__header__title">Hard Skills</h2>
         </div>
-        {% if projects | length %}
-        {% endif %}
-        <div class="home__projects__list row row-cols-1 row-cols-lg-3 g-4">
-        {% for project in projects %}
-            <a class="col home__projects__list__item" href="https://soufieddin.github.io/p{{project.link}}" target="_blank">
-                <div class="item home__projects__list__item__element card h-100">
-                    <img src='./static/images/{{project.img}}.svg' class="card-img-top image--card" alt="...">
+
+        <div class="home__projects__list row row-cols-1 row-cols-xl-4 row-cols-md-2 g-4">
+            <div class="col home__skills__list__item">
+                <div class="item home__skills__list__item__element home__skills__list__item__element--longer  card h-100 ">
+                    <img src='./static/images/tools.svg' class="card-img-top image--card" alt="...">
                     <div class="card-body">
-                        <p class="card-title">{{project.title}}</p>
+                        <h5 class="card-title">General</h5>
+                        <ul>
+                            <li>NunJucks</li>
+                            <li>Markdown</li>
+                            <li>NPM</li>
+                            <li>Jest</li>
+                            <li>Postman</li>
+                            <li>JWT</li>
+                            <li>Git</li>
+                        </ul>
                     </div>
                 </div>
-            </a>
-        {% endfor %}
+            </div>
+
+            <div class="col home__skills__list__item">
+                <div class="item home__skills__list__item__element home__skills__list__item__element--longer  card h-100 ">
+                    <img src='./static/images/backend.svg' class="card-img-top image--card" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Back-End</h5>
+                        <ul>
+                            <li>NodeJs</li>
+                            <li>ExpressJS</li>
+                            <li>Knex</li>
+                            <li>Squelize</li>
+                            <li>Mysql</li>
+                            <li>Sqlite</li>
+                            <li>FireBase</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col home__skills__list__item">
+                <div class="item home__skills__list__item__element home__skills__list__item__element--longer  card h-100">
+                    <img src='./static/images/fend.svg' class="card-img-top image--card" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Front-End</h5>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>SASS</li>
+                            <li>Bootstrap</li>
+                            <li>Vanilla Javascript</li>
+                            <li>ReactJS</li>
+                            <li>EleventyJS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col home__skills__list__item">
+                <div class="item home__skills__list__item__element home__skills__list__item__element--longer  card h-100 ">
+                    <img src='./static/images/frontend.svg' class="card-img-top image--card" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Web-Design</h5>
+                        <ul>
+
+                            <li>AdobeXD</li>
+                            <li>Adobe photoshop</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div> #}
-    
+    </div>
 </section>

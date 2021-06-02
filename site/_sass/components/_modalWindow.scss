@@ -21,13 +21,22 @@
   margin-top: -32px;
   height: 300%;
   .footer-nav {
-    padding-top: 10rem;
+    padding-top: 20rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     &__list {
-      a {
-        font-size: $text-md;
+      list-style: none;
+      padding: 0;
+      li{
+        margin-bottom: 1rem;
+        a {
+          font-size: $text-lg;
+          color: #fff;
+  
+        }
       }
+     
     }
    
   }

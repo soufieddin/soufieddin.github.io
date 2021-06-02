@@ -1,17 +1,3 @@
-{# <button class = "btn-to-top">To top</button>
-<div class = "container">
-  <div class="dropdown">
-      <button class="dropdown__btn btn--third">Other Projects</button>
-      <div class="dropdown__links">
-      {% for article in collections.work%}
-      {% if article.url !== page.url %}
-        <a class="dropdown__links__item" href="{{ article.url | url}}">
-          {{ article.data.project.title}}
-        </a>
-      {% endif %}
-      {% endfor %}
-  </div>
-</div> #}
 <div class="cases container">
   <img class = "image--client" src = "../../static/images/{{project.thumb}}.svg" />
   <div class="cases__text">
@@ -20,12 +6,16 @@
   <div class="cases__client">
     <div class = "row">
       <div class = "cases__client__about col-md-6 col-sm-12">
-        <h6>Client: {{client.name}}</h6>
-        <p>{{client.synopsis}}</p>
+        <h6>Developed & designed as a university project </h6>
+        <p>{{project.synopsis}}</p>
       </div>
-      <div class = "cases__client__review col-md-6 col-sm-12">
-        <q>{{client.review}}</q>
-        <h6><cite>_{{client.name}}</cite></h6>
+      <div class = "cases__client__tech col-md-6 col-sm-12">
+        <h6>Used technologies</h6>
+        <div>
+          {% for t in technologies %}
+          <strong>{{t}}</strong> <br/>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>

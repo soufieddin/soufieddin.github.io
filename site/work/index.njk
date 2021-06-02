@@ -12,24 +12,19 @@ title: Work
                 <source src="../static/images/coding2.mp4" type="video/mp4">
             </video>
         </div>
-        <div class="container">
-            <div class="row">
-                
-            </div>
-        </div>
     </div>
     <div class="home__projects container">
         <div class="home__projects__header">
             <h2 class="home__projects__header__title">Interesting projects</h2>
         </div>
-        <div class="home__projects__list row row-cols-1 row-cols-lg-3 g-4">
+        <div class="home__projects__list row row-cols-1 row-cols-md-2 g-4">
         {% for p in collections.work %}
             <a class="col home__projects__list__item " href="{{p.url | url}}" target="_blank">
                 <div class="item home__projects__list__item__element home__projects__list__item__element--height  card h-100">
                     <img src='../static/images/{{p.data.project.thumb}}.svg' class="card-img-top image--card" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{p.data.project.title}}</h5>
-                        <h6 class="card-title">Client: {{p.data.client.name}}</h6>
+                        <h6 class="card-title">For: {{p.data.project.for}}</h6>
 
                     </div>
                 </div>
