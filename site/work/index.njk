@@ -19,7 +19,7 @@ title: Work
         </div>
         <div class="home__projects__list row row-cols-1 row-cols-md-2 g-4">
         {% for p in collections.work %}
-            <a class="col home__projects__list__item " href="{{p.url | url}}" target="_blank">
+            <a class="col home__projects__list__item " href="{{p.url | url}}">
                 <div class="item home__projects__list__item__element home__projects__list__item__element--height  card h-100">
                     <img src='../static/images/{{p.data.project.thumb}}.svg' class="card-img-top image--card" alt="...">
                     <div class="card-body">
