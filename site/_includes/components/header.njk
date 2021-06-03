@@ -3,11 +3,11 @@
         <div class="row justify-content-between">
             <h1 class="col logo">
                 <a href="{{ '/' | url }}" title="Back to the homepage of the {{ site.subdomain }}">
-                    <img class= "image--logo" src = "{{path}}/static/images/as-logo.svg">
+                    <img class= "image--logo" src = "{{path}}/static/images/as-logo.svg" alt='logo'>
                 </a>
             </h1>
             {% include "components/navigation.njk" %}
-              <button class="button--burger" >
+              <button class="button--burger" aria-label="burger menu' aria-hidden="true">
                         <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M29 4H0V0H29V4ZM29 8H0V12H29V8ZM29 16H0V20H29V16Z" fill="white"/>
                         </svg>
@@ -15,7 +15,7 @@
             <div class="my-modal">
                 <div class="modal-content">
                    {% include "components/navigationModal.njk" %}
-                    <button class="button--close" >
+                    <button class="button--close" aria-label="close menu' aria-hidden="true">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M24 20.188L15.685 11.979L23.885 3.697L20.188 0L11.976 8.318L3.666 0.115L0 3.781L8.321 12.021L0.115 20.334L3.781 24L12.018 15.682L20.303 23.885L24 20.188Z" fill="white"/>
                         </svg> 

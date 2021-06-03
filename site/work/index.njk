@@ -9,22 +9,22 @@ title: Work
     <div class="home">
         <div class="home__img ">
             <video class="home__img__vid col-12" autoplay muted loop id="myVideo">
-                <source src="../static/images/coding2.mp4" type="video/mp4">
+                <source src="../static/images/coding2.mp4" type="video/mp4" alt='video of man coding'>
             </video>
         </div>
     </div>
     <div class="home__projects container">
         <div class="home__projects__header">
-            <h2 class="home__projects__header__title">Interesting projects</h2>
+            <h1 class="home__projects__header__title">Interesting projects</h1>
         </div>
         <div class="home__projects__list row row-cols-1 row-cols-md-2 g-4">
         {% for p in collections.work %}
             <a class="col home__projects__list__item " href="{{p.url | url}}">
                 <div class="item home__projects__list__item__element home__projects__list__item__element--height  card h-100">
-                    <img src='../static/images/{{p.data.project.thumb}}.svg' class="card-img-top image--card" alt="...">
+                    <img src='../static/images/{{p.data.project.thumb}}.svg' class="card-img-top image--card" alt="logo of the project">
                     <div class="card-body">
-                        <h5 class="card-title">{{p.data.project.title}}</h5>
-                        <h6 class="card-title">For: {{p.data.project.for}}</h6>
+                        <strong class="card-title">{{p.data.project.title}}</strong><br>
+                        <strong class="card-title">For: {{p.data.project.for}}</strong>
 
                     </div>
                 </div>
