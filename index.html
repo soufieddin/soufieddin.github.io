@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="robots" content="noindex, nofollow" />
+        
         <title>Home | Aiden Soufi | Portfolio</title>
 <meta name="description" content="My Portfolio">
 <link rel="canonical" href="/portfolio/" />
@@ -26,8 +26,8 @@
 <meta name="theme-color" content="#ffffff"> 
         <link type="text/plain" rel="author" href="/portfolio/humans.txt" />       
         <link rel="stylesheet" href="/portfolio/static/css/main.css">
-        <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
-        <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+        
+        
     </head>
     <body class=""> 
         <header class="header">    
@@ -35,14 +35,14 @@
         <div class="row justify-content-between">
             <h1 class="col logo">
                 <a href="/portfolio/" title="Back to the homepage of the Aiden Soufi">
-                    <img class= "image--logo" src = "./static/images/as-logo.svg">
+                    <img class= "image--logo" src = "./static/images/as-logo.svg" alt='logo'>
                 </a>
             </h1>
             <nav class="col nav">
 <ul class="nav__list"><li class="nav__list-item nav__list-item--active"><a href="/portfolio/">Home</a></li>
 <li class="nav__list-item"><a href="/portfolio/work/">Work</a></li></ul>
 </nav>
-              <button class="button--burger" >
+              <button class="button--burger" aria-label="burger menu' aria-hidden="true">
                         <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M29 4H0V0H29V4ZM29 8H0V12H29V8ZM29 16H0V20H29V16Z" fill="white"/>
                         </svg>
@@ -53,7 +53,7 @@
 <ul class="footer-nav__list"><li class="footer-nav__list-item footer-nav__list-item--active"><a href="/portfolio/">Home</a></li>
 <li class="footer-nav__list-item"><a href="/portfolio/work/">Work</a></li></ul>
 </nav>
-                    <button class="button--close" >
+                    <button class="button--close" aria-label="close menu' aria-hidden="true">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M24 20.188L15.685 11.979L23.885 3.697L20.188 0L11.976 8.318L3.666 0.115L0 3.781L8.321 12.021L0.115 20.334L3.781 24L12.018 15.682L20.303 23.885L24 20.188Z" fill="white"/>
                         </svg> 
@@ -64,11 +64,11 @@
     </div>
 </header>
         <main class="main">
-        <button class = "button--toTop">▲</button>
+        <button class = "button--toTop" aria-label="to top' aria-hidden="true">▲</button>
             <section class="home">
     <div class="home__img ">
         <video class="home__img__vid col-12" autoplay muted loop id="myVideo">
-            <source src="./static/images/coding.mp4" type="video/mp4">
+            <source src="./static/images/coding.mp4" type="video/mp4" alt='head video of man typing or coding'>
         </video>
     </div>
     <div class="home__extra container">
@@ -81,11 +81,11 @@
                     <div class="home__extra__personal__wrapper">
                         <div>
                             <p>My name is</p>
-                            <h2>Aiden Soufi</h2>
+                            <strong>Aiden Soufi</strong>
                         </div>
                         <div class = 'home__extra__job'>
                             <p>and i'm a</p>
-                            <h2>JavaScript developer</h2>
+                            <strong>JavaScript developer</strong>
                         </div>
                     </div>
                 </div>
@@ -95,15 +95,15 @@
 
     <div class="home__skills container">
         <div class="home__skills__header">
-            <h2 class="home__projects__header__title">Hard Skills</h2>
+            <h1 class="home__skills__header__title">Hard Skills</h1>
         </div>
 
         <div class="home__projects__list row row-cols-1 row-cols-xl-4 row-cols-md-2 g-4">
             <div class="col home__skills__list__item">
                 <div class="item home__skills__list__item__element home__skills__list__item__element--longer  card h-100 ">
-                    <img src='./static/images/tools.svg' class="card-img-top image--card" alt="...">
+                    <img src='./static/images/tools.svg' class="card-img-top image--card" alt="icon of table">
                     <div class="card-body">
-                        <h5 class="card-title">General</h5>
+                        <strong class="card-title">General</strong>
                         <ul>
                             <li>NunJucks</li>
                             <li>Markdown</li>
@@ -119,9 +119,9 @@
 
             <div class="col home__skills__list__item">
                 <div class="item home__skills__list__item__element home__skills__list__item__element--longer  card h-100 ">
-                    <img src='./static/images/backend.svg' class="card-img-top image--card" alt="...">
+                    <img src='./static/images/backend.svg' class="card-img-top image--card" alt="icon">
                     <div class="card-body">
-                        <h5 class="card-title">Back-End</h5>
+                        <strong class="card-title">Back-End</strong>
                         <ul>
                             <li>NodeJs</li>
                             <li>ExpressJS</li>
@@ -137,9 +137,9 @@
             
             <div class="col home__skills__list__item">
                 <div class="item home__skills__list__item__element home__skills__list__item__element--longer  card h-100">
-                    <img src='./static/images/fend.svg' class="card-img-top image--card" alt="...">
+                    <img src='./static/images/fend.svg' class="card-img-top image--card" alt="icon">
                     <div class="card-body">
-                        <h5 class="card-title">Front-End</h5>
+                        <strong class="card-title">Front-End</strong>
                         <ul>
                             <li>HTML5</li>
                             <li>CSS3</li>
@@ -155,9 +155,9 @@
 
             <div class="col home__skills__list__item">
                 <div class="item home__skills__list__item__element home__skills__list__item__element--longer  card h-100 ">
-                    <img src='./static/images/frontend.svg' class="card-img-top image--card" alt="...">
+                    <img src='./static/images/frontend.svg' class="card-img-top image--card" alt="icon">
                     <div class="card-body">
-                        <h5 class="card-title">Web-Design</h5>
+                        <strong class="card-title">Web-Design</strong>
                         <ul>
 
                             <li>AdobeXD</li>
@@ -182,19 +182,19 @@
                       
                        <li class="footer__list__item">
                         <a href="https://www.instagram.com/aiden__so/" class="footer__list__item__link">
-                            <img class="image--social" src="./static/images/icons/igm.svg"> 
+                            <img class="image--social" src="./static/images/icons/igm.svg" alt='social icon'> 
                         </a>
                        </li>
                     
                        <li class="footer__list__item">
                         <a href="https://www.linkedin.com/in/aiden-soufi-a17ba0191/" class="footer__list__item__link">
-                            <img class="image--social" src="./static/images/icons/lid.svg"> 
+                            <img class="image--social" src="./static/images/icons/lid.svg" alt='social icon'> 
                         </a>
                        </li>
                     
                        <li class="footer__list__item">
                         <a href="https://github.com/soufieddin" class="footer__list__item__link">
-                            <img class="image--social" src="./static/images/icons/gh.svg"> 
+                            <img class="image--social" src="./static/images/icons/gh.svg" alt='social icon'> 
                         </a>
                        </li>
                      
