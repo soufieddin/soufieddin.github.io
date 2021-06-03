@@ -60,6 +60,19 @@
         }
       }
     }
+    &__back{
+      margin-top: 4rem;
+      text-align: center;
+      a{
+        
+        color:#c0c0c0;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
     &__item{
       &__img{
         transition: all .5s ease-in-out ;

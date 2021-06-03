@@ -2116,6 +2116,18 @@ body {
   color: #c0c0c0;
   border-bottom: 2px solid #c0c0c0;
 }
+.cases__element__back {
+  margin-top: 4rem;
+  text-align: center;
+}
+.cases__element__back a {
+  color: #c0c0c0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.cases__element__back a:hover {
+  text-decoration: underline;
+}
 .cases__element__item__img {
   transition: all 0.5s ease-in-out;
 }
