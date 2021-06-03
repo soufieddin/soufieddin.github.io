@@ -43,6 +43,11 @@
               margin-bottom: 1rem;
               &--height{
                 min-height: 18rem;
+                transition: all .3s ease-in-out;
+                &:hover{
+                  transform: scale(1.03);
+                  text-decoration: none;
+                }
               }
               &--longer{
                 min-height:24rem;
@@ -57,10 +62,7 @@
                 
               }
           }
-          &:hover{
-            transform: scale(1.05);
-            text-decoration: none;
-          }
+         
           .extra{
               background-color:transparent;
               border:none;
