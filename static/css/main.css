@@ -1972,6 +1972,11 @@ body {
 }
 .home__clients__list__item__element--height, .home__projects__list__item__element--height, .home__skills__list__item__element--height {
   min-height: 18rem;
+  transition: all 0.3s ease-in-out;
+}
+.home__clients__list__item__element--height:hover, .home__projects__list__item__element--height:hover, .home__skills__list__item__element--height:hover {
+  transform: scale(1.03);
+  text-decoration: none;
 }
 .home__clients__list__item__element--longer, .home__projects__list__item__element--longer, .home__skills__list__item__element--longer {
   min-height: 24rem;
@@ -1983,10 +1988,6 @@ body {
 .home__clients__list__item__element ul, .home__projects__list__item__element ul, .home__skills__list__item__element ul {
   list-style: none;
   padding: 0;
-}
-.home__clients__list__item:hover, .home__projects__list__item:hover, .home__skills__list__item:hover {
-  transform: scale(1.05);
-  text-decoration: none;
 }
 .home__clients__list__item .extra, .home__projects__list__item .extra, .home__skills__list__item .extra {
   background-color: transparent;
