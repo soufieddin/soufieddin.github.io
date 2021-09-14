@@ -74,17 +74,19 @@
 		&__projects{
 			&__more{
 				margin-top: 4rem;
-				text-align: center;
-				&__link{
-					color:#c0c0c0;
-					cursor: pointer;
-					transition: all .3s ease-in-out;
-					&:hover{
-						text-decoration: underline;
-					}
-				}
+      	text-align: center;
+      	margin:0 auto;
+      a{
+        font-size: 2rem;
+        color:#c0c0c0;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        &:hover{
+          text-decoration: underline;
+          color:#c0c0c0 !important;
+        }
+      }
 			}
 		}
-
 }
 
