@@ -71,11 +71,5 @@
     &__clients, &__projects, &__skills{
         @include list-cards(5rem);
     }
-		&__projects{
-			&__other{
-				color:yellow !important;
-			}
-		}
-
 }
 
