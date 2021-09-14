@@ -1997,6 +1997,17 @@ body {
 .home__clients__list__item .extra img, .home__projects__list__item .extra img, .home__skills__list__item .extra img {
   width: 4rem;
 }
+.home__projects__other {
+  margin-top: 2rem;
+}
+.home__projects__other__link {
+  text-decoration: none;
+}
+.home__projects__other__link__action {
+  color: #c0c0c0 !important;
+  font-size: 1.75rem;
+  text-align: center;
+}
 
 .footer {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
