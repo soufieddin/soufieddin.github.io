@@ -71,6 +71,20 @@
     &__clients, &__projects, &__skills{
         @include list-cards(5rem);
     }
+		&__projects{
+			&__more{
+				margin-top: 4rem;
+				text-align: center;
+				&__link{
+					color:#c0c0c0;
+					cursor: pointer;
+					transition: all .3s ease-in-out;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+		}
 
 }
 
