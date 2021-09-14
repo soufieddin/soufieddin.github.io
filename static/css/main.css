@@ -2131,14 +2131,17 @@ body {
 .cases__element__back {
   margin-top: 4rem;
   text-align: center;
+  margin: 0 auto;
 }
 .cases__element__back a {
+  font-size: 2rem;
   color: #c0c0c0;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 .cases__element__back a:hover {
   text-decoration: underline;
+  color: #c0c0c0 !important;
 }
 .cases__element__item__img {
   transition: all 0.5s ease-in-out;
