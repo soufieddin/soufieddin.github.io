@@ -71,5 +71,20 @@
     &__clients, &__projects, &__skills{
         @include list-cards(5rem);
     }
+		&__projects{
+			&__other{
+				margin-top: 2rem;
+				&__link{
+					text-decoration: none;
+					&__action{
+						color:#c0c0c0 !important;
+						font-size: 1.75rem;
+						text-align: center;
+
+					}
+				}
+			}
+		}
+
 }
 
