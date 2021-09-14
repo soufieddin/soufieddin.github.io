@@ -2000,14 +2000,17 @@ body {
 .home__projects__more {
   margin-top: 4rem;
   text-align: center;
+  margin: 0 auto;
 }
-.home__projects__more__link {
+.home__projects__more a {
+  font-size: 2rem;
   color: #c0c0c0;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.home__projects__more__link:hover {
+.home__projects__more a:hover {
   text-decoration: underline;
+  color: #c0c0c0 !important;
 }
 
 .footer {
@@ -2134,7 +2137,6 @@ body {
   margin: 0 auto;
 }
 .cases__element__back a {
-  font-size: 2rem;
   color: #c0c0c0;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
