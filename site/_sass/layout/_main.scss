@@ -73,11 +73,11 @@
     }
 		&__projects{
 			&__more{
-				margin-top: 4rem;
+				margin-top: 4rem !important;
       	text-align: center;
       	margin:0 auto;
       a{
-        font-size: 2rem;
+        font-size: 1.75rem !important;
         color:#c0c0c0;
         cursor: pointer;
         transition: all .3s ease-in-out;
