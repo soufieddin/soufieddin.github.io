@@ -1998,12 +1998,12 @@ body {
   width: 4rem;
 }
 .home__projects__more {
-  margin-top: 4rem;
+  margin-top: 4rem !important;
   text-align: center;
   margin: 0 auto;
 }
 .home__projects__more a {
-  font-size: 2rem;
+  font-size: 1.75rem !important;
   color: #c0c0c0;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -2137,6 +2137,7 @@ body {
   margin: 0 auto;
 }
 .cases__element__back a {
+  font-size: 1.75rem !important;
   color: #c0c0c0;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
